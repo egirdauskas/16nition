@@ -1,0 +1,84 @@
+{
+  "version": "offline_tournament_catalog_v1",
+  "classification": "revival_policy_console_fallback",
+  "default_enabled": false,
+  "authorization": "User2November2026 approves documented FIFA16console permanent cups when Mobile definitions cannot be recovered; retain historical requirements/prizes as references and disable unsupported reward types.",
+  "source": "https://fifauteam.com/fifa-16-ultimate-team-tournaments/",
+  "source_scope": "PlayStation/Xbox fixed single-player cups; not recovered Mobile server definitions",
+  "format": "single_elimination_16_teams",
+  "rounds": 4,
+  "match_minutes": 6,
+  "fixture_order": "revival_policy: deterministic supplied-club draw, no historical opponent order or invented match results",
+  "trophy_art": "revival_policy_original_art_assignment: supplied assetsLicensedTrophies.big, shape1103 in bronze/silver/gold; not recovered historical cup-to-art assignment",
+  "rewards_mode": "reference_only_disabled",
+  "cups": [
+    {
+      "key": "starter_cup",
+      "name": "Starter Cup",
+      "service_id": 201,
+      "metadata_service_id": 8203100,
+      "difficulty": 1,
+      "required_quality": null,
+      "quality_scope": "starting11_and_substitutes",
+      "minimum_chemistry": 0,
+      "unlock_trophies": 0,
+      "historical_prize_reference": {
+        "coins": 500,
+        "pack": "Gold Gift Pack"
+      },
+      "trophy_asset": "trophy_1103_bronze",
+      "trophy_silhouette": "trophy_1103_dark"
+    },
+    {
+      "key": "bronze_challenge",
+      "name": "Bronze Challenge",
+      "service_id": 202,
+      "metadata_service_id": 8203101,
+      "difficulty": 3,
+      "required_quality": "bronze",
+      "quality_scope": "starting11_and_substitutes",
+      "minimum_chemistry": 0,
+      "unlock_trophies": 0,
+      "historical_prize_reference": {
+        "coins": 1000,
+        "pack": "Gold Gift Pack"
+      },
+      "trophy_asset": "trophy_1103_bronze",
+      "trophy_silhouette": "trophy_1103_dark"
+    },
+    {
+      "key": "silver_shield",
+      "name": "Silver Shield",
+      "service_id": 203,
+      "metadata_service_id": 8203102,
+      "difficulty": 2,
+      "required_quality": "silver",
+      "quality_scope": "starting11_and_substitutes",
+      "minimum_chemistry": 75,
+      "unlock_trophies": 0,
+      "historical_prize_reference": {
+        "coins": 750,
+        "pack": "Silver Gift Pack"
+      },
+      "trophy_asset": "trophy_1103_silver",
+      "trophy_silhouette": "trophy_1103_dark"
+    },
+    {
+      "key": "champions_trophy",
+      "name": "Champions Trophy",
+      "service_id": 204,
+      "metadata_service_id": 8203103,
+      "difficulty": 4,
+      "required_quality": null,
+      "quality_scope": "starting11_and_substitutes",
+      "minimum_chemistry": 0,
+      "unlock_trophies": 0,
+      "historical_prize_reference": {
+        "coins": 1200,
+        "pack": "Premium Loan Player Reward Pack"
+      },
+      "trophy_asset": "trophy_1103_gold",
+      "trophy_silhouette": "trophy_1103_dark"
+    }
+  ]
+}

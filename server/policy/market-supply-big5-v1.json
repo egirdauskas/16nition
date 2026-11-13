@@ -1,0 +1,9 @@
+{
+  "version": "market_supply_big5_v1",
+  "classification": "revival_policy",
+  "approved": "User, 5 November 2026: double the amount of big-five-league gold cards on the Transfer Market.",
+  "default_enabled": false,
+  "big_five_league_ids": [13, 16, 19, 31, 53],
+  "gold_tiers": ["gold", "gold_elite"],
+  "big_five_multiplier": 2
+}

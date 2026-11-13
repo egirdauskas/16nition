@@ -1,0 +1,7 @@
+{
+  "version": "market_supply_scale_v1",
+  "classification": "revival_policy",
+  "approved": "User, 5 November 2026: widely increase the overall scale of listings to over 1,000 live at any given time.",
+  "default_enabled": false,
+  "multiplier": 5
+}

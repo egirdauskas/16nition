@@ -1,0 +1,9 @@
+{
+  "version": "consumable_pool_exclusions_v2",
+  "classification": "revival_policy",
+  "base_pool": "training_injury_misc_filtered_v1",
+  "pool": "training_injury_misc_filtered_v2",
+  "excluded_resource_ids": [
+    5004012
+  ]
+}

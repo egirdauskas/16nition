@@ -1,0 +1,455 @@
+{
+  "classification": "revival_policy",
+  "version": "offline_rewards_v1",
+  "default_enabled": false,
+  "stock_delivery_enabled": false,
+  "coin_tables_are_already_15x": true,
+  "progression_policy_version": "account_progression_v1",
+  "season_source_policy_version": "existing_xp_authorization_table_15x_v1",
+  "season_coin_factor": 1,
+  "divisions": {
+    "1": {
+      "match": {
+        "W": {
+          "level1_coins": 10500,
+          "pack_label": "Premium Gold"
+        },
+        "D": {
+          "level1_coins": 6300,
+          "pack_label": "Gold"
+        },
+        "L": {
+          "level1_coins": 3525,
+          "pack_label": "Premium Silver"
+        }
+      },
+      "season": {
+        "RELEGATION": {
+          "coins": 18000,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "MAINTENANCE": {
+          "coins": 30000,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "PROMOTION": {
+          "coins": null,
+          "pack_label": null,
+          "pack_status": "inapplicable"
+        },
+        "CHAMPIONSHIP": {
+          "coins": 135000,
+          "pack_label": "Rare Players",
+          "pack_status": "authorized"
+        }
+      }
+    },
+    "2": {
+      "match": {
+        "W": {
+          "level1_coins": 9000,
+          "pack_label": "Premium Gold"
+        },
+        "D": {
+          "level1_coins": 5400,
+          "pack_label": "Gold"
+        },
+        "L": {
+          "level1_coins": 3000,
+          "pack_label": "Premium Silver"
+        }
+      },
+      "season": {
+        "RELEGATION": {
+          "coins": 14250,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "MAINTENANCE": {
+          "coins": 24000,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "PROMOTION": {
+          "coins": 82500,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "CHAMPIONSHIP": {
+          "coins": 108000,
+          "pack_label": "Mega",
+          "pack_status": "authorized"
+        }
+      }
+    },
+    "3": {
+      "match": {
+        "W": {
+          "level1_coins": 7650,
+          "pack_label": "Gold"
+        },
+        "D": {
+          "level1_coins": 4575,
+          "pack_label": "Premium Silver"
+        },
+        "L": {
+          "level1_coins": 2550,
+          "pack_label": "Silver"
+        }
+      },
+      "season": {
+        "RELEGATION": {
+          "coins": 12000,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "MAINTENANCE": {
+          "coins": 20250,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "PROMOTION": {
+          "coins": 70500,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "CHAMPIONSHIP": {
+          "coins": 91500,
+          "pack_label": "Premium Gold Players",
+          "pack_status": "authorized"
+        }
+      }
+    },
+    "4": {
+      "match": {
+        "W": {
+          "level1_coins": 6450,
+          "pack_label": "Gold"
+        },
+        "D": {
+          "level1_coins": 3825,
+          "pack_label": "Premium Silver"
+        },
+        "L": {
+          "level1_coins": 2175,
+          "pack_label": "Silver"
+        }
+      },
+      "season": {
+        "RELEGATION": {
+          "coins": 9750,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "MAINTENANCE": {
+          "coins": 16500,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "PROMOTION": {
+          "coins": 60000,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "CHAMPIONSHIP": {
+          "coins": 78000,
+          "pack_label": "Jumbo Premium Gold",
+          "pack_status": "authorized"
+        }
+      }
+    },
+    "5": {
+      "match": {
+        "W": {
+          "level1_coins": 5400,
+          "pack_label": "Premium Silver"
+        },
+        "D": {
+          "level1_coins": 3225,
+          "pack_label": "Silver"
+        },
+        "L": {
+          "level1_coins": 1800,
+          "pack_label": "Premium Bronze"
+        }
+      },
+      "season": {
+        "RELEGATION": {
+          "coins": 8250,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "MAINTENANCE": {
+          "coins": 13500,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "PROMOTION": {
+          "coins": 51000,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "CHAMPIONSHIP": {
+          "coins": 67500,
+          "pack_label": "Premium Gold",
+          "pack_status": "authorized"
+        }
+      }
+    },
+    "6": {
+      "match": {
+        "W": {
+          "level1_coins": 4500,
+          "pack_label": "Premium Silver"
+        },
+        "D": {
+          "level1_coins": 2700,
+          "pack_label": "Silver"
+        },
+        "L": {
+          "level1_coins": 1500,
+          "pack_label": "Premium Bronze"
+        }
+      },
+      "season": {
+        "RELEGATION": {
+          "coins": 6750,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "MAINTENANCE": {
+          "coins": 11250,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "PROMOTION": {
+          "coins": 43500,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "CHAMPIONSHIP": {
+          "coins": 57000,
+          "pack_label": "Gold",
+          "pack_status": "authorized"
+        }
+      }
+    },
+    "7": {
+      "match": {
+        "W": {
+          "level1_coins": 3750,
+          "pack_label": "Silver"
+        },
+        "D": {
+          "level1_coins": 2250,
+          "pack_label": "Premium Bronze"
+        },
+        "L": {
+          "level1_coins": 1275,
+          "pack_label": "Bronze"
+        }
+      },
+      "season": {
+        "RELEGATION": {
+          "coins": 5250,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "MAINTENANCE": {
+          "coins": 9000,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "PROMOTION": {
+          "coins": 37500,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "CHAMPIONSHIP": {
+          "coins": 48000,
+          "pack_label": "Premium Silver",
+          "pack_status": "authorized"
+        }
+      }
+    },
+    "8": {
+      "match": {
+        "W": {
+          "level1_coins": 3150,
+          "pack_label": "Silver"
+        },
+        "D": {
+          "level1_coins": 1875,
+          "pack_label": "Premium Bronze"
+        },
+        "L": {
+          "level1_coins": 1050,
+          "pack_label": "Bronze"
+        }
+      },
+      "season": {
+        "RELEGATION": {
+          "coins": 4500,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "MAINTENANCE": {
+          "coins": 7500,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "PROMOTION": {
+          "coins": 31500,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "CHAMPIONSHIP": {
+          "coins": 40500,
+          "pack_label": "Silver",
+          "pack_status": "authorized"
+        }
+      }
+    },
+    "9": {
+      "match": {
+        "W": {
+          "level1_coins": 2700,
+          "pack_label": "Premium Bronze"
+        },
+        "D": {
+          "level1_coins": 1575,
+          "pack_label": "Bronze"
+        },
+        "L": {
+          "level1_coins": 900,
+          "pack_label": "Bronze"
+        }
+      },
+      "season": {
+        "RELEGATION": {
+          "coins": 3750,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "MAINTENANCE": {
+          "coins": 6000,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "PROMOTION": {
+          "coins": 27000,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "CHAMPIONSHIP": {
+          "coins": 34500,
+          "pack_label": "Premium Bronze",
+          "pack_status": "authorized"
+        }
+      }
+    },
+    "10": {
+      "match": {
+        "W": {
+          "level1_coins": 2250,
+          "pack_label": "Premium Bronze"
+        },
+        "D": {
+          "level1_coins": 1350,
+          "pack_label": "Bronze"
+        },
+        "L": {
+          "level1_coins": 750,
+          "pack_label": "Bronze"
+        }
+      },
+      "season": {
+        "RELEGATION": {
+          "coins": null,
+          "pack_label": null,
+          "pack_status": "inapplicable"
+        },
+        "MAINTENANCE": {
+          "coins": 4500,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "PROMOTION": {
+          "coins": 22500,
+          "pack_label": null,
+          "pack_status": "unresolved"
+        },
+        "CHAMPIONSHIP": {
+          "coins": 28500,
+          "pack_label": "Bronze",
+          "pack_status": "authorized"
+        }
+      }
+    }
+  },
+  "permanent_coin_catalog": {
+    "Bronze": {
+      "coin_price": 400,
+      "definition": null,
+      "availability": "unsupported_pending_evidence"
+    },
+    "Premium Bronze": {
+      "coin_price": 750,
+      "definition": null,
+      "availability": "unsupported_pending_evidence"
+    },
+    "Silver": {
+      "coin_price": 2500,
+      "definition": null,
+      "availability": "unsupported_pending_evidence"
+    },
+    "Premium Silver": {
+      "coin_price": 3750,
+      "definition": null,
+      "availability": "unsupported_pending_evidence"
+    },
+    "Gold": {
+      "coin_price": 5000,
+      "definition": null,
+      "availability": "unsupported_pending_evidence"
+    },
+    "Premium Gold": {
+      "coin_price": 7500,
+      "definition": null,
+      "availability": "unsupported_pending_evidence"
+    },
+    "Jumbo Premium Gold": {
+      "coin_price": 15000,
+      "definition": null,
+      "availability": "unsupported_pending_evidence"
+    },
+    "Premium Gold Players": {
+      "coin_price": 25000,
+      "definition": null,
+      "availability": "unsupported_pending_evidence"
+    },
+    "Mega": {
+      "coin_price": 35000,
+      "definition": null,
+      "availability": "unsupported_pending_evidence"
+    },
+    "Rare Players": {
+      "coin_price": 50000,
+      "definition": null,
+      "availability": "unsupported_pending_evidence"
+    },
+    "Jumbo Rare Players": {
+      "coin_price": 100000,
+      "definition": null,
+      "availability": "unsupported_pending_evidence"
+    },
+    "Ultimate": {
+      "coin_price": 125000,
+      "definition": null,
+      "availability": "unsupported_pending_evidence"
+    }
+  },
+  "rationale": "Explicit user match/title pack and permanent coin-price tables. User clarified2026-10-12: use the existing table always for season coins; exact native-xp-level authorization amounts are already15x. Current console-v2 thresholds remain separate; do not recalculate season cash from that policy. Earlier lower-outcome pack labels retained only in the report artifact; approval not established, so configurable unresolved here. No native product/resource IDs or definitions invented; no source pack/XP/season delivery enabled."
+}

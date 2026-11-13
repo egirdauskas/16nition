@@ -1,0 +1,132 @@
+{
+  "version": "recovered_single_consumable_captions_v1",
+  "classification": "recovered_supplied_stock_text",
+  "source": {
+    "file": "reports/overnight/2026-10-13-native-packs/supplied/patch.26.com.ea.gp.fifaworld-eng_us.db",
+    "sha256": "a7d47d85769e922e2df6620e4c388a25a7fcae3cb4703f36d36b19de3d3511b2",
+    "member": "eng_us.db",
+    "archive": "input/patch.26.com.ea.gp.fifaworld.obb"
+  },
+  "entries": {
+    "FUT_UC_PACE": {
+      "row": 14209,
+      "value": "PACE"
+    },
+    "FUT_UC_SHOOTING": {
+      "row": 2476,
+      "value": "SHOOTING"
+    },
+    "FUT_UC_PASSING": {
+      "row": 15058,
+      "value": "PASSING"
+    },
+    "FUT_UC_DRIBBLING": {
+      "row": 7832,
+      "value": "DRIBBLING"
+    },
+    "FUT_UC_DEFENDING": {
+      "row": 13950,
+      "value": "DEFENDING"
+    },
+    "FUT_UC_PHYSICAL": {
+      "row": 6615,
+      "value": "PHYSICAL"
+    },
+    "FUT_UC_DIVING": {
+      "row": 10229,
+      "value": "DIVING"
+    },
+    "FUT_UC_HANDLING": {
+      "row": 11189,
+      "value": "HANDLING"
+    },
+    "FUT_UC_KICKING": {
+      "row": 8522,
+      "value": "KICKING"
+    },
+    "FUT_UC_REFLEXES": {
+      "row": 14324,
+      "value": "REFLEXES"
+    },
+    "FUT_UC_ACCELERATION": {
+      "row": 14060,
+      "value": "SPEED"
+    },
+    "FUT_UC_POSITIONING": {
+      "row": 14503,
+      "value": "POSITIONING"
+    },
+    "Attribute_All": {
+      "row": 8194,
+      "value": "ALL ATTR"
+    },
+    "FUT_TRAINING_CARD_ONLY_ONE_MATCH": {
+      "row": 12184,
+      "value": "Boost attributes for the next match"
+    },
+    "FUT_CONSUMABLE_PLAYERTRAINING": {
+      "row": 3594,
+      "value": "Player Training items are applied to players to improve their attributes."
+    },
+    "FUT_CONSUMABLE_KEEPERTRAINING": {
+      "row": 14650,
+      "value": "Goalkeeper Training items are applied to keepers to improve their attributes."
+    },
+    "FUT_CONSUMABLE_PLAYERHEALING": {
+      "row": 12379,
+      "value": "Player Healing items are applied to players to heal injuries."
+    },
+    "FUT_CONSUMABLE_POSITIONMOD": {
+      "row": 8670,
+      "value": "Position Modifiers change a player’s preferred position."
+    },
+    "FUT_CONSUMABLE_FORMATIONMOD": {
+      "row": 13082,
+      "value": "Formation Modifiers change a player’s preferred formation."
+    },
+    "FCC_CU_Arena_help_4": {
+      "row": 10038,
+      "value": "You can change a manager's preferred formation with a formation modifier."
+    },
+    "LTXT_CONSUMABLES_PLAYER_POSITION": {
+      "row": 15293,
+      "value": "Player\nPosition"
+    },
+    "LTXT_CONSUMABLES_PLAYER_FORMATION": {
+      "row": 12561,
+      "value": "Player\nFormation"
+    },
+    "LTXT_CONSUMABLES_MANAGER_FORMATION": {
+      "row": 2211,
+      "value": "Manager\nFormation"
+    },
+    "Injury_head_desc": {
+      "row": 1727,
+      "value": "Head Healing +%1d"
+    },
+    "Injury_shoulder_desc": {
+      "row": 3539,
+      "value": "Upper body Healing +%1d"
+    },
+    "Injury_arm_desc": {
+      "row": 9436,
+      "value": "Arm Healing +%1d"
+    },
+    "Injury_hip_desc": {
+      "row": 5782,
+      "value": "Knee Healing +%1d"
+    },
+    "Injury_leg_desc": {
+      "row": 113,
+      "value": "Leg Healing +%1d"
+    },
+    "Injury_foot_desc": {
+      "row": 1349,
+      "value": "Foot Healing +%1d"
+    },
+    "Injury_All_desc": {
+      "row": 6362,
+      "value": "Heals All +%1d"
+    }
+  }
+}

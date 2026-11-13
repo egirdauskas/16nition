@@ -1,0 +1,56 @@
+{
+  "version": "filtered_consumable_pack_bindings_v2",
+  "classification": "revival_policy",
+  "default_enabled": false,
+  "stock_delivery_enabled": false,
+  "bindings": {
+    "Bronze": {
+      "previous_definition": "revival_bronze_mixed_specials_v4",
+      "definition": "revival_bronze_mixed_specials_v5"
+    },
+    "Premium Bronze": {
+      "previous_definition": "revival_premium_bronze_mixed_specials_v4",
+      "definition": "revival_premium_bronze_mixed_specials_v5"
+    },
+    "Silver": {
+      "previous_definition": "revival_silver_mixed_specials_v4",
+      "definition": "revival_silver_mixed_specials_v5"
+    },
+    "Premium Silver": {
+      "previous_definition": "revival_premium_silver_mixed_specials_v4",
+      "definition": "revival_premium_silver_mixed_specials_v5"
+    },
+    "Gold": {
+      "previous_definition": "revival_gold_mixed_specials_v4",
+      "definition": "revival_gold_mixed_specials_v5"
+    },
+    "Premium Gold": {
+      "previous_definition": "revival_premium_gold_mixed_specials_v4",
+      "definition": "revival_premium_gold_mixed_specials_v5"
+    },
+    "Rare Players": {
+      "previous_definition": "revival_rare_players_specials_v2",
+      "definition": "revival_rare_players_specials_v2"
+    },
+    "Premium Gold Players": {
+      "previous_definition": "revival_premium_gold_players_specials_v4",
+      "definition": "revival_premium_gold_players_specials_v4"
+    },
+    "Jumbo Premium Gold": {
+      "previous_definition": "revival_jumbo_premium_gold_mixed_specials_v4",
+      "definition": "revival_jumbo_premium_gold_mixed_specials_v5"
+    },
+    "Mega": {
+      "previous_definition": "revival_mega_mixed_specials_v4",
+      "definition": "revival_mega_mixed_specials_v5"
+    },
+    "Jumbo Rare Players": {
+      "previous_definition": "revival_jumbo_rare_players_specials_v2",
+      "definition": "revival_jumbo_rare_players_specials_v2"
+    },
+    "Ultimate": {
+      "previous_definition": "revival_ultimate_players_specials_v2",
+      "definition": "revival_ultimate_players_specials_v2"
+    }
+  }
+}

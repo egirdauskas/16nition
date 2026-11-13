@@ -1,0 +1,42 @@
+{
+  "version": "classic_pack_store_backend_v4",
+  "classification": "revival_policy",
+  "default_enabled": false,
+  "stock_delivery_enabled": false,
+  "price_source": "offline_rewards_v1",
+  "identity_namespace": "server_local_test_sku_not_ea_product_id",
+  "bindings": {
+    "Bronze": {
+      "product_id": 44001,
+      "definition": "revival_bronze_mixed_v1"
+    },
+    "Premium Bronze": {
+      "product_id": 44002,
+      "definition": "revival_premium_bronze_mixed_v1"
+    },
+    "Silver": {
+      "product_id": 44003,
+      "definition": "revival_silver_mixed_v1"
+    },
+    "Premium Silver": {
+      "product_id": 44004,
+      "definition": "revival_premium_silver_mixed_v1"
+    },
+    "Gold": {
+      "product_id": 44005,
+      "definition": "revival_gold_mixed_v1"
+    },
+    "Premium Gold": {
+      "product_id": 44006,
+      "definition": "revival_premium_gold_mixed_v1"
+    },
+    "Rare Players": {
+      "product_id": 45001,
+      "definition": "revival_rare_players_v1"
+    },
+    "Premium Gold Players": {
+      "product_id": 45004,
+      "definition": "revival_premium_gold_players_v3"
+    }
+  }
+}

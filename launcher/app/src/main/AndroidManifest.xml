@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+    <permission android:name="org.ignition.launcher.permission.GAME_ASSETS"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="org.ignition.launcher.permission.GAME_ASSETS" />
+    <queries>
+        <package android:name="com.ea.gp.fifaworld" />
+    </queries>
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="16NITION"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:extractNativeLibs="true">
+        <activity android:name=".MainActivity" android:exported="true" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".LocalBackendService"
+            android:exported="true" android:permission="org.ignition.launcher.permission.GAME_ASSETS"
+            android:foregroundServiceType="specialUse">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Runs the user's offline football replacement server on this device while the original game is open." />
+        </service>
+        <provider android:name=".GameAssets" android:authorities="org.ignition.launcher.assets"
+            android:exported="true" />
+        <service android:name=".GameSessionService" android:exported="true" />
+        <receiver android:name=".GameInstallReceiver" android:exported="false" />
+    </application>
+</manifest>

@@ -1,0 +1,131 @@
+{
+  "classification": "revival_policy",
+  "version": "difficulty_rewards_v1",
+  "default_enabled": false,
+  "stock_delivery_enabled": false,
+  "coin_tables_are_already_15x": true,
+  "coin_level_step_percent": 2,
+  "xp_base": {
+    "W": 100,
+    "D": 60,
+    "L": 30
+  },
+  "season_aggregate": "arithmetic_mean_all_scheduled_fixtures",
+  "rounding": "floor_final_integer",
+  "calibration": {
+    "version": "catalog_frequency_mean_of_approved_division_tables_v1",
+    "catalog_sha256": "fadbded741d44b6996bc7e1930d150d63b3fc0e39ce61f0e39c4aeae6fb8eac8",
+    "baseline_sha256": "6e153484df6ba6c4ee591d76f58eb3cb165b1a09235341eb8f43fee19b3a206a",
+    "match_coin_rounding": 25,
+    "season_coin_rounding": 250,
+    "xp_percent_rounding": 1
+  },
+  "tiers": {
+    "0": {
+      "label": "Beginner",
+      "match_coins": {
+        "W": 2250,
+        "D": 1350,
+        "L": 750
+      },
+      "xp_scale_percent": 100,
+      "season_coins": {
+        "RELEGATION": null,
+        "MAINTENANCE": 4500,
+        "PROMOTION": 22500,
+        "CHAMPIONSHIP": 28500
+      }
+    },
+    "1": {
+      "label": "Amateur",
+      "match_coins": {
+        "W": 2975,
+        "D": 1775,
+        "L": 1000
+      },
+      "xp_scale_percent": 114,
+      "season_coins": {
+        "RELEGATION": 5250,
+        "MAINTENANCE": 6750,
+        "PROMOTION": 29500,
+        "CHAMPIONSHIP": 38000
+      }
+    },
+    "2": {
+      "label": "Semi-Pro",
+      "match_coins": {
+        "W": 3850,
+        "D": 2300,
+        "L": 1275
+      },
+      "xp_scale_percent": 128,
+      "season_coins": {
+        "RELEGATION": 6000,
+        "MAINTENANCE": 9250,
+        "PROMOTION": 37000,
+        "CHAMPIONSHIP": 48750
+      }
+    },
+    "3": {
+      "label": "Professional",
+      "match_coins": {
+        "W": 5075,
+        "D": 3025,
+        "L": 1700
+      },
+      "xp_scale_percent": 142,
+      "season_coins": {
+        "RELEGATION": 8000,
+        "MAINTENANCE": 12750,
+        "PROMOTION": 46750,
+        "CHAMPIONSHIP": 62750
+      }
+    },
+    "4": {
+      "label": "World Class",
+      "match_coins": {
+        "W": 7100,
+        "D": 4250,
+        "L": 2375
+      },
+      "xp_scale_percent": 163,
+      "season_coins": {
+        "RELEGATION": 11250,
+        "MAINTENANCE": 18750,
+        "PROMOTION": 60750,
+        "CHAMPIONSHIP": 87500
+      }
+    },
+    "5": {
+      "label": "Legendary",
+      "match_coins": {
+        "W": 9000,
+        "D": 5400,
+        "L": 3025
+      },
+      "xp_scale_percent": 179,
+      "season_coins": {
+        "RELEGATION": 14750,
+        "MAINTENANCE": 24750,
+        "PROMOTION": 71000,
+        "CHAMPIONSHIP": 112250
+      }
+    },
+    "6": {
+      "label": "Ultimate",
+      "match_coins": {
+        "W": 10100,
+        "D": 6050,
+        "L": 3375
+      },
+      "xp_scale_percent": 187,
+      "season_coins": {
+        "RELEGATION": 17000,
+        "MAINTENANCE": 28500,
+        "PROMOTION": 79500,
+        "CHAMPIONSHIP": 128000
+      }
+    }
+  },
+  "rationale": "User29October2026: difficulty-driven match W/D/L coins and XP factor; full scheduled season difficulty aggregate for season coins, retain approximately approved economy scale. Calibration uses all490 catalog fixtures once each and approved tables already15x; not historical EA reward values. No current source, receipt, pack tier or runtime flag changed; new policy remains disabled pending prospective atomic integration/native verification."
+}

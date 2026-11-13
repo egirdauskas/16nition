@@ -1,0 +1,30 @@
+{
+  "schema": "ignition-game-versions/1",
+  "package": "com.ea.gp.fifaworld",
+  "signer_sha256": "5bff7d614e1ba11a566abb589c863b013f79aa747bd2146733366c5625a5f0d2",
+  "ignition_revision": 8,
+  "versions": {
+    "26": {
+      "version_name": "3.2.113645",
+      "status": "certified",
+      "output_version_code": 34,
+      "host_original": "input/original.apk",
+      "expansions": {
+        "main.13.com.ea.gp.fifaworld.obb": "fe3e66c5e8c804656d8ee9ca62ace64a1fe968669f5c397b23ce174b0b8c720c",
+        "patch.26.com.ea.gp.fifaworld.obb": "bdca1604e7fc8dc80d96d6d56ae0e21ff3bd1cdf75a62ecaab0109dd269ef38a"
+      }
+    },
+    "22": {
+      "version_name": "3.0.112594",
+      "status": "experimental",
+      "store_caption_style": "single_line",
+      "identity_refresh_grant": "answer",
+      "output_version_code": 30,
+      "host_original": "vm/game-versions/accepted/3.0.112594-vc22/original.apk",
+      "expansions": {
+        "main.13.com.ea.gp.fifaworld.obb": "fe3e66c5e8c804656d8ee9ca62ace64a1fe968669f5c397b23ce174b0b8c720c",
+        "patch.22.com.ea.gp.fifaworld.obb": "3e8ab82af74ed665099ab5d5b9beda99a89d93f739a71fd45ab235f4d7c46ffe"
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "version": "specialist_consumable_packs_v1",
+  "classification": "revival_policy",
+  "default_enabled": false,
+  "stock_delivery_enabled": false,
+  "authorization": "User20October2026; Gold-only formation/position tiers explicitly approved after supplied pool census.",
+  "pack_definitions": {
+    "revival_consumables_balanced_v1": {
+      "name": "Consumables Pack",
+      "coin_price": 5000,
+      "scope": "all",
+      "tier_counts": {
+        "bronze": 4,
+        "silver": 4,
+        "gold": 4
+      },
+      "rare_count": 3
+    },
+    "revival_player_formations_v1": {
+      "name": "Player Formation Pack",
+      "coin_price": 10000,
+      "scope": "player_formation",
+      "tier_counts": {
+        "bronze": 0,
+        "silver": 0,
+        "gold": 12
+      },
+      "rare_count": 3
+    },
+    "revival_player_positions_v1": {
+      "name": "Player Position Pack",
+      "coin_price": 10000,
+      "scope": "player_position",
+      "tier_counts": {
+        "bronze": 0,
+        "silver": 0,
+        "gold": 12
+      },
+      "rare_count": 12
+    }
+  },
+  "consumable_pool": "training_injury_misc_filtered_v2",
+  "exclusions": "Current pool excludes fitness, morale, contracts, unsupported class0 ranges and Capacity Crowd. Never relabel native quality/rarity.",
+  "store_binding": {
+    "mixed_pack": "Featured only; explicitly selected by user20October2026",
+    "player_formation": {
+      "tab": "Consumables",
+      "category_index": 7,
+      "category_id": 517
+    },
+    "player_position": {
+      "tab": "Consumables",
+      "category_index": 6,
+      "category_id": 516
+    },
+    "evidence": "captures/run-755 and756; original StoreCommonModel constants andGetDockData con/index; nativegroup501 categorychildren",
+    "classification": "STATIC_MAPPED_AND_NATIVE_INSTALLED; purchase/open certificates separate"
+  },
+  "fifa_points_enabled": false
+}

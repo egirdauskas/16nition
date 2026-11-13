@@ -1,0 +1,40 @@
+{
+  "version": "recovered_large_pack_captions_v1",
+  "classification": "recovered_supplied_stock_text",
+  "source": {
+    "file": "reports/overnight/2026-10-13-native-packs/supplied/patch.26.com.ea.gp.fifaworld-eng_us.db",
+    "sha256": "a7d47d85769e922e2df6620e4c388a25a7fcae3cb4703f36d36b19de3d3511b2",
+    "valid_rows": 15698,
+    "effective_archive": "input/patch.26.com.ea.gp.fifaworld.obb",
+    "member": "eng_us.db"
+  },
+  "limits": "Shared supplied locale, not Mobile product IDs. Backend revival selection preserves quantities/Gold/rare guarantees with supplied players and all153 consumables; club-item pool and native large openings are unverified and disabled.",
+  "definitions": {
+    "revival_jumbo_premium_gold_mixed_v1": {
+      "NAME": {
+        "key": "FUT_STORE_PACK_306_NAME",
+        "row": 6994,
+        "value": "JUMBO PREMIUM GOLD PACK"
+      },
+      "SHORT": null,
+      "DESC": {
+        "key": "FUT_STORE_PACK_306_DESC",
+        "row": 3642,
+        "value": "Double the size of a Premium Gold Pack with an extra Rare! A mix of 24 items, including players, club items and consumables, at least 20 Gold with 7 Rares."
+      }
+    },
+    "revival_mega_mixed_v1": {
+      "NAME": {
+        "key": "FUT_STORE_PACK_404_NAME",
+        "row": 2489,
+        "value": "MEGA PACK"
+      },
+      "SHORT": null,
+      "DESC": {
+        "key": "FUT_STORE_PACK_404_DESC",
+        "row": 7762,
+        "value": "The BIGGEST pack yet with a whopping 30, yes THIRTY, items! A mix of players, club items and consumables, at least 26 Gold with 18 Rares."
+      }
+    }
+  }
+}

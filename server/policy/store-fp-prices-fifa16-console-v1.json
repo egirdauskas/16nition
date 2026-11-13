@@ -1,0 +1,30 @@
+{
+  "version": "store_fp_prices_fifa16_console_v1",
+  "classification": "user_authorized_console_fallback",
+  "default_enabled": false,
+  "source": {
+    "platform": "FIFA 16 console FUT",
+    "kind": "historical_secondary_table",
+    "url": "https://fifauteam.com/fifa-16-ultimate-team-packs/",
+    "corroboration_url": "https://fifauteam.com/fifa-points-fifa-16-ultimate-team/",
+    "retrieved_utc": "2026-10-19T17:58:54.223665+00:00"
+  },
+  "mobile_search": {
+    "url": "https://fifauteam.com/fifa-16-mobile-ios-android-windows-phone/",
+    "finding": "payment methods described; FP cash-bundle prices present, but no twelve-pack FP price table recovered in bounded source/search review; not a universal absence claim"
+  },
+  "point_prices": {
+    "Bronze": null,
+    "Premium Bronze": null,
+    "Silver": 50,
+    "Premium Silver": 75,
+    "Gold": 100,
+    "Premium Gold": 150,
+    "Jumbo Premium Gold": 300,
+    "Premium Gold Players": 350,
+    "Mega": 700,
+    "Rare Players": 1000,
+    "Jumbo Rare Players": 2000,
+    "Ultimate": 2500
+  }
+}

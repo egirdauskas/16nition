@@ -1,0 +1,15 @@
+{
+  "classification": "revival_policy",
+  "version": "native_match_coins_v1",
+  "scope": "isolated_native_simulation",
+  "default_enabled": false,
+  "table_version": "offline_rewards_v1",
+  "coin_table_already_15x": true,
+  "level_step_percent": 2,
+  "snapshot": "at_create",
+  "rounding": "floor_integer_coins",
+  "season_rewards_enabled": false,
+  "xp_enabled": false,
+  "pack_rewards_enabled": false,
+  "rationale": "Explicit user-authorized approved division/result match coins, already15x, with floor and2% per pre-fixture account level. Exactly one marker-pinned isolated fixture; independent of positive XP, source packs and Store certification. Default activation remains disabled."
+}

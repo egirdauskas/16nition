@@ -1,0 +1,19 @@
+{
+  "version": "pack_family_split_v1",
+  "classification": "revival_policy",
+  "default_enabled": false,
+  "authorization": "User27October2026: exclude club items from Consumables Pack; add5000coinCustomizationPack with the same12items/4eachnative tier/exact3rares, clubitems only.",
+  "previous_consumables": "revival_consumables_balanced_v3",
+  "consumable_pool": "training_injury_misc_no_crowd_v3",
+  "club_item_pool": "supplied_club_items_v1",
+  "products": [
+    {"definition": "revival_consumables_only_v4", "name": "Consumables Pack", "family": "consumable", "product_id": 62300, "first_offer_id": 62302, "coin_price": 5000},
+    {"definition": "revival_customization_v1", "name": "Customization Pack", "family": "club_item", "product_id": 62301, "first_offer_id": 62334, "coin_price": 5000}
+  ],
+  "item_count": 12,
+  "tier_counts": {"bronze": 4, "silver": 4, "gold": 4},
+  "rare_count": 3,
+  "featured_only": true,
+  "fifa_points_enabled": false,
+  "preservation": "Old definitions/entitlements/receipts/aliases remain immutable; retire the old mixed Consumables SKU prospectively. Standard and reward packs are unchanged."
+}

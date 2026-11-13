@@ -1,0 +1,96 @@
+{
+  "classification": "revival_policy",
+  "version": "mobile_futties_headroom_v1",
+  "stat_bounds": [
+    1,
+    99
+  ],
+  "weight_denominator": 10,
+  "formula": "delta=max(0,target_ovr-base_ovr); denominator=(100-base_ovr)*10; gain=floor(((99-base_stat)*delta*position_weight+floor(denominator/2))/denominator); result=min(99,base_stat+gain)",
+  "rounding": "integer half-up",
+  "interpretation": "A deterministic display-stat upgrade preserving base headroom/profile with position priorities. It does not reconstruct EA stats or solve an engine OVR equation. OVR remains separately authenticated.",
+  "position_groups": {
+    "goalkeeper": {
+      "positions": [
+        "GK"
+      ],
+      "weights": [
+        12,
+        12,
+        9,
+        12,
+        4,
+        11
+      ]
+    },
+    "defender": {
+      "positions": [
+        "CB",
+        "RB",
+        "LB",
+        "RWB",
+        "LWB"
+      ],
+      "weights": [
+        10,
+        4,
+        9,
+        8,
+        15,
+        14
+      ]
+    },
+    "midfielder": {
+      "positions": [
+        "CDM",
+        "CM",
+        "CAM"
+      ],
+      "weights": [
+        10,
+        8,
+        14,
+        13,
+        6,
+        9
+      ]
+    },
+    "wide": {
+      "positions": [
+        "RM",
+        "LM",
+        "RW",
+        "LW",
+        "RF",
+        "LF"
+      ],
+      "weights": [
+        13,
+        12,
+        10,
+        14,
+        3,
+        8
+      ]
+    },
+    "striker": {
+      "positions": [
+        "ST",
+        "CF"
+      ],
+      "weights": [
+        12,
+        16,
+        7,
+        12,
+        3,
+        10
+      ]
+    }
+  },
+  "below_base_ovr": "exclude",
+  "missing_or_invalid_base_vector": "exclude",
+  "authentic_stats_precedence": "per-field; complete authentic lines disable synthesis entirely",
+  "per_player_tuning": false,
+  "authorization": "Explicit user FUTTIES revival policy; same audited position-aware headroom equation, no historical EA stats claim."
+}

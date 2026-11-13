@@ -1,0 +1,69 @@
+{
+  "persona_id": 1,
+  "products": [
+    {
+      "product_id": 40010,
+      "definition": "revival_gold_players",
+      "coin_price": 5000,
+      "purchase_limit": 2,
+      "repeatable": true,
+      "provenance": "revival_policy"
+    },
+    {
+      "product_id": 40011,
+      "definition": "revival_gold_players",
+      "point_price": 100,
+      "purchase_limit": 2,
+      "repeatable": true,
+      "provenance": "revival_policy"
+    },
+    {
+      "product_id": 40012,
+      "definition": "revival_premium_gold_players",
+      "coin_price": 7500,
+      "purchase_limit": 2,
+      "repeatable": true,
+      "provenance": "revival_policy"
+    },
+    {
+      "product_id": 40013,
+      "definition": "revival_rare_gold_players",
+      "point_price": 500,
+      "purchase_limit": 2,
+      "repeatable": true,
+      "provenance": "revival_policy"
+    },
+    {
+      "product_id": 40014,
+      "definition": "revival_consumables_pack",
+      "coin_price": 1000,
+      "purchase_limit": 2,
+      "repeatable": true,
+      "provenance": "revival_policy"
+    },
+    {
+      "product_id": 40015,
+      "definition": "revival_consumables_pack",
+      "point_price": 25,
+      "purchase_limit": 2,
+      "repeatable": true,
+      "provenance": "revival_policy"
+    },
+    {
+      "product_id": 40016,
+      "definition": "revival_jumbo_gold_players",
+      "coin_price": 15000,
+      "purchase_limit": 2,
+      "repeatable": true,
+      "provenance": "revival_policy"
+    },
+    {
+      "product_id": 40017,
+      "definition": "revival_gold_starter",
+      "coin_price": 2500,
+      "purchase_limit": 2,
+      "repeatable": true,
+      "provenance": "revival_policy"
+    }
+  ]
+}

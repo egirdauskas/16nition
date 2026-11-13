@@ -1,0 +1,17 @@
+{
+  "version": "level_rewards_v1",
+  "classification": "revival_policy",
+  "approved": "User, 5 November 2026 (XP-004): 1,000 coins x the new level for every future level-up; untradeable milestone packs every 5 levels; no back pay for levels reached earlier.",
+  "default_enabled": false,
+  "coins_per_level": 1000,
+  "milestone_packs": {
+    "5": "revival_premium_gold_mixed_specials_v8",
+    "10": "revival_rare_players_specials_v2",
+    "15": "revival_jumbo_premium_gold_mixed_specials_v8",
+    "20": "revival_mega_mixed_specials_v8",
+    "25": "revival_jumbo_rare_players_specials_v2"
+  },
+  "repeat_from_level": 30,
+  "repeat_every_levels": 5,
+  "repeat_pack": "revival_ultimate_players_specials_v2"
+}

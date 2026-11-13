@@ -1,0 +1,25 @@
+{
+  "version": "recovered_ultimate_pack_caption_v1",
+  "classification": "recovered_original_ea_console_text",
+  "source": {
+    "url": "https://www.easports.com/fifa/ultimate-team/news/2016/fut-16-tots-new-pack-details",
+    "publisher": "EA SPORTS",
+    "title": "New Pack Offerings \u2013 FIFA Ultimate Team \u2013 FIFA 16",
+    "excerpt_sha256": "3455826e0e9de216534fe27017d924c3a7e69a1d66afd05acb1d15c394da3c97",
+    "excerpt_words": 12
+  },
+  "limits": "Historical console announcement, not supplied Mobile locale. OrdinaryGold-only30rare-player selection is revival policy; no EA Gold/odds/art/productID or Mobileavailability claim.",
+  "definitions": {
+    "revival_ultimate_players_v1": {
+      "NAME": {
+        "key": "official_article_heading",
+        "value": "Ultimate Pack"
+      },
+      "SHORT": null,
+      "DESC": {
+        "key": "official_article_ultimate_excerpt",
+        "value": "This is our largest player pack ever, featuring 30 rare player items."
+      }
+    }
+  }
+}

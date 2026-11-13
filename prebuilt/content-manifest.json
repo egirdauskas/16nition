@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "classification": "local_obb_preparation",
+  "expansions": {
+    "main.13.com.ea.gp.fifaworld.obb": "fe3e66c5e8c804656d8ee9ca62ace64a1fe968669f5c397b23ce174b0b8c720c",
+    "patch.26.com.ea.gp.fifaworld.obb": "bdca1604e7fc8dc80d96d6d56ae0e21ff3bd1cdf75a62ecaab0109dd269ef38a"
+  },
+  "files": {
+    "native/content/main.13.com.ea.gp.fifaworld/data/db/fifa_ng_db.db": {
+      "expansion": "main.13.com.ea.gp.fifaworld.obb",
+      "member": "data/db/fifa_ng_db.db",
+      "sha256": "f4526c39b935ef7ce5a0e99a0568350d11997c6a18a6cea79c611ad3c150d105",
+      "size": 4653800
+    },
+    "native/content/main.13.com.ea.gp.fifaworld/data/db/fifa_ng_db-meta.xml": {
+      "expansion": "main.13.com.ea.gp.fifaworld.obb",
+      "member": "data/db/fifa_ng_db-meta.xml",
+      "sha256": "e6a6d54ac31b8eb9706675746eb48566a8258a75d58921e499d1535b6ef4d0c4",
+      "size": 459310
+    }
+  },
+  "special_catalog_sha256": "90d023b73a32091bd071f5b83611665902efed207818ec68a26da56cbf1e6e83"
+}

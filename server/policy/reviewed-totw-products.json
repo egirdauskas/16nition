@@ -1,0 +1,14 @@
+{
+  "persona_id": 1,
+  "products": [
+    {
+      "product_id": 40030,
+      "definition": "revival_premium_gold_totw",
+      "coin_price": 7500,
+      "purchase_limit": 2,
+      "repeatable": true,
+      "featured": true,
+      "provenance": "revival_policy"
+    }
+  ]
+}

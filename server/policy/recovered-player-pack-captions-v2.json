@@ -1,0 +1,27 @@
+{
+  "version": "recovered_player_pack_captions_v2",
+  "classification": "recovered_supplied_stock_text",
+  "source": {
+    "file": "reports/overnight/2026-10-13-native-packs/supplied/patch.26.com.ea.gp.fifaworld-eng_us.db",
+    "sha256": "a7d47d85769e922e2df6620e4c388a25a7fcae3cb4703f36d36b19de3d3511b2",
+    "valid_rows": 15698,
+    "effective_archive": "input/patch.26.com.ea.gp.fifaworld.obb",
+    "member": "eng_us.db"
+  },
+  "limits": "Shared supplied locale; no EA/Mobile productID inferred. OrdinaryGold-only exact3rare selection is revival policy satisfying supplied12/atleast10Gold/3rare guarantees.",
+  "definitions": {
+    "revival_premium_gold_players_v3": {
+      "NAME": {
+        "key": "FUT_STORE_PACK_502_NAME",
+        "row": 3150,
+        "value": "PREMIUM GOLD PLAYERS PACK"
+      },
+      "SHORT": null,
+      "DESC": {
+        "key": "FUT_STORE_PACK_502_DESC",
+        "row": 6480,
+        "value": "Nothing but players to build out your ultimate squads! Includes 12 players, at least 10 Gold with 3 Rares."
+      }
+    }
+  }
+}

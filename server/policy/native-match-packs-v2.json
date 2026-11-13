@@ -1,0 +1,15 @@
+{
+  "version": "native_match_packs_v2",
+  "classification": "revival_policy",
+  "default_enabled": false,
+  "bindings": {
+    "Bronze": "revival_bronze_mixed_specials_v2",
+    "Premium Bronze": "revival_premium_bronze_mixed_specials_v2"
+  },
+  "enabled_divisions": [
+    10,
+    9
+  ],
+  "xp_enabled": false,
+  "season_packs_enabled": false
+}

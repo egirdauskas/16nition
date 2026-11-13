@@ -1,0 +1,652 @@
+{
+  "classification": "revival_policy",
+  "bulk_enabled": false,
+  "master_path": "fifa16_mobile_specials_mega.json",
+  "master_sha256": "7ab349cd7696acb22a787f91820e69d1faf3017f4f0a50c259e7ea02dc5d53c4",
+  "presentation_mappings": {
+    "totw_3": {
+      "enum": "TOTW_CARD",
+      "rareflag": 3,
+      "confidence": "static_enum_and_stock_runtime_proven_for_reviewed_TOTW_player",
+      "sources": [
+        "reports/special-card-audit/enum-assignments.json",
+        "reports/special-card-audit/decoder-map.json",
+        "reports/special-player-cards.md"
+      ],
+      "runtime_evidence": [
+        "captures/run-339/native-special-open.json",
+        "captures/run-339/after-special-open.png",
+        "captures/run-340/native-special-browsed.json",
+        "captures/run-340/final-healthy-coexistence.png"
+      ]
+    },
+    "holiday_14": {
+      "enum": "HOLIDAY",
+      "rareflag": 14,
+      "historical_families": [
+        "holiday"
+      ],
+      "observation_visuals": {
+        "holiday": [
+          "holiday",
+          "holiday_red"
+        ]
+      },
+      "family_evidence": {
+        "holiday": {
+          "basis": "named_mobile_family_and_preserved_design",
+          "source_ids": [
+            "img_19_06",
+            "img_18_13",
+            "informs_futmas",
+            "informs_futmas2"
+          ],
+          "design": "item103140.png /item203140.png: red body, white snowflakes, matching named Holiday campaign"
+        }
+      },
+      "static_sources": [
+        "reports/special-card-audit/enum-assignments.json",
+        "reports/special-family-mapping/static/main-flash-constants.json",
+        "reports/special-family-mapping/static/patch-flash-constants.json",
+        "reports/special-card-audit/patch-unassigned-items.txt",
+        "ghidra/exports/special-player-consumers.txt"
+      ],
+      "runtime_proven": true,
+      "runtime_evidence": [
+        "captures/run-344/native-opened-item.json",
+        "captures/run-344/opened-settled.png",
+        "captures/run-344/native-reloaded-item.json",
+        "captures/run-344/reload-settled.png",
+        "captures/run-344/visual-review.json"
+      ],
+      "confidence": "stock_render_native_fields_club_placement_clean_restart_and_named_mobile_design"
+    },
+    "tots_11": {
+      "enum": "TOTS_CARD",
+      "rareflag": 11,
+      "historical_families": [
+        "tots"
+      ],
+      "observation_visuals": {
+        "tots": [
+          "blue_tots_thumbnail",
+          "tots_yellow_blue_stock_mobile"
+        ]
+      },
+      "family_evidence": {
+        "tots": {
+          "basis": "named_mobile_family_and_preserved_design",
+          "source_ids": [
+            "forum_img_20",
+            "forum_extra_img_21",
+            "youtube_thumb_apJHJm-l62Q"
+          ],
+          "design": "item203110.png: blue/gold tiered frame; effective Lua TOTS11 overrides legacy Flash RARITY_TOTY name"
+        }
+      },
+      "static_sources": [
+        "reports/special-card-audit/enum-assignments.json",
+        "reports/special-family-mapping/static/main-flash-constants.json",
+        "reports/special-family-mapping/static/patch-flash-constants.json",
+        "reports/special-card-audit/patch-unassigned-items.txt",
+        "ghidra/exports/special-player-consumers.txt"
+      ],
+      "runtime_proven": true,
+      "runtime_evidence": [
+        "captures/run-345/native-opened-item.json",
+        "captures/run-345/opened-settled.png",
+        "captures/run-345/native-reloaded-item.json",
+        "captures/run-345/reload-settled.png",
+        "captures/run-345/visual-review.json"
+      ],
+      "confidence": "stock_render_native_fields_club_placement_clean_restart_and_named_mobile_design"
+    },
+    "carnival_10": {
+      "enum": "TEAL_CARD",
+      "rareflag": 10,
+      "historical_families": [
+        "carnival"
+      ],
+      "observation_visuals": {
+        "carnival": [
+          "teal"
+        ]
+      },
+      "family_evidence": {
+        "carnival": {
+          "basis": "named_mobile_family_and_preserved_design",
+          "source_ids": [
+            "informs_brasil",
+            "img_23_10"
+          ],
+          "design": "Named Brazilian Superstars campaign: cyan/teal body with diagonal white foil and dark teal footer, matches item100100/item200100"
+        }
+      },
+      "static_sources": [
+        "reports/special-card-audit/enum-assignments.json",
+        "reports/special-family-mapping/static/main-flash-constants.json",
+        "reports/special-family-mapping/static/patch-flash-constants.json",
+        "reports/special-card-audit/patch-unassigned-items.txt",
+        "ghidra/exports/special-player-consumers.txt"
+      ],
+      "runtime_proven": true,
+      "runtime_evidence": [
+        "captures/run-347/native-opened-item.json",
+        "captures/run-347/opened-settled.png",
+        "captures/run-347/native-reloaded-item.json",
+        "captures/run-347/native-reload-results.json",
+        "captures/run-347/ui-112318-301212.png",
+        "captures/run-347/visual-review-completed.json"
+      ],
+      "confidence": "named_mobile_campaign_preserved_design_and_stock_open_club_fresh_native_restart_settled_frame"
+    },
+    "most_feared_13": {
+      "enum": "HALLOWEEN",
+      "rareflag": 13,
+      "historical_families": [
+        "most_feared"
+      ],
+      "observation_visuals": {
+        "most_feared": [
+          "orange_black"
+        ]
+      },
+      "family_evidence": {
+        "most_feared": {
+          "basis": "named_mobile_family_and_preserved_design",
+          "source_ids": [
+            "img_10_06",
+            "fi_roundup_10"
+          ],
+          "design": "Nested main assetsCommon EB3 item103130 authentic brown/orange diagonal-foil and dark footer/bands match named Mobile MostFeared DEFENDERS, unlike purple forwards/midfielders; native rarity>12 custom paths plus effective HALLOWEEN13"
+        }
+      },
+      "static_sources": [
+        "reports/special-card-audit/enum-assignments.json",
+        "reports/special-family-mapping/static/main-flash-constants.json",
+        "reports/special-family-mapping/static/patch-flash-constants.json",
+        "reports/special-card-audit/patch-unassigned-items.txt",
+        "ghidra/exports/special-player-consumers.txt",
+        "reports/special-family-followup/eb3-assets/index.json",
+        "reports/special-family-followup/patch-card-methods-v2.json"
+      ],
+      "runtime_proven": true,
+      "runtime_evidence": [
+        "captures/run-349/native-opened-item.json",
+        "captures/run-349/opened-settled.png",
+        "captures/run-349/native-reloaded-item.json",
+        "captures/run-349/reload-settled.png",
+        "captures/run-349/visual-review.json"
+      ],
+      "confidence": "stock_render_native_fields_club_placement_clean_restart_and_named_mobile_design",
+      "historical_events": [
+        "most_feared_defenders"
+      ]
+    },
+    "most_feared_purple_4": {
+      "enum": "PURPLE_CARD",
+      "rareflag": 4,
+      "historical_families": [
+        "most_feared"
+      ],
+      "historical_events": [
+        "most_feared_midfielders_forwards"
+      ],
+      "observation_visuals": {
+        "most_feared": [
+          "purple"
+        ]
+      },
+      "family_evidence": {
+        "most_feared": {
+          "basis": "named_mobile_family_and_preserved_design",
+          "source_ids": [
+            "img_11_12",
+            "img_11_13",
+            "fi_roundup_11"
+          ],
+          "design": "Named FIFA16UTMobile MostFeared FORWARDS image12 (and scoped Mobile midfielders image13) match nested EB3 item200040 violet curved header/foil bands/dark lower footer; actual ItemStyle ID004 path confirms numbered artwork, not pack header name"
+        }
+      },
+      "static_sources": [
+        "reports/special-card-audit/enum-assignments.json",
+        "reports/special-family-mapping/static/main-flash-constants.json",
+        "reports/special-family-mapping/static/patch-flash-constants.json",
+        "reports/special-card-audit/patch-unassigned-items.txt",
+        "ghidra/exports/special-player-consumers.txt",
+        "reports/special-family-followup/eb3-assets/index.json",
+        "reports/special-family-followup/patch-card-methods-v2.json"
+      ],
+      "runtime_proven": true,
+      "runtime_evidence": [
+        "captures/run-350/native-opened-item.json",
+        "captures/run-350/opened-settled.png",
+        "captures/run-350/native-reloaded-item.json",
+        "captures/run-350/reload-settled.png",
+        "captures/run-350/visual-review.json"
+      ],
+      "confidence": "stock_render_native_fields_club_placement_clean_restart_and_named_mobile_design"
+    },
+    "double_elevens_4": {
+      "enum": "PURPLE_CARD",
+      "rareflag": 4,
+      "historical_families": [
+        "double_elevens"
+      ],
+      "historical_events": [],
+      "observation_visuals": {
+        "double_elevens": [
+          "purple"
+        ]
+      },
+      "family_evidence": {
+        "double_elevens": {
+          "basis": "named_mobile_family_and_preserved_design",
+          "source_ids": [
+            "img_12_10",
+            "img_12_11",
+            "img_12_12"
+          ],
+          "design": "Named Mobile DoubleElevens images use the violet glass header/foil bands of Flash purple4"
+        }
+      },
+      "static_sources": [
+        "reports/special-card-audit/enum-assignments.json",
+        "reports/special-family-mapping/static/main-flash-constants.json",
+        "reports/special-family-mapping/static/patch-flash-constants.json",
+        "reports/special-card-audit/patch-unassigned-items.txt",
+        "ghidra/exports/special-player-consumers.txt",
+        "reports/special-family-followup/eb3-assets/index.json",
+        "reports/special-family-followup/patch-card-methods-v2.json"
+      ],
+      "runtime_proven": true,
+      "runtime_evidence": [
+        "captures/run-351/native-opened-item.json",
+        "captures/run-351/opened-settled.png",
+        "captures/run-351/native-reloaded-item.json",
+        "captures/run-351/reload-settled.png",
+        "captures/run-351/visual-review.json"
+      ],
+      "confidence": "stock_render_native_fields_club_placement_clean_restart_and_named_mobile_design"
+    },
+    "toty_5": {
+      "enum": "BLUE_CARD",
+      "rareflag": 5,
+      "historical_families": [
+        "toty"
+      ],
+      "historical_events": [],
+      "observation_visuals": {
+        "toty": [
+          "blue",
+          "blue_dark_stock_mobile"
+        ]
+      },
+      "family_evidence": {
+        "toty": {
+          "basis": "named_mobile_family_and_preserved_design",
+          "source_ids": [
+            "informs_fulltoty",
+            "informs_toty",
+            "informs_messitoty"
+          ],
+          "design": "Named TeamOfTheYear Mobile campaign pure royal-blue glass/foil and blue footer match item100050/item200050, not blue/gold slot11"
+        }
+      },
+      "static_sources": [
+        "reports/special-card-audit/enum-assignments.json",
+        "reports/special-family-mapping/static/main-flash-constants.json",
+        "reports/special-family-mapping/static/patch-flash-constants.json",
+        "reports/special-card-audit/patch-unassigned-items.txt",
+        "ghidra/exports/special-player-consumers.txt"
+      ],
+      "historical_record_exclusions": {},
+      "runtime_proven": true,
+      "runtime_evidence": [
+        "captures/run-352/native-opened-item.json",
+        "captures/run-352/opened-settled.png",
+        "captures/run-352/native-reloaded-item.json",
+        "captures/run-352/reload-settled.png",
+        "captures/run-352/visual-review.json"
+      ],
+      "confidence": "stock_render_native_fields_club_placement_clean_restart_and_named_mobile_design"
+    },
+    "futties_9": {
+      "enum": "PINK_CARD",
+      "rareflag": 9,
+      "historical_families": [
+        "futties"
+      ],
+      "assignment_provenance": "revival_policy_authorized",
+      "historical_numeric_assignment_recovered": false,
+      "historical_design_binding_recovered": false,
+      "runtime_proven": true,
+      "runtime_evidence": [
+        "captures/run-360/native-opened-item.json",
+        "captures/run-360/opened-settled.png",
+        "captures/run-360/native-reloaded-item.json",
+        "captures/run-360/reload-settled.png",
+        "captures/run-360/visual-review.json"
+      ],
+      "confidence": "stock_pink9_certified_with_explicit_revival_policy_not_historical_design"
+    },
+    "motm_8": {
+      "enum": "ORANGE_CARD",
+      "rareflag": 8,
+      "historical_families": [
+        "motm"
+      ],
+      "historical_events": [],
+      "observation_visuals": {
+        "motm": [
+          "orange",
+          "orange_stock_mobile"
+        ]
+      },
+      "family_evidence": {
+        "motm": {
+          "basis": "named_mobile_family_and_preserved_design",
+          "source_ids": [
+            "informs_motm",
+            "img_20_14",
+            "forum_img_25"
+          ],
+          "design": "Named MOTM graphic and actual Mobile stock orange card share gold/orange glass header, diagonal white foil, dark orange bands from item100080/item200080"
+        }
+      },
+      "static_sources": [
+        "reports/special-card-audit/enum-assignments.json",
+        "reports/special-family-mapping/static/main-flash-constants.json",
+        "reports/special-family-mapping/static/patch-flash-constants.json",
+        "reports/special-card-audit/patch-unassigned-items.txt",
+        "ghidra/exports/special-player-consumers.txt"
+      ],
+      "historical_record_exclusions": {
+        "mobile_motm_lukaku:rossbarkley": "contextual_ordinary_gold_not_orange_special",
+        "mobile_motm_lukaku:gerarddeulofeu": "contextual_ordinary_gold_not_orange_special"
+      },
+      "runtime_proven": true,
+      "runtime_evidence": [
+        "captures/run-354/native-opened-item.json",
+        "captures/run-354/opened-settled.png",
+        "captures/run-356/native-reloaded-item.json",
+        "captures/run-356/reload-settled.png",
+        "captures/run-356/visual-review.json"
+      ],
+      "confidence": "stock_render_native_fields_club_placement_clean_restart_and_named_mobile_design"
+    },
+    "record_breaker_6": {
+      "enum": "BLUERED_CARD",
+      "rareflag": 6,
+      "historical_families": [
+        "record_breaker"
+      ],
+      "historical_events": [],
+      "observation_visuals": {
+        "record_breaker": [
+          "blue_red"
+        ]
+      },
+      "family_evidence": {
+        "record_breaker": {
+          "basis": "named_mobile_family_and_preserved_design",
+          "source_ids": [
+            "informs_rbmessi",
+            "img_22_12"
+          ],
+          "design": "Named RecordBreakingMessi: dark blue glass with diagonal red center/glow and blue footer matches item100060/item200060"
+        }
+      },
+      "static_sources": [
+        "reports/special-card-audit/enum-assignments.json",
+        "reports/special-family-mapping/static/main-flash-constants.json",
+        "reports/special-family-mapping/static/patch-flash-constants.json",
+        "reports/special-card-audit/patch-unassigned-items.txt",
+        "ghidra/exports/special-player-consumers.txt"
+      ],
+      "historical_record_exclusions": {},
+      "runtime_proven": true,
+      "runtime_evidence": [
+        "captures/run-357/native-opened-item.json",
+        "captures/run-357/opened-settled.png",
+        "captures/run-357/native-reloaded-item.json",
+        "captures/run-357/reload-settled.png",
+        "captures/run-357/visual-review.json"
+      ],
+      "confidence": "stock_render_native_fields_club_placement_clean_restart_and_named_mobile_design"
+    },
+    "hero_4": {
+      "enum": "PURPLE_CARD",
+      "rareflag": 4,
+      "historical_families": [
+        "hero"
+      ],
+      "historical_events": [
+        "hero_messi_300_liga"
+      ],
+      "observation_visuals": {
+        "hero": [
+          "purple"
+        ]
+      },
+      "family_evidence": {
+        "hero": {
+          "basis": "named_mobile_family_and_preserved_design",
+          "source_ids": [
+            "informs_meeeessi"
+          ],
+          "design": "Actual nested item200040 player artwork and Flash RARITY_PURPLE4; named HERO MESSI campaign has same violet glass header/foil bands"
+        }
+      },
+      "static_sources": [
+        "reports/special-card-audit/enum-assignments.json",
+        "reports/special-family-mapping/static/main-flash-constants.json",
+        "reports/special-family-mapping/static/patch-flash-constants.json",
+        "reports/special-card-audit/patch-unassigned-items.txt",
+        "ghidra/exports/special-player-consumers.txt"
+      ],
+      "historical_record_exclusions": {},
+      "runtime_proven": true,
+      "runtime_evidence": [
+        "captures/run-358/native-opened-item.json",
+        "captures/run-358/opened-settled.png",
+        "captures/run-358/native-reloaded-item.json",
+        "captures/run-358/reload-settled.png",
+        "captures/run-358/visual-review.json"
+      ],
+      "confidence": "stock_render_native_fields_club_placement_clean_restart_and_named_mobile_design"
+    },
+    "ones_to_watch_10": {
+      "enum": "TEAL_CARD",
+      "rareflag": 10,
+      "historical_families": [
+        "ones_to_watch"
+      ],
+      "historical_events": [],
+      "observation_visuals": {
+        "ones_to_watch": [
+          "teal"
+        ]
+      },
+      "family_evidence": {
+        "ones_to_watch": {
+          "basis": "named_mobile_family_and_preserved_design",
+          "source_ids": [
+            "informs_otw",
+            "informs_otw2",
+            "informs_otw3",
+            "informs_otw4",
+            "informs_otw5"
+          ],
+          "design": "Named Mobile OTW campaign batches use cyan diagonal foil body /dark teal footer matching item100100/item200100"
+        }
+      },
+      "static_sources": [
+        "reports/special-card-audit/enum-assignments.json",
+        "reports/special-family-mapping/static/main-flash-constants.json",
+        "reports/special-family-mapping/static/patch-flash-constants.json",
+        "reports/special-card-audit/patch-unassigned-items.txt",
+        "ghidra/exports/special-player-consumers.txt"
+      ],
+      "historical_record_exclusions": {},
+      "runtime_proven": true,
+      "runtime_evidence": [
+        "captures/run-359/native-opened-item.json",
+        "captures/run-359/opened-settled.png",
+        "captures/run-359/native-reloaded-item.json",
+        "captures/run-359/reload-settled.png",
+        "captures/run-359/visual-review.json"
+      ],
+      "confidence": "stock_render_native_fields_club_placement_clean_restart_and_named_mobile_design"
+    }
+  },
+  "versions": {
+    "totw_banner_until_01_27:waynerooney": {
+      "presentation_mapping": "totw_3",
+      "reason": "One reviewed stock-client test; not bulk activation"
+    },
+    "holiday_edition:miranda": {
+      "presentation_mapping": "holiday_14",
+      "identity_review": "source_club_unique_supported_candidate",
+      "reason": "User approved 7 Nov 2026: unique source-club base resolution (club-resolved card)"
+    },
+    "totw_banner_until_01_13:oscar": {
+      "presentation_mapping": "totw_3",
+      "identity_review": "source_club_unique_supported_candidate",
+      "reason": "User approved 7 Nov 2026: unique source-club base resolution (club-resolved card)"
+    },
+    "totw_banner_until_01_20:maxwell": {
+      "presentation_mapping": "totw_3",
+      "identity_review": "source_club_unique_supported_candidate",
+      "reason": "User approved 7 Nov 2026: unique source-club base resolution (club-resolved card)"
+    },
+    "totw_banner_until_03_02:miranda": {
+      "presentation_mapping": "totw_3",
+      "identity_review": "source_club_unique_supported_candidate",
+      "reason": "User approved 7 Nov 2026: unique source-club base resolution (club-resolved card)"
+    },
+    "totw_banner_until_03_30:fabinho": {
+      "presentation_mapping": "totw_3",
+      "identity_review": "source_club_unique_supported_candidate",
+      "reason": "User approved 7 Nov 2026: unique source-club base resolution (club-resolved card)"
+    }
+  },
+  "reviewed_families": {
+    "totw": {
+      "presentation_mapping": "totw_3",
+      "reason": "SHA-pinned Mobile observation + unique supported base + complete conflict-free fields; all other families excluded"
+    },
+    "holiday": {
+      "presentation_mapping": "holiday_14",
+      "reason": "Named Mobile campaign plus preserved design; stock opening/Club/native/restart proof; automatic complete/conflict-free base-field review"
+    },
+    "tots": {
+      "presentation_mapping": "tots_11",
+      "reason": "Named Mobile campaign plus preserved design; stock opening/Club/native/restart proof; automatic complete/conflict-free base-field review"
+    },
+    "carnival": {
+      "presentation_mapping": "carnival_10",
+      "reason": "Direct named BrazilianSuperstars Mobile campaign, exact preserved teal design and complete stock opening/Club/restart evidence; only conflict-free complete versions pass automatic review",
+      "identity_review": "source_club_unique_supported_candidate"
+    },
+    "most_feared": {
+      "presentation_mapping": "most_feared_13",
+      "reason": "Named MostFeared DEFENDERS exact EB3 Halloween13 artwork +349 stock open/Club/restart; strict per-record review; excludes different purple midpoint/forward batch."
+    },
+    "double_elevens": {
+      "presentation_mapping": "double_elevens_4",
+      "reason": "Named Mobile campaign plus preserved design; stock opening/Club/native/restart proof; automatic complete/conflict-free base-field review"
+    },
+    "toty": {
+      "presentation_mapping": "toty_5",
+      "identity_review": "source_club_unique_supported_candidate",
+      "reason": "Primary reviewed named Mobile TOTY campaign + independent352open/Club/restart certification"
+    },
+    "motm": {
+      "presentation_mapping": "motm_8",
+      "reason": "Named Mobile campaign plus preserved design; stock opening/Club/native/restart proof; automatic complete/conflict-free base-field review"
+    },
+    "record_breaker": {
+      "presentation_mapping": "record_breaker_6",
+      "reason": "Named Mobile campaign plus preserved design; stock opening/Club/native/restart proof; automatic complete/conflict-free base-field review"
+    },
+    "ones_to_watch": {
+      "presentation_mapping": "ones_to_watch_10",
+      "reason": "Named Mobile campaign plus preserved design; stock opening/Club/native/restart proof; automatic complete/conflict-free base-field review"
+    },
+    "futties": {
+      "presentation_mapping": "futties_9",
+      "reason": "Official Mobile FUTTIES identity/OVR/position plus authorized pink9 and synthesized stats; stock open/Club/restart"
+    },
+    "console_tots": {
+      "presentation_mapping": "tots_11",
+      "reason": "User 7 Nov 2026: console TOTS squads for leagues without an authoritative Mobile source (console_tots_policy_v1)"
+    },
+    "console_totw": {
+      "presentation_mapping": "totw_3",
+      "reason": "User 7 Nov 2026: all console TOTW in-forms in the same manner (console_tots_policy_v1)"
+    }
+  },
+  "mobile_tots_supplement": {
+    "classification": "revival_policy",
+    "historical_evidence_sha256": "47cbc5842692d709fc60eee7a58a5e9c5adba5d935321236e8276f3b5dcfc559",
+    "reason": "EA Mobile confirmation plus separate versioned stats overlay; original master stays SHA-pinned"
+  },
+  "historical_observation_supplements": [
+    {
+      "path": "reports/special-family-followup/most-feared-purple-observations.json",
+      "sha256": "41b6e307c0f7d339d36e4ae14a62257776265baf62266f4d2a9f0e762b787825",
+      "event_ids": [
+        "most_feared_midfielders_forwards"
+      ],
+      "reason": "Fourteen authentic period Mobile campaign face lines, no stat synthesis; frozen master remains unchanged"
+    }
+  ],
+  "reviewed_events": {
+    "most_feared_midfielders_forwards": {
+      "presentation_mapping": "most_feared_purple_4",
+      "reason": "Named Mobile campaign plus preserved design; stock opening/Club/native/restart proof; automatic complete/conflict-free base-field review"
+    },
+    "hero_messi_300_liga": {
+      "presentation_mapping": "hero_4",
+      "reason": "Named Mobile campaign plus preserved design; stock opening/Club/native/restart proof; automatic complete/conflict-free base-field review"
+    }
+  },
+  "mobile_futties_supplement": {
+    "historical_evidence_sha256": "70e0cd8d2476919db5ddca07f9cd81091076e767c0fe0b107f8e075162cc3ab6",
+    "synthesis_policy_sha256": "91d32d83a418995d36602449d582c5b81e409789d21a654e29bfea381af6a1d4",
+    "classification": "revival_policy",
+    "historical_source": "ea_andy5471946"
+  },
+  "historical_published_face_reviews": [
+    {
+      "path": "reports/special-conversion-pass/toty-published-review.json",
+      "sha256": "1804b731d0d513265c30ba1b6211f5c014732cbab32f1b118809521338ae7a47"
+    }
+  ],
+  "console_specials_supplement": {
+    "classification": "revival_policy",
+    "version": "console_tots_policy_v1",
+    "authorization": "user, 7 Nov 2026; see server/console_specials.py",
+    "datasets": [
+      {
+        "family": "console_tots",
+        "presentation_mapping": "tots_11",
+        "path": "reports/console-tots-policy/2026-11-07/console-tots-v1.json",
+        "sha256": "2539f5ee9406cec4d99fbd4f7fcdac06472905f080b0179dcd333e111571f647"
+      },
+      {
+        "family": "console_tots",
+        "presentation_mapping": "tots_11",
+        "path": "reports/console-tots-policy/2026-11-07/console-tots-v1-futhead.json",
+        "sha256": "62bf853635f294aefa62f6a223a8d43a644a6f398e0ede3777c13275c53dc99f"
+      },
+      {
+        "family": "console_totw",
+        "presentation_mapping": "totw_3",
+        "path": "reports/console-tots-policy/2026-11-07/console-totw-v1.json",
+        "sha256": "bb0e1b739e5eae9c0f5b5e7dcce4f62537bc8e3d2c16fdc65be1016c48dab0d3"
+      }
+    ]
+  }
+}

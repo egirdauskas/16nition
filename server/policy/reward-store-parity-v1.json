@@ -1,0 +1,63 @@
+{
+  "version": "reward_store_parity_v1",
+  "classification": "revival_policy",
+  "default_enabled": false,
+  "stock_delivery_enabled": false,
+  "ownership": "untradeable",
+  "applies_to": [
+    "fixture",
+    "championship"
+  ],
+  "existing_entitlements": "preserve",
+  "store_catalog_sha256": "015562c05403d92a237d4287130cab66b531d4c062f4c0e2255ac7e8f41f339c",
+  "bindings": {
+    "Bronze": {
+      "definition": "revival_bronze_mixed_specials_v8",
+      "definition_sha256": "5245b772d93cc7ea286b5865512af170989a3384cb327d7cbc9014dd872f3494"
+    },
+    "Premium Bronze": {
+      "definition": "revival_premium_bronze_mixed_specials_v8",
+      "definition_sha256": "5ce9158fd3a36e3eee1ad2b7b5b4d56f5cf83dda2c6becb7b47f7e13ccdb9862"
+    },
+    "Silver": {
+      "definition": "revival_silver_mixed_specials_v8",
+      "definition_sha256": "2924480af58e42c467e695fa6a93a09cd6ca3a07cd5404678be00ea76ec17cae"
+    },
+    "Premium Silver": {
+      "definition": "revival_premium_silver_mixed_specials_v8",
+      "definition_sha256": "3eeae16b1b215105f67d69bfa37d817ab6a8c4bb7773f43f3326e0b1355a309b"
+    },
+    "Gold": {
+      "definition": "revival_gold_mixed_specials_v8",
+      "definition_sha256": "bc3f7a40c7f26f16639890b8a4b2c8a8d711b769b21ef9f779328b0eab528c52"
+    },
+    "Premium Gold": {
+      "definition": "revival_premium_gold_mixed_specials_v8",
+      "definition_sha256": "cf1ec195d56bf4b53b42c51bf990538a8d3989e4cdd4eefeb1498004638d2718"
+    },
+    "Rare Players": {
+      "definition": "revival_rare_players_specials_v2",
+      "definition_sha256": "d93c1700210aeb195b200028b6cea6dae0e98a5ed46556ddd7340a006e3ebff4"
+    },
+    "Premium Gold Players": {
+      "definition": "revival_premium_gold_players_specials_v4",
+      "definition_sha256": "95b6a9cde74e7f6777db46f15aa53a6e1e7f353b98f0c30bb8bc357767e91a22"
+    },
+    "Jumbo Premium Gold": {
+      "definition": "revival_jumbo_premium_gold_mixed_specials_v8",
+      "definition_sha256": "4e080f8aeba6fb5c16d8dfbc38017e819cb9eb2e9463154f7ed6672be2b9d723"
+    },
+    "Mega": {
+      "definition": "revival_mega_mixed_specials_v8",
+      "definition_sha256": "78dc1960862bac999adf8f40ded1641b5a8b21736256e009ab583e59c00feb98"
+    },
+    "Jumbo Rare Players": {
+      "definition": "revival_jumbo_rare_players_specials_v2",
+      "definition_sha256": "adab3c803249fcb7b571d7bb1f54648579b1a2ed3456119d0fb2e2ec2dfdfbe6"
+    },
+    "Ultimate": {
+      "definition": "revival_ultimate_players_specials_v2",
+      "definition_sha256": "9caa21295f9e16abc7316c23988967a1f5557139cbb686b8d27cf38bab73504f"
+    }
+  }
+}

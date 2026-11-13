@@ -1,0 +1,31 @@
+{
+  "version": "store_single_consumables_v1",
+  "classification": "revival_policy",
+  "default_enabled": false,
+  "quantity_per_offer": 1,
+  "authorization": "User 4 November 2026: specific-card Store offers on original Consumables tiles; training common prices 300/500/1000, rare prices twice common, for both Player Training and GK Training.",
+  "training": {
+    "player_and_goalkeeper_same_prices": true,
+    "duration_matches": 1,
+    "coin_prices": {
+      "bronze": {"common": 300, "rare": 600},
+      "silver": {"common": 500, "rare": 1000},
+      "gold": {"common": 1000, "rare": 2000}
+    }
+  },
+  "healing": {
+    "coin_prices": {"bronze": 300, "silver": 500, "gold": 1000},
+    "authorization": "Previously approved direct-offer prices; no new rarity surcharge introduced by the training decision."
+  },
+  "position_and_formation": {
+    "price_policy": "server/policy/market-economy-v2.json",
+    "sections": ["items.position", "items.formation"],
+    "authorization": "Previously approved v2 targets; referenced independently of market policy admission."
+  },
+  "supported_categories": [
+    "healing", "player_training", "goalkeeper_training", "player_position",
+    "player_formation", "manager_formation"
+  ],
+  "fitness_and_morale_offers_enabled": false,
+  "stock_certification": "Native custom artwork delivery verified separately; individual products and purchases remain unverified and disabled."
+}

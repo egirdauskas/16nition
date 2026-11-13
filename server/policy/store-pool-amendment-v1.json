@@ -1,0 +1,65 @@
+{
+  "version": "store_pool_amendment_v1",
+  "classification": "revival_policy",
+  "default_enabled": false,
+  "authorization": "25October2026 user: remove silvers from Mega and undefined items wherever applicable; club-item application remains ticketed",
+  "excluded_subtypes": [
+    232
+  ],
+  "consumable_pool": "training_injury_misc_no_crowd_v3",
+  "bindings": [
+    {
+      "label": "Bronze",
+      "previous_definition": "revival_bronze_mixed_specials_v7",
+      "definition": "revival_bronze_mixed_specials_v8"
+    },
+    {
+      "label": "Premium Bronze",
+      "previous_definition": "revival_premium_bronze_mixed_specials_v7",
+      "definition": "revival_premium_bronze_mixed_specials_v8"
+    },
+    {
+      "label": "Silver",
+      "previous_definition": "revival_silver_mixed_specials_v7",
+      "definition": "revival_silver_mixed_specials_v8"
+    },
+    {
+      "label": "Premium Silver",
+      "previous_definition": "revival_premium_silver_mixed_specials_v7",
+      "definition": "revival_premium_silver_mixed_specials_v8"
+    },
+    {
+      "label": "Gold",
+      "previous_definition": "revival_gold_mixed_specials_v7",
+      "definition": "revival_gold_mixed_specials_v8"
+    },
+    {
+      "label": "Premium Gold",
+      "previous_definition": "revival_premium_gold_mixed_specials_v7",
+      "definition": "revival_premium_gold_mixed_specials_v8"
+    },
+    {
+      "label": "Jumbo Premium Gold",
+      "previous_definition": "revival_jumbo_premium_gold_mixed_specials_v7",
+      "definition": "revival_jumbo_premium_gold_mixed_specials_v8"
+    },
+    {
+      "label": "Mega",
+      "previous_definition": "revival_mega_mixed_specials_v7",
+      "definition": "revival_mega_mixed_specials_v8"
+    },
+    {
+      "label": "Consumables Pack",
+      "previous_definition": "revival_consumables_balanced_v2",
+      "definition": "revival_consumables_balanced_v3"
+    }
+  ],
+  "preservation": "Never migrate issued entitlements, old draws, receipts or ownership; only future current Store purchases change.",
+  "mega": {
+    "item_count": 30,
+    "rare_count": 18,
+    "gold": 30,
+    "silver": 0,
+    "bronze": 0
+  }
+}

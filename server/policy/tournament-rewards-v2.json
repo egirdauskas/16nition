@@ -1,0 +1,63 @@
+{
+  "version": "tournament_rewards_v2",
+  "classification": "revival_policy",
+  "default_enabled": false,
+  "stock_delivery_enabled": false,
+  "authorization": "User 3 November 2026: tournament bonus UI, cup-specific trophies, Brazil Cup, first-win-only packs/player, repeat championship coins, Seasons-equivalent difficulty match rewards; explicit pack-tier mapping approved.",
+  "ownership": "untradeable",
+  "retroactive": false,
+  "first_win": "No prior trophy for this cup at run creation; historical trophies count. Match rewards repeat normally.",
+  "difficulty_policy": "difficulty_rewards_v1",
+  "match_pack_divisions": {
+    "0": 10,
+    "1": 8,
+    "2": 7,
+    "3": 5,
+    "4": 3,
+    "5": 2,
+    "6": 1
+  },
+  "championship": {
+    "201": {
+      "coins": 10000,
+      "first_win_packs": [
+        "revival_premium_gold_mixed_specials_v8"
+      ]
+    },
+    "202": {
+      "coins": 20000,
+      "first_win_packs": [
+        "revival_bronze_special_reward_v1"
+      ]
+    },
+    "203": {
+      "coins": 15000,
+      "first_win_packs": [
+        "revival_silver_special_reward_v1"
+      ]
+    },
+    "204": {
+      "coins": 24000,
+      "first_win_packs": [
+        "revival_rare_players_specials_v2"
+      ]
+    },
+    "205": {
+      "coins": 20000,
+      "first_win_packs": [
+        "revival_mega_mixed_specials_v8",
+        "revival_carnival_david_luiz_reward_v1"
+      ]
+    }
+  },
+  "brazil_cup": {
+    "service_id": 205,
+    "name": "Brazil Cup",
+    "difficulty": 4,
+    "minimum_brazilian_starters": 7,
+    "minimum_five_star_skillers": 0,
+    "skiller_scope": "starting11",
+    "skills_status": "Optional disabled: recovered original eligibility enum supports no skill-move predicate; seven Brazilian starters remain required."
+  },
+  "delivery": "Source-bound atomic account images through the existing tournament journal. Player prize is an unopened one-player envelope referencing the admitted Carnival David Luiz, never manufactured metadata."
+}

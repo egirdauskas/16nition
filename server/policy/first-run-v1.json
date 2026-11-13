@@ -1,0 +1,49 @@
+{
+  "classification": "revival_policy",
+  "version": "first_run_v1",
+  "authorization": "User, 9 November 2026: prefer in-game setup wherever possible; 18 Bronze players plus one random non-rare Gold and three random Silvers, specials eligible; one manager, no extra club-item bundle; grant once when setup completes.",
+  "implementation_status": "native_creation_and_welcome_verified_full_release_pending",
+  "setup": {
+    "preferred_flow": "stock_in_game",
+    "required_identity": [
+      "club_name",
+      "three_character_club_abbreviation"
+    ],
+    "grant_trigger": "setup_completed",
+    "grant_scope": "once_per_new_club",
+    "returning_accounts": "never_reseed"
+  },
+  "starter_inventory": {
+    "bronze_roster": {
+      "count": 18,
+      "must_support_playable_squad": true
+    },
+    "extra_players": [
+      {
+        "count": 1,
+        "tier": "gold",
+        "rarity": "non_rare",
+        "selection": "random"
+      },
+      {
+        "count": 3,
+        "tier": "silver",
+        "selection": "random"
+      }
+    ],
+    "extra_player_placement": "squad_reserve_slots_18_through_21",
+    "specials": "eligible_under_existing_tier_and_rarity_policy",
+    "manager_count": 1,
+    "extra_club_item_bundle": false
+  },
+  "welcome_gift": {
+    "policy": "welcome-gift-v1.json",
+    "coins": 7500,
+    "premium_gold_packs": 5,
+    "packs_untradeable": true
+  },
+  "separate_store_offer": {
+    "policy": "store-demo-offers-v1.json",
+    "note": "Existing once-only one-coin Starter Pack remains separate from setup and welcome grants."
+  }
+}

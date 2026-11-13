@@ -1,0 +1,25 @@
+{
+  "classification": "revival_policy",
+  "version": "pack_special_rates_v1",
+  "active": true,
+  "authorization": "user, 7 Nov 2026: specials less likely in every slot; after the console migration: rare slot gold 10% / silver 4% / bronze 2% (Ultimate Pack averages about 3) and non-rare slots capped at 1% / 0.4% / 0.2% (\"with non rare 1% it's good\"); applies to regular and weighted packs",
+  "rule": "Specials fill the slot kind of their base card. Per tier, a rare slot is a special with chance min(rare rate, s_rare), where s_rare is the specials' share of the rare pool; a non-rare slot with chance min(non-rare rate, k * s_common), k = rare chance / s_rare. Each slot decides special-or-not first, then the usual deterministic rank picks within that subset (weighted packs scale special weights to the same chance).",
+  "rare_slot_special_per_mille": {
+    "gold": 100,
+    "silver": 40,
+    "bronze": 20
+  },
+  "selections": [
+    "typed_tier_quota_v1",
+    "mixed_bronze_all_specials_v1",
+    "mixed_silver_all_specials_v1",
+    "mixed_gold_all_specials_v1",
+    "reviewed_specials_sha256_without_replacement"
+  ],
+  "activation": "set active true only in the console-specials migration, after the draw history is sealed",
+  "non_rare_slot_special_per_mille": {
+    "gold": 10,
+    "silver": 4,
+    "bronze": 2
+  }
+}

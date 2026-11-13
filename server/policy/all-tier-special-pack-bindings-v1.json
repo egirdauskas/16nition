@@ -1,0 +1,56 @@
+{
+  "version": "all_tier_special_pack_bindings_v1",
+  "classification": "revival_policy",
+  "default_enabled": false,
+  "tier_basis": "preserved_base_quality",
+  "bindings": {
+    "Bronze": {
+      "previous_definition": "revival_bronze_mixed_v1",
+      "definition": "revival_bronze_mixed_specials_v2"
+    },
+    "Premium Bronze": {
+      "previous_definition": "revival_premium_bronze_mixed_v1",
+      "definition": "revival_premium_bronze_mixed_specials_v2"
+    },
+    "Silver": {
+      "previous_definition": "revival_silver_mixed_v1",
+      "definition": "revival_silver_mixed_specials_v2"
+    },
+    "Premium Silver": {
+      "previous_definition": "revival_premium_silver_mixed_v1",
+      "definition": "revival_premium_silver_mixed_specials_v2"
+    },
+    "Gold": {
+      "previous_definition": "revival_gold_mixed_v1",
+      "definition": "revival_gold_mixed_specials_v2"
+    },
+    "Premium Gold": {
+      "previous_definition": "revival_premium_gold_mixed_v1",
+      "definition": "revival_premium_gold_mixed_specials_v2"
+    },
+    "Rare Players": {
+      "previous_definition": "revival_rare_players_v1",
+      "definition": "revival_rare_players_specials_v2"
+    },
+    "Premium Gold Players": {
+      "previous_definition": "revival_premium_gold_players_v3",
+      "definition": "revival_premium_gold_players_specials_v4"
+    },
+    "Jumbo Premium Gold": {
+      "previous_definition": "revival_jumbo_premium_gold_mixed_v1",
+      "definition": "revival_jumbo_premium_gold_mixed_specials_v2"
+    },
+    "Mega": {
+      "previous_definition": "revival_mega_mixed_v1",
+      "definition": "revival_mega_mixed_specials_v2"
+    },
+    "Jumbo Rare Players": {
+      "previous_definition": "revival_jumbo_rare_players_v1",
+      "definition": "revival_jumbo_rare_players_specials_v2"
+    },
+    "Ultimate": {
+      "previous_definition": "revival_ultimate_players_v1",
+      "definition": "revival_ultimate_players_specials_v2"
+    }
+  }
+}

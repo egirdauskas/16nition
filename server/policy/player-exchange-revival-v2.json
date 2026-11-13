@@ -1,0 +1,111 @@
+{
+  "version": "player_exchange_revival_v2",
+  "classification": "revival_policy",
+  "default_enabled": false,
+  "authorization": "User2November2026 approved stronger bands anchored to eight common75OVR Gold players:8*(75*4)=2400 guarantees Rare Gold. Preserve1\u2013100 first band and1\u20133 outputs/free replacement.",
+  "historical_source": "https://www.ea.com/fifa-mobile-player-exchange-FAQ",
+  "native_score": "sum_of_selected_owned_player_discard_values",
+  "input_count": [
+    2,
+    10
+  ],
+  "reward_count_weights": [
+    50,
+    35,
+    15
+  ],
+  "free_replacement_draws": 1,
+  "coins_charged": 0,
+  "xp_awarded": 0,
+  "reward_tradeable": true,
+  "tiers": [
+    "common_bronze",
+    "rare_bronze",
+    "common_silver",
+    "rare_silver",
+    "common_gold",
+    "rare_gold"
+  ],
+  "ranges": [
+    {
+      "upperLimit": 100,
+      "lowerPackLevel": 0,
+      "upperPackLevel": 2,
+      "tier_weights": [
+        40,
+        40,
+        20,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "upperLimit": 240,
+      "lowerPackLevel": 2,
+      "upperPackLevel": 4,
+      "tier_weights": [
+        0,
+        0,
+        60,
+        35,
+        5,
+        0
+      ]
+    },
+    {
+      "upperLimit": 480,
+      "lowerPackLevel": 2,
+      "upperPackLevel": 5,
+      "tier_weights": [
+        0,
+        0,
+        20,
+        50,
+        25,
+        5
+      ]
+    },
+    {
+      "upperLimit": 960,
+      "lowerPackLevel": 3,
+      "upperPackLevel": 5,
+      "tier_weights": [
+        0,
+        0,
+        0,
+        20,
+        50,
+        30
+      ]
+    },
+    {
+      "upperLimit": 2399,
+      "lowerPackLevel": 4,
+      "upperPackLevel": 5,
+      "tier_weights": [
+        0,
+        0,
+        0,
+        0,
+        30,
+        70
+      ]
+    },
+    {
+      "upperLimit": 2147483647,
+      "lowerPackLevel": 5,
+      "upperPackLevel": 5,
+      "tier_weights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        100
+      ]
+    }
+  ],
+  "selection": "Weighted count, then weighted tier per reward; uniform among admitted player versions in that tier. Specials belong to the rare tier of their approved pool quality. All admitted special families remain eligible. Exact draws are pinned per transaction.",
+  "limits": "Cutoffs, count weights and tier weights are local design values, not recovered EA odds. Native tier-number visual mapping and financial delivery require separate original-client proof. No level/15x match multiplier applies."
+}

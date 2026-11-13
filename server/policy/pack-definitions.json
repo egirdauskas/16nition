@@ -1,0 +1,3487 @@
+{
+  "schema_version": 1,
+  "provenance": "revival_policy",
+  "definitions": {
+    "revival_gold_players": {
+      "provenance": "revival_policy",
+      "name": "Revival Gold Players Pack",
+      "quality": "gold",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "selection": "SHA256 rank by catalog_id + full resource; one rare then11 independent candidates",
+      "weights": "equal per eligible full resource; no base suppression; no duplicate resource within a pack",
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported"
+    },
+    "revival_consumable_sample": {
+      "provenance": "revival_policy",
+      "name": "Revival Consumable Sample",
+      "item_family": "consumable",
+      "quality": "mixed",
+      "item_count": 2,
+      "minimum_rare": 1,
+      "subtypes": [
+        51,
+        133
+      ],
+      "selection": "Lowest valid supplied resource per proven subtype: GK training and manager formation",
+      "weights": "deterministic two-family sample; no historical odds claim"
+    },
+    "revival_gold_starter": {
+      "provenance": "revival_policy",
+      "name": "Revival Gold Starter Players",
+      "quality": "gold",
+      "item_count": 6,
+      "minimum_rare": 1,
+      "selection": "weighted_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported"
+    },
+    "revival_premium_gold_players": {
+      "provenance": "revival_policy",
+      "name": "Revival Premium Gold Players",
+      "quality": "gold",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "selection": "weighted_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 2
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported"
+    },
+    "revival_rare_gold_players": {
+      "provenance": "revival_policy",
+      "name": "Revival Rare Gold Players",
+      "quality": "gold",
+      "item_count": 12,
+      "minimum_rare": 12,
+      "selection": "weighted_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported"
+    },
+    "revival_jumbo_gold_players": {
+      "provenance": "revival_policy",
+      "name": "Revival Jumbo Premium Gold Players",
+      "quality": "gold",
+      "item_count": 24,
+      "minimum_rare": 7,
+      "selection": "weighted_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 3
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported"
+    },
+    "revival_consumables_pack": {
+      "provenance": "revival_policy",
+      "name": "Revival Consumables Pack",
+      "item_family": "consumable",
+      "quality": "mixed",
+      "item_count": 4,
+      "minimum_rare": 1,
+      "subtypes": [
+        51,
+        133
+      ],
+      "selection": "weighted_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 2
+      }
+    },
+    "revival_special_player_test": {
+      "provenance": "revival_policy",
+      "name": "Revival Test TOTW Rooney",
+      "quality": "gold",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "reconstructed_special_test",
+      "weights": "one explicitly reviewed historical version; not pack odds",
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_versions": [
+        "totw_banner_until_01_27:waynerooney"
+      ]
+    },
+    "revival_premium_gold_totw": {
+      "provenance": "revival_policy",
+      "name": "Revival Premium Gold TOTW Players",
+      "quality": "gold",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "selection": "reviewed_specials_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 2
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_pool": "reviewed_totw3",
+      "special_weight": 4,
+      "minimum_special": 1,
+      "unopened_priority": -10
+    },
+    "revival_presentation_holiday_test": {
+      "provenance": "revival_policy",
+      "name": "Revival Test holiday",
+      "quality": "gold",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "reconstructed_special_test",
+      "weights": "one explicitly reviewed historical version; not pack odds",
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_versions": [
+        "holiday_edition:cristianoronaldo"
+      ]
+    },
+    "revival_presentation_tots_test": {
+      "provenance": "revival_policy",
+      "name": "Revival Test tots",
+      "quality": "gold",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "reconstructed_special_test",
+      "weights": "one explicitly reviewed historical version; not pack odds",
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_versions": [
+        "mobile_tots:neymar"
+      ]
+    },
+    "revival_presentation_carnival_test": {
+      "provenance": "revival_policy",
+      "name": "Revival Test carnival",
+      "quality": "gold",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "reconstructed_special_test",
+      "weights": "one explicitly reviewed historical version; not pack odds",
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_versions": [
+        "brazilian_carnival:thiagosilva"
+      ]
+    },
+    "revival_mobile_tots_players": {
+      "provenance": "revival_policy",
+      "name": "Revival Mobile TOTS Players",
+      "quality": "gold",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "selection": "reviewed_specials_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 2
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_pool": "reviewed_tots11",
+      "special_weight": 4,
+      "minimum_special": 1,
+      "unopened_priority": -10
+    },
+    "revival_mobile_tots_synthesis_test": {
+      "provenance": "revival_policy",
+      "name": "Revival Mobile TOTS Test",
+      "quality": "gold",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "reconstructed_special_test",
+      "weights": "one explicitly reviewed historical version; not pack odds",
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_versions": [
+        "mobile_tots:p1179:r97:gk"
+      ]
+    },
+    "revival_presentation_most_feared_test": {
+      "provenance": "revival_policy",
+      "name": "Revival Test most_feared",
+      "quality": "gold",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "reconstructed_special_test",
+      "weights": "one explicitly reviewed historical version; not pack odds",
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_versions": [
+        "most_feared_defenders:j_r_me_boateng"
+      ]
+    },
+    "revival_presentation_most_feared_purple_test": {
+      "provenance": "revival_policy",
+      "name": "Revival Test most_feared_purple",
+      "quality": "gold",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "reconstructed_special_test",
+      "weights": "one explicitly reviewed historical version; not pack odds",
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_versions": [
+        "most_feared_midfielders_forwards:zlatan_ibrahimovi"
+      ]
+    },
+    "revival_presentation_double_elevens_test": {
+      "provenance": "revival_policy",
+      "name": "Revival Test double_elevens",
+      "quality": "gold",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "reconstructed_special_test",
+      "weights": "one explicitly reviewed historical version; not pack odds",
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_versions": [
+        "double_elevens:neymar"
+      ]
+    },
+    "revival_presentation_toty_test": {
+      "provenance": "revival_policy",
+      "name": "Revival Test toty",
+      "quality": "gold",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "reconstructed_special_test",
+      "weights": "one explicitly reviewed historical version; not pack odds",
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_versions": [
+        "mobile_toty_january:neymar"
+      ]
+    },
+    "revival_presentation_motm_test": {
+      "provenance": "revival_policy",
+      "name": "Revival Test motm",
+      "quality": "gold",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "reconstructed_special_test",
+      "weights": "one explicitly reviewed historical version; not pack odds",
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_versions": [
+        "mobile_motm_lukaku:romelu_lukaku"
+      ]
+    },
+    "revival_presentation_record_breaker_test": {
+      "provenance": "revival_policy",
+      "name": "Revival Test record_breaker",
+      "quality": "gold",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "reconstructed_special_test",
+      "weights": "one explicitly reviewed historical version; not pack odds",
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_versions": [
+        "record_breaker_messi:lionel_messi"
+      ]
+    },
+    "revival_presentation_hero_test": {
+      "provenance": "revival_policy",
+      "name": "Revival Test hero",
+      "quality": "gold",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "reconstructed_special_test",
+      "weights": "one explicitly reviewed historical version; not pack odds",
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_versions": [
+        "hero_messi_300_liga:lionelmessi"
+      ]
+    },
+    "revival_presentation_ones_to_watch_test": {
+      "provenance": "revival_policy",
+      "name": "Revival Test ones_to_watch",
+      "quality": "gold",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "reconstructed_special_test",
+      "weights": "one explicitly reviewed historical version; not pack odds",
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_versions": [
+        "ones_to_watch_batch4:alexissanchez"
+      ]
+    },
+    "revival_presentation_futties_test": {
+      "provenance": "revival_policy",
+      "name": "Revival Test FUTTIES",
+      "quality": "gold",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "reconstructed_special_test",
+      "weights": "one explicitly reviewed historical version; not pack odds",
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_versions": [
+        "mobile_futties:p1179:r96:gk"
+      ]
+    },
+    "revival_all_special_players": {
+      "provenance": "revival_policy",
+      "name": "Revival Mixed Special Players Pack",
+      "quality": "mixed",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "selection": "reviewed_specials_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 2
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_pool": "reviewed_all_admitted",
+      "special_weight": 4,
+      "minimum_special": 1,
+      "unopened_priority": -10
+    },
+    "revival_gold_players_specials_v2": {
+      "provenance": "revival_policy",
+      "name": "Revival Gold Players Pack",
+      "quality": "gold",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "selection": "reviewed_specials_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_pool": "reviewed_all_admitted",
+      "special_weight": 4,
+      "minimum_special": 0,
+      "unopened_priority": 0,
+      "specials_satisfy_rare_guarantee": true
+    },
+    "revival_gold_starter_specials_v2": {
+      "provenance": "revival_policy",
+      "name": "Revival Gold Starter Players",
+      "quality": "gold",
+      "item_count": 6,
+      "minimum_rare": 1,
+      "selection": "reviewed_specials_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_pool": "reviewed_all_admitted",
+      "special_weight": 4,
+      "minimum_special": 0,
+      "unopened_priority": 0,
+      "specials_satisfy_rare_guarantee": true
+    },
+    "revival_premium_gold_players_specials_v2": {
+      "provenance": "revival_policy",
+      "name": "Revival Premium Gold Players",
+      "quality": "gold",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "selection": "reviewed_specials_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 2
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_pool": "reviewed_all_admitted",
+      "special_weight": 4,
+      "minimum_special": 0,
+      "unopened_priority": 0,
+      "specials_satisfy_rare_guarantee": true
+    },
+    "revival_rare_gold_players_specials_v2": {
+      "provenance": "revival_policy",
+      "name": "Revival Rare Gold Players",
+      "quality": "gold",
+      "item_count": 12,
+      "minimum_rare": 12,
+      "selection": "reviewed_specials_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_pool": "reviewed_all_admitted",
+      "special_weight": 4,
+      "minimum_special": 0,
+      "unopened_priority": 0,
+      "specials_satisfy_rare_guarantee": true
+    },
+    "revival_jumbo_gold_players_specials_v2": {
+      "provenance": "revival_policy",
+      "name": "Revival Jumbo Premium Gold Players",
+      "quality": "gold",
+      "item_count": 24,
+      "minimum_rare": 7,
+      "selection": "reviewed_specials_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 3
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_pool": "reviewed_all_admitted",
+      "special_weight": 4,
+      "minimum_special": 0,
+      "unopened_priority": 0,
+      "specials_satisfy_rare_guarantee": true
+    },
+    "revival_premium_gold_totw_specials_v2": {
+      "provenance": "revival_policy",
+      "name": "Revival Premium Gold TOTW Players",
+      "quality": "gold",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "selection": "reviewed_specials_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 2
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_pool": "reviewed_all_admitted",
+      "special_weight": 4,
+      "minimum_special": 1,
+      "unopened_priority": -10,
+      "specials_satisfy_rare_guarantee": true,
+      "guaranteed_special_family": "totw"
+    },
+    "revival_mobile_tots_players_specials_v2": {
+      "provenance": "revival_policy",
+      "name": "Revival Mobile TOTS Players",
+      "quality": "gold",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "selection": "reviewed_specials_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 2
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_pool": "reviewed_all_admitted",
+      "special_weight": 4,
+      "minimum_special": 1,
+      "unopened_priority": -10,
+      "specials_satisfy_rare_guarantee": true,
+      "guaranteed_special_family": "tots"
+    },
+    "revival_bronze_mixed_v1": {
+      "provenance": "revival_policy",
+      "name": "Bronze Pack",
+      "quality": "bronze",
+      "item_family": "mixed_bronze",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "minimum_bronze": 10,
+      "selection": "mixed_bronze_random_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false
+    },
+    "revival_premium_bronze_mixed_v1": {
+      "provenance": "revival_policy",
+      "name": "Premium Bronze Pack",
+      "quality": "bronze",
+      "item_family": "mixed_bronze",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "minimum_bronze": 10,
+      "selection": "mixed_bronze_random_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true
+    },
+    "revival_silver_mixed_v1": {
+      "provenance": "revival_policy",
+      "name": "Silver Pack",
+      "quality": "silver",
+      "item_family": "mixed_silver",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "selection": "mixed_silver_random_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "minimum_silver": 10
+    },
+    "revival_premium_silver_mixed_v1": {
+      "provenance": "revival_policy",
+      "name": "Premium Silver Pack",
+      "quality": "silver",
+      "item_family": "mixed_silver",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "selection": "mixed_silver_random_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "minimum_silver": 10
+    },
+    "revival_gold_mixed_v1": {
+      "provenance": "revival_policy",
+      "name": "Gold Pack",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "selection": "mixed_gold_random_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 10
+    },
+    "revival_premium_gold_mixed_v1": {
+      "provenance": "revival_policy",
+      "name": "Premium Gold Pack",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "selection": "mixed_gold_random_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 10
+    },
+    "revival_rare_players_v1": {
+      "provenance": "revival_policy",
+      "name": "RARE PLAYERS PACK",
+      "quality": "gold",
+      "item_count": 12,
+      "minimum_rare": 12,
+      "selection": "weighted_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported"
+    },
+    "revival_premium_gold_players_v3": {
+      "provenance": "revival_policy",
+      "name": "PREMIUM GOLD PLAYERS PACK",
+      "quality": "gold",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "selection": "weighted_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "exact_rare": true
+    },
+    "revival_jumbo_premium_gold_mixed_v1": {
+      "provenance": "revival_policy",
+      "name": "JUMBO PREMIUM GOLD PACK",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 24,
+      "minimum_rare": 7,
+      "exact_rare": true,
+      "selection": "mixed_gold_random_v2",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 20
+    },
+    "revival_mega_mixed_v1": {
+      "provenance": "revival_policy",
+      "name": "MEGA PACK",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 30,
+      "minimum_rare": 18,
+      "exact_rare": true,
+      "selection": "mixed_gold_random_v2",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 26
+    },
+    "revival_jumbo_rare_players_v1": {
+      "provenance": "revival_policy",
+      "name": "JUMBO RARE PLAYERS PACK",
+      "quality": "gold",
+      "item_count": 24,
+      "minimum_rare": 24,
+      "selection": "weighted_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported"
+    },
+    "revival_ultimate_players_v1": {
+      "provenance": "revival_policy",
+      "name": "Ultimate Pack",
+      "quality": "gold",
+      "item_count": 30,
+      "minimum_rare": 30,
+      "selection": "weighted_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported"
+    },
+    "revival_bronze_mixed_specials_v2": {
+      "provenance": "revival_policy",
+      "name": "Bronze Pack",
+      "quality": "bronze",
+      "item_family": "mixed_bronze",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "minimum_bronze": 10,
+      "selection": "mixed_bronze_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true
+    },
+    "revival_premium_bronze_mixed_specials_v2": {
+      "provenance": "revival_policy",
+      "name": "Premium Bronze Pack",
+      "quality": "bronze",
+      "item_family": "mixed_bronze",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "minimum_bronze": 10,
+      "selection": "mixed_bronze_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true
+    },
+    "revival_silver_mixed_specials_v2": {
+      "provenance": "revival_policy",
+      "name": "Silver Pack",
+      "quality": "silver",
+      "item_family": "mixed_silver",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "selection": "mixed_silver_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "minimum_silver": 10,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true
+    },
+    "revival_premium_silver_mixed_specials_v2": {
+      "provenance": "revival_policy",
+      "name": "Premium Silver Pack",
+      "quality": "silver",
+      "item_family": "mixed_silver",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "selection": "mixed_silver_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "minimum_silver": 10,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true
+    },
+    "revival_gold_mixed_specials_v2": {
+      "provenance": "revival_policy",
+      "name": "Gold Pack",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "selection": "mixed_gold_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 10
+    },
+    "revival_premium_gold_mixed_specials_v2": {
+      "provenance": "revival_policy",
+      "name": "Premium Gold Pack",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "selection": "mixed_gold_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 10
+    },
+    "revival_rare_players_specials_v2": {
+      "provenance": "revival_policy",
+      "name": "RARE PLAYERS PACK",
+      "quality": "gold",
+      "item_count": 12,
+      "minimum_rare": 12,
+      "selection": "reviewed_specials_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_pool": "reviewed_all_admitted",
+      "special_weight": 1,
+      "minimum_special": 0,
+      "unopened_priority": -100,
+      "specials_satisfy_rare_guarantee": true
+    },
+    "revival_premium_gold_players_specials_v4": {
+      "provenance": "revival_policy",
+      "name": "PREMIUM GOLD PLAYERS PACK",
+      "quality": "gold",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "selection": "reviewed_specials_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "exact_rare": true,
+      "special_pool": "reviewed_all_admitted",
+      "special_weight": 1,
+      "minimum_special": 0,
+      "unopened_priority": -100,
+      "specials_satisfy_rare_guarantee": true
+    },
+    "revival_jumbo_premium_gold_mixed_specials_v2": {
+      "provenance": "revival_policy",
+      "name": "JUMBO PREMIUM GOLD PACK",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 24,
+      "minimum_rare": 7,
+      "exact_rare": true,
+      "selection": "mixed_gold_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 20
+    },
+    "revival_mega_mixed_specials_v2": {
+      "provenance": "revival_policy",
+      "name": "MEGA PACK",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 30,
+      "minimum_rare": 18,
+      "exact_rare": true,
+      "selection": "mixed_gold_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 26
+    },
+    "revival_jumbo_rare_players_specials_v2": {
+      "provenance": "revival_policy",
+      "name": "JUMBO RARE PLAYERS PACK",
+      "quality": "gold",
+      "item_count": 24,
+      "minimum_rare": 24,
+      "selection": "reviewed_specials_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_pool": "reviewed_all_admitted",
+      "special_weight": 1,
+      "minimum_special": 0,
+      "unopened_priority": -100,
+      "specials_satisfy_rare_guarantee": true
+    },
+    "revival_ultimate_players_specials_v2": {
+      "provenance": "revival_policy",
+      "name": "Ultimate Pack",
+      "quality": "gold",
+      "item_count": 30,
+      "minimum_rare": 30,
+      "selection": "reviewed_specials_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_pool": "reviewed_all_admitted",
+      "special_weight": 1,
+      "minimum_special": 0,
+      "unopened_priority": -100,
+      "specials_satisfy_rare_guarantee": true
+    },
+    "revival_bronze_mixed_specials_v3": {
+      "provenance": "revival_policy",
+      "name": "Bronze Pack",
+      "quality": "bronze",
+      "item_family": "mixed_bronze",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "minimum_bronze": 10,
+      "selection": "mixed_bronze_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_v1"
+    },
+    "revival_premium_bronze_mixed_specials_v3": {
+      "provenance": "revival_policy",
+      "name": "Premium Bronze Pack",
+      "quality": "bronze",
+      "item_family": "mixed_bronze",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "minimum_bronze": 10,
+      "selection": "mixed_bronze_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_v1"
+    },
+    "revival_silver_mixed_specials_v3": {
+      "provenance": "revival_policy",
+      "name": "Silver Pack",
+      "quality": "silver",
+      "item_family": "mixed_silver",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "selection": "mixed_silver_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "minimum_silver": 10,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_v1"
+    },
+    "revival_premium_silver_mixed_specials_v3": {
+      "provenance": "revival_policy",
+      "name": "Premium Silver Pack",
+      "quality": "silver",
+      "item_family": "mixed_silver",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "selection": "mixed_silver_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "minimum_silver": 10,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_v1"
+    },
+    "revival_gold_mixed_specials_v3": {
+      "provenance": "revival_policy",
+      "name": "Gold Pack",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "selection": "mixed_gold_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 10,
+      "consumable_pool": "training_injury_misc_v1"
+    },
+    "revival_premium_gold_mixed_specials_v3": {
+      "provenance": "revival_policy",
+      "name": "Premium Gold Pack",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "selection": "mixed_gold_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 10,
+      "consumable_pool": "training_injury_misc_v1"
+    },
+    "revival_jumbo_premium_gold_mixed_specials_v3": {
+      "provenance": "revival_policy",
+      "name": "JUMBO PREMIUM GOLD PACK",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 24,
+      "minimum_rare": 7,
+      "exact_rare": true,
+      "selection": "mixed_gold_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 20,
+      "consumable_pool": "training_injury_misc_v1"
+    },
+    "revival_mega_mixed_specials_v3": {
+      "provenance": "revival_policy",
+      "name": "MEGA PACK",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 30,
+      "minimum_rare": 18,
+      "exact_rare": true,
+      "selection": "mixed_gold_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 26,
+      "consumable_pool": "training_injury_misc_v1"
+    },
+    "revival_bronze_mixed_specials_v4": {
+      "provenance": "revival_policy",
+      "name": "Bronze Pack",
+      "quality": "bronze",
+      "item_family": "mixed_bronze",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "minimum_bronze": 10,
+      "selection": "mixed_bronze_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_filtered_v1"
+    },
+    "revival_premium_bronze_mixed_specials_v4": {
+      "provenance": "revival_policy",
+      "name": "Premium Bronze Pack",
+      "quality": "bronze",
+      "item_family": "mixed_bronze",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "minimum_bronze": 10,
+      "selection": "mixed_bronze_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_filtered_v1"
+    },
+    "revival_silver_mixed_specials_v4": {
+      "provenance": "revival_policy",
+      "name": "Silver Pack",
+      "quality": "silver",
+      "item_family": "mixed_silver",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "selection": "mixed_silver_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "minimum_silver": 10,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_filtered_v1"
+    },
+    "revival_premium_silver_mixed_specials_v4": {
+      "provenance": "revival_policy",
+      "name": "Premium Silver Pack",
+      "quality": "silver",
+      "item_family": "mixed_silver",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "selection": "mixed_silver_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "minimum_silver": 10,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_filtered_v1"
+    },
+    "revival_gold_mixed_specials_v4": {
+      "provenance": "revival_policy",
+      "name": "Gold Pack",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "selection": "mixed_gold_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 10,
+      "consumable_pool": "training_injury_misc_filtered_v1"
+    },
+    "revival_premium_gold_mixed_specials_v4": {
+      "provenance": "revival_policy",
+      "name": "Premium Gold Pack",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "selection": "mixed_gold_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 10,
+      "consumable_pool": "training_injury_misc_filtered_v1"
+    },
+    "revival_jumbo_premium_gold_mixed_specials_v4": {
+      "provenance": "revival_policy",
+      "name": "JUMBO PREMIUM GOLD PACK",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 24,
+      "minimum_rare": 7,
+      "exact_rare": true,
+      "selection": "mixed_gold_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 20,
+      "consumable_pool": "training_injury_misc_filtered_v1"
+    },
+    "revival_mega_mixed_specials_v4": {
+      "provenance": "revival_policy",
+      "name": "MEGA PACK",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 30,
+      "minimum_rare": 18,
+      "exact_rare": true,
+      "selection": "mixed_gold_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 26,
+      "consumable_pool": "training_injury_misc_filtered_v1"
+    },
+    "revival_bronze_mixed_specials_v5": {
+      "provenance": "revival_policy",
+      "name": "Bronze Pack",
+      "quality": "bronze",
+      "item_family": "mixed_bronze",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "minimum_bronze": 10,
+      "selection": "mixed_bronze_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_filtered_v2"
+    },
+    "revival_premium_bronze_mixed_specials_v5": {
+      "provenance": "revival_policy",
+      "name": "Premium Bronze Pack",
+      "quality": "bronze",
+      "item_family": "mixed_bronze",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "minimum_bronze": 10,
+      "selection": "mixed_bronze_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_filtered_v2"
+    },
+    "revival_silver_mixed_specials_v5": {
+      "provenance": "revival_policy",
+      "name": "Silver Pack",
+      "quality": "silver",
+      "item_family": "mixed_silver",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "selection": "mixed_silver_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "minimum_silver": 10,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_filtered_v2"
+    },
+    "revival_premium_silver_mixed_specials_v5": {
+      "provenance": "revival_policy",
+      "name": "Premium Silver Pack",
+      "quality": "silver",
+      "item_family": "mixed_silver",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "selection": "mixed_silver_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "minimum_silver": 10,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_filtered_v2"
+    },
+    "revival_gold_mixed_specials_v5": {
+      "provenance": "revival_policy",
+      "name": "Gold Pack",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "selection": "mixed_gold_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 10,
+      "consumable_pool": "training_injury_misc_filtered_v2"
+    },
+    "revival_premium_gold_mixed_specials_v5": {
+      "provenance": "revival_policy",
+      "name": "Premium Gold Pack",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "selection": "mixed_gold_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 10,
+      "consumable_pool": "training_injury_misc_filtered_v2"
+    },
+    "revival_jumbo_premium_gold_mixed_specials_v5": {
+      "provenance": "revival_policy",
+      "name": "JUMBO PREMIUM GOLD PACK",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 24,
+      "minimum_rare": 7,
+      "exact_rare": true,
+      "selection": "mixed_gold_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 20,
+      "consumable_pool": "training_injury_misc_filtered_v2"
+    },
+    "revival_mega_mixed_specials_v5": {
+      "provenance": "revival_policy",
+      "name": "MEGA PACK",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 30,
+      "minimum_rare": 18,
+      "exact_rare": true,
+      "selection": "mixed_gold_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 26,
+      "consumable_pool": "training_injury_misc_filtered_v2"
+    },
+    "revival_consumables_balanced_v1": {
+      "provenance": "revival_policy",
+      "name": "Consumables Pack",
+      "item_family": "consumable",
+      "quality": "mixed",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "tier_counts": {
+        "bronze": 4,
+        "silver": 4,
+        "gold": 4
+      },
+      "consumable_scope": "all",
+      "consumable_pool": "training_injury_misc_filtered_v2",
+      "selection": "consumables_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      }
+    },
+    "revival_player_formations_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Formation Pack",
+      "item_family": "consumable",
+      "quality": "gold",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "tier_counts": {
+        "bronze": 0,
+        "silver": 0,
+        "gold": 12
+      },
+      "consumable_scope": "player_formation",
+      "consumable_pool": "training_injury_misc_filtered_v2",
+      "selection": "consumables_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      }
+    },
+    "revival_player_positions_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position Pack",
+      "item_family": "consumable",
+      "quality": "gold",
+      "item_count": 12,
+      "minimum_rare": 12,
+      "exact_rare": true,
+      "tier_counts": {
+        "bronze": 0,
+        "silver": 0,
+        "gold": 12
+      },
+      "consumable_scope": "player_position",
+      "consumable_pool": "training_injury_misc_filtered_v2",
+      "selection": "consumables_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      }
+    },
+    "revival_bronze_mixed_specials_v6": {
+      "provenance": "revival_policy",
+      "name": "Bronze Pack",
+      "quality": "bronze",
+      "item_family": "mixed_bronze",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "minimum_bronze": 10,
+      "selection": "mixed_bronze_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_filtered_v2",
+      "club_item_pool": "supplied_club_items_v1"
+    },
+    "revival_premium_bronze_mixed_specials_v6": {
+      "provenance": "revival_policy",
+      "name": "Premium Bronze Pack",
+      "quality": "bronze",
+      "item_family": "mixed_bronze",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "minimum_bronze": 10,
+      "selection": "mixed_bronze_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_filtered_v2",
+      "club_item_pool": "supplied_club_items_v1"
+    },
+    "revival_silver_mixed_specials_v6": {
+      "provenance": "revival_policy",
+      "name": "Silver Pack",
+      "quality": "silver",
+      "item_family": "mixed_silver",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "selection": "mixed_silver_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "minimum_silver": 10,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_filtered_v2",
+      "club_item_pool": "supplied_club_items_v1"
+    },
+    "revival_premium_silver_mixed_specials_v6": {
+      "provenance": "revival_policy",
+      "name": "Premium Silver Pack",
+      "quality": "silver",
+      "item_family": "mixed_silver",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "selection": "mixed_silver_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "minimum_silver": 10,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_filtered_v2",
+      "club_item_pool": "supplied_club_items_v1"
+    },
+    "revival_gold_mixed_specials_v6": {
+      "provenance": "revival_policy",
+      "name": "Gold Pack",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "selection": "mixed_gold_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 10,
+      "consumable_pool": "training_injury_misc_filtered_v2",
+      "club_item_pool": "supplied_club_items_v1"
+    },
+    "revival_premium_gold_mixed_specials_v6": {
+      "provenance": "revival_policy",
+      "name": "Premium Gold Pack",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "selection": "mixed_gold_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 10,
+      "consumable_pool": "training_injury_misc_filtered_v2",
+      "club_item_pool": "supplied_club_items_v1"
+    },
+    "revival_jumbo_premium_gold_mixed_specials_v6": {
+      "provenance": "revival_policy",
+      "name": "JUMBO PREMIUM GOLD PACK",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 24,
+      "minimum_rare": 7,
+      "exact_rare": true,
+      "selection": "mixed_gold_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 20,
+      "consumable_pool": "training_injury_misc_filtered_v2",
+      "club_item_pool": "supplied_club_items_v1"
+    },
+    "revival_mega_mixed_specials_v6": {
+      "provenance": "revival_policy",
+      "name": "MEGA PACK",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 30,
+      "minimum_rare": 18,
+      "exact_rare": true,
+      "selection": "mixed_gold_all_specials_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 26,
+      "consumable_pool": "training_injury_misc_filtered_v2",
+      "club_item_pool": "supplied_club_items_v1"
+    },
+    "revival_bronze_mixed_specials_v7": {
+      "provenance": "revival_policy",
+      "name": "Bronze Pack",
+      "quality": "bronze",
+      "item_family": "mixed_bronze",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "minimum_bronze": 10,
+      "selection": "typed_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_filtered_v2",
+      "club_item_pool": "supplied_club_items_v1",
+      "tier_counts": {
+        "bronze": 10,
+        "silver": 2,
+        "gold": 0
+      }
+    },
+    "revival_premium_bronze_mixed_specials_v7": {
+      "provenance": "revival_policy",
+      "name": "Premium Bronze Pack",
+      "quality": "bronze",
+      "item_family": "mixed_bronze",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "minimum_bronze": 10,
+      "selection": "typed_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_filtered_v2",
+      "club_item_pool": "supplied_club_items_v1",
+      "tier_counts": {
+        "bronze": 10,
+        "silver": 2,
+        "gold": 0
+      }
+    },
+    "revival_silver_mixed_specials_v7": {
+      "provenance": "revival_policy",
+      "name": "Silver Pack",
+      "quality": "silver",
+      "item_family": "mixed_silver",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "selection": "typed_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "minimum_silver": 11,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_filtered_v2",
+      "club_item_pool": "supplied_club_items_v1",
+      "tier_counts": {
+        "bronze": 1,
+        "silver": 11,
+        "gold": 0
+      }
+    },
+    "revival_premium_silver_mixed_specials_v7": {
+      "provenance": "revival_policy",
+      "name": "Premium Silver Pack",
+      "quality": "silver",
+      "item_family": "mixed_silver",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "selection": "typed_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "minimum_silver": 11,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_filtered_v2",
+      "club_item_pool": "supplied_club_items_v1",
+      "tier_counts": {
+        "bronze": 1,
+        "silver": 11,
+        "gold": 0
+      }
+    },
+    "revival_gold_mixed_specials_v7": {
+      "provenance": "revival_policy",
+      "name": "Gold Pack",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "selection": "typed_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 10,
+      "consumable_pool": "training_injury_misc_filtered_v2",
+      "club_item_pool": "supplied_club_items_v1",
+      "tier_counts": {
+        "bronze": 0,
+        "silver": 2,
+        "gold": 10
+      }
+    },
+    "revival_premium_gold_mixed_specials_v7": {
+      "provenance": "revival_policy",
+      "name": "Premium Gold Pack",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "selection": "typed_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 10,
+      "consumable_pool": "training_injury_misc_filtered_v2",
+      "club_item_pool": "supplied_club_items_v1",
+      "tier_counts": {
+        "bronze": 0,
+        "silver": 2,
+        "gold": 10
+      }
+    },
+    "revival_jumbo_premium_gold_mixed_specials_v7": {
+      "provenance": "revival_policy",
+      "name": "JUMBO PREMIUM GOLD PACK",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 24,
+      "minimum_rare": 7,
+      "exact_rare": true,
+      "selection": "typed_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 20,
+      "consumable_pool": "training_injury_misc_filtered_v2",
+      "club_item_pool": "supplied_club_items_v1",
+      "tier_counts": {
+        "bronze": 0,
+        "silver": 4,
+        "gold": 20
+      }
+    },
+    "revival_mega_mixed_specials_v7": {
+      "provenance": "revival_policy",
+      "name": "MEGA PACK",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 30,
+      "minimum_rare": 18,
+      "exact_rare": true,
+      "selection": "typed_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 26,
+      "consumable_pool": "training_injury_misc_filtered_v2",
+      "club_item_pool": "supplied_club_items_v1",
+      "tier_counts": {
+        "bronze": 0,
+        "silver": 4,
+        "gold": 26
+      }
+    },
+    "revival_consumables_balanced_v2": {
+      "provenance": "revival_policy",
+      "name": "Consumables Pack",
+      "item_family": "non_player",
+      "quality": "mixed",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "tier_counts": {
+        "bronze": 4,
+        "silver": 4,
+        "gold": 4
+      },
+      "consumable_scope": "all",
+      "consumable_pool": "training_injury_misc_filtered_v2",
+      "selection": "typed_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "club_item_pool": "supplied_club_items_v1"
+    },
+    "revival_bronze_mixed_specials_v8": {
+      "provenance": "revival_policy",
+      "name": "Bronze Pack",
+      "quality": "bronze",
+      "item_family": "mixed_bronze",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "minimum_bronze": 10,
+      "selection": "typed_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_no_crowd_v3",
+      "club_item_pool": "supplied_club_items_v1",
+      "tier_counts": {
+        "bronze": 10,
+        "silver": 2,
+        "gold": 0
+      }
+    },
+    "revival_premium_bronze_mixed_specials_v8": {
+      "provenance": "revival_policy",
+      "name": "Premium Bronze Pack",
+      "quality": "bronze",
+      "item_family": "mixed_bronze",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "minimum_bronze": 10,
+      "selection": "typed_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_no_crowd_v3",
+      "club_item_pool": "supplied_club_items_v1",
+      "tier_counts": {
+        "bronze": 10,
+        "silver": 2,
+        "gold": 0
+      }
+    },
+    "revival_silver_mixed_specials_v8": {
+      "provenance": "revival_policy",
+      "name": "Silver Pack",
+      "quality": "silver",
+      "item_family": "mixed_silver",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "selection": "typed_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "minimum_silver": 11,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_no_crowd_v3",
+      "club_item_pool": "supplied_club_items_v1",
+      "tier_counts": {
+        "bronze": 1,
+        "silver": 11,
+        "gold": 0
+      }
+    },
+    "revival_premium_silver_mixed_specials_v8": {
+      "provenance": "revival_policy",
+      "name": "Premium Silver Pack",
+      "quality": "silver",
+      "item_family": "mixed_silver",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "selection": "typed_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "minimum_silver": 11,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "consumable_pool": "training_injury_misc_no_crowd_v3",
+      "club_item_pool": "supplied_club_items_v1",
+      "tier_counts": {
+        "bronze": 1,
+        "silver": 11,
+        "gold": 0
+      }
+    },
+    "revival_gold_mixed_specials_v8": {
+      "provenance": "revival_policy",
+      "name": "Gold Pack",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 12,
+      "minimum_rare": 1,
+      "exact_rare": true,
+      "selection": "typed_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": false,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 10,
+      "consumable_pool": "training_injury_misc_no_crowd_v3",
+      "club_item_pool": "supplied_club_items_v1",
+      "tier_counts": {
+        "bronze": 0,
+        "silver": 2,
+        "gold": 10
+      }
+    },
+    "revival_premium_gold_mixed_specials_v8": {
+      "provenance": "revival_policy",
+      "name": "Premium Gold Pack",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "selection": "typed_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 10,
+      "consumable_pool": "training_injury_misc_no_crowd_v3",
+      "club_item_pool": "supplied_club_items_v1",
+      "tier_counts": {
+        "bronze": 0,
+        "silver": 2,
+        "gold": 10
+      }
+    },
+    "revival_jumbo_premium_gold_mixed_specials_v8": {
+      "provenance": "revival_policy",
+      "name": "JUMBO PREMIUM GOLD PACK",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 24,
+      "minimum_rare": 7,
+      "exact_rare": true,
+      "selection": "typed_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 20,
+      "consumable_pool": "training_injury_misc_no_crowd_v3",
+      "club_item_pool": "supplied_club_items_v1",
+      "tier_counts": {
+        "bronze": 0,
+        "silver": 4,
+        "gold": 20
+      }
+    },
+    "revival_mega_mixed_specials_v8": {
+      "provenance": "revival_policy",
+      "name": "MEGA PACK",
+      "quality": "gold",
+      "item_family": "mixed_gold",
+      "item_count": 30,
+      "minimum_rare": 18,
+      "exact_rare": true,
+      "selection": "typed_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "unopened_priority": -100,
+      "is_premium": true,
+      "special_pool": "reviewed_all_admitted",
+      "specials_satisfy_rare_guarantee": true,
+      "minimum_gold": 30,
+      "consumable_pool": "training_injury_misc_no_crowd_v3",
+      "club_item_pool": "supplied_club_items_v1",
+      "tier_counts": {
+        "bronze": 0,
+        "silver": 0,
+        "gold": 30
+      }
+    },
+    "revival_consumables_balanced_v3": {
+      "provenance": "revival_policy",
+      "name": "Consumables Pack",
+      "item_family": "non_player",
+      "quality": "mixed",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "tier_counts": {
+        "bronze": 4,
+        "silver": 4,
+        "gold": 4
+      },
+      "consumable_scope": "all",
+      "consumable_pool": "training_injury_misc_no_crowd_v3",
+      "selection": "typed_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "club_item_pool": "supplied_club_items_v1"
+    },
+    "revival_consumables_only_v4": {
+      "provenance": "revival_policy",
+      "name": "Consumables Pack",
+      "item_family": "consumable",
+      "quality": "mixed",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "tier_counts": {
+        "bronze": 4,
+        "silver": 4,
+        "gold": 4
+      },
+      "selection": "typed_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "consumable_scope": "all",
+      "consumable_pool": "training_injury_misc_no_crowd_v3"
+    },
+    "revival_customization_v1": {
+      "provenance": "revival_policy",
+      "name": "Customization Pack",
+      "item_family": "club_item",
+      "quality": "mixed",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "exact_rare": true,
+      "tier_counts": {
+        "bronze": 4,
+        "silver": 4,
+        "gold": 4
+      },
+      "selection": "typed_tier_quota_v1",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "club_item_pool": "supplied_club_items_v1"
+    },
+    "revival_bronze_special_reward_v1": {
+      "provenance": "revival_policy",
+      "name": "Bronze Special Pack",
+      "quality": "bronze",
+      "item_family": "player",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "reviewed_tier_special_v1",
+      "special_pool": "reviewed_all_admitted",
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported"
+    },
+    "revival_silver_special_reward_v1": {
+      "provenance": "revival_policy",
+      "name": "Silver Special Pack",
+      "quality": "silver",
+      "item_family": "player",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "reviewed_tier_special_v1",
+      "special_pool": "reviewed_all_admitted",
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported"
+    },
+    "revival_carnival_david_luiz_reward_v1": {
+      "provenance": "revival_policy",
+      "name": "Carnival David Luiz",
+      "quality": "gold",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "reconstructed_special_test",
+      "weights": "one explicitly reviewed historical version; not pack odds",
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_versions": [
+        "brazilian_carnival:davidluiz"
+      ]
+    },
+    "revival_single_consumable_5002007_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002007
+    },
+    "revival_single_consumable_5002008_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002008
+    },
+    "revival_single_consumable_5002009_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002009
+    },
+    "revival_single_consumable_5002010_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002010
+    },
+    "revival_single_consumable_5002011_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002011
+    },
+    "revival_single_consumable_5002012_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002012
+    },
+    "revival_single_consumable_5002013_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002013
+    },
+    "revival_single_consumable_5002014_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002014
+    },
+    "revival_single_consumable_5002015_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002015
+    },
+    "revival_single_consumable_5002019_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002019
+    },
+    "revival_single_consumable_5002020_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002020
+    },
+    "revival_single_consumable_5002021_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002021
+    },
+    "revival_single_consumable_5002022_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002022
+    },
+    "revival_single_consumable_5002023_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002023
+    },
+    "revival_single_consumable_5002024_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002024
+    },
+    "revival_single_consumable_5002025_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002025
+    },
+    "revival_single_consumable_5002026_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002026
+    },
+    "revival_single_consumable_5002027_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002027
+    },
+    "revival_single_consumable_5002028_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002028
+    },
+    "revival_single_consumable_5002029_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002029
+    },
+    "revival_single_consumable_5002030_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Healing",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5002030
+    },
+    "revival_single_consumable_5003001_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003001
+    },
+    "revival_single_consumable_5003002_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003002
+    },
+    "revival_single_consumable_5003003_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003003
+    },
+    "revival_single_consumable_5003004_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003004
+    },
+    "revival_single_consumable_5003005_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003005
+    },
+    "revival_single_consumable_5003006_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003006
+    },
+    "revival_single_consumable_5003007_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003007
+    },
+    "revival_single_consumable_5003008_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003008
+    },
+    "revival_single_consumable_5003009_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003009
+    },
+    "revival_single_consumable_5003010_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003010
+    },
+    "revival_single_consumable_5003011_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003011
+    },
+    "revival_single_consumable_5003012_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003012
+    },
+    "revival_single_consumable_5003013_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003013
+    },
+    "revival_single_consumable_5003014_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003014
+    },
+    "revival_single_consumable_5003015_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003015
+    },
+    "revival_single_consumable_5003016_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003016
+    },
+    "revival_single_consumable_5003017_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003017
+    },
+    "revival_single_consumable_5003018_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003018
+    },
+    "revival_single_consumable_5003019_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003019
+    },
+    "revival_single_consumable_5003020_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003020
+    },
+    "revival_single_consumable_5003021_v1": {
+      "provenance": "revival_policy",
+      "name": "Goalkeeper Training",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003021
+    },
+    "revival_single_consumable_5003022_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003022
+    },
+    "revival_single_consumable_5003023_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003023
+    },
+    "revival_single_consumable_5003024_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003024
+    },
+    "revival_single_consumable_5003025_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003025
+    },
+    "revival_single_consumable_5003026_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003026
+    },
+    "revival_single_consumable_5003027_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003027
+    },
+    "revival_single_consumable_5003028_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003028
+    },
+    "revival_single_consumable_5003029_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003029
+    },
+    "revival_single_consumable_5003030_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003030
+    },
+    "revival_single_consumable_5003031_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003031
+    },
+    "revival_single_consumable_5003032_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003032
+    },
+    "revival_single_consumable_5003033_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003033
+    },
+    "revival_single_consumable_5003034_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003034
+    },
+    "revival_single_consumable_5003035_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003035
+    },
+    "revival_single_consumable_5003036_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003036
+    },
+    "revival_single_consumable_5003037_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003037
+    },
+    "revival_single_consumable_5003038_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003038
+    },
+    "revival_single_consumable_5003039_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003039
+    },
+    "revival_single_consumable_5003040_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "bronze",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003040
+    },
+    "revival_single_consumable_5003041_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "silver",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003041
+    },
+    "revival_single_consumable_5003042_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Training",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003042
+    },
+    "revival_single_consumable_5003043_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003043
+    },
+    "revival_single_consumable_5003044_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003044
+    },
+    "revival_single_consumable_5003045_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003045
+    },
+    "revival_single_consumable_5003046_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003046
+    },
+    "revival_single_consumable_5003047_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003047
+    },
+    "revival_single_consumable_5003048_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003048
+    },
+    "revival_single_consumable_5003049_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003049
+    },
+    "revival_single_consumable_5003050_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003050
+    },
+    "revival_single_consumable_5003051_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003051
+    },
+    "revival_single_consumable_5003052_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003052
+    },
+    "revival_single_consumable_5003053_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003053
+    },
+    "revival_single_consumable_5003054_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003054
+    },
+    "revival_single_consumable_5003055_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003055
+    },
+    "revival_single_consumable_5003056_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003056
+    },
+    "revival_single_consumable_5003057_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003057
+    },
+    "revival_single_consumable_5003058_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 0,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003058
+    },
+    "revival_single_consumable_5003059_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003059
+    },
+    "revival_single_consumable_5003060_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003060
+    },
+    "revival_single_consumable_5003061_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003061
+    },
+    "revival_single_consumable_5003062_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003062
+    },
+    "revival_single_consumable_5003063_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003063
+    },
+    "revival_single_consumable_5003064_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003064
+    },
+    "revival_single_consumable_5003065_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003065
+    },
+    "revival_single_consumable_5003066_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003066
+    },
+    "revival_single_consumable_5003067_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003067
+    },
+    "revival_single_consumable_5003068_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003068
+    },
+    "revival_single_consumable_5003069_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003069
+    },
+    "revival_single_consumable_5003070_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003070
+    },
+    "revival_single_consumable_5003071_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003071
+    },
+    "revival_single_consumable_5003072_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003072
+    },
+    "revival_single_consumable_5003073_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003073
+    },
+    "revival_single_consumable_5003074_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003074
+    },
+    "revival_single_consumable_5003075_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003075
+    },
+    "revival_single_consumable_5003076_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003076
+    },
+    "revival_single_consumable_5003077_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003077
+    },
+    "revival_single_consumable_5003078_v1": {
+      "provenance": "revival_policy",
+      "name": "Player Position",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003078
+    },
+    "revival_single_consumable_5003079_v1": {
+      "provenance": "revival_policy",
+      "name": "Manager Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003079
+    },
+    "revival_single_consumable_5003080_v1": {
+      "provenance": "revival_policy",
+      "name": "Manager Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003080
+    },
+    "revival_single_consumable_5003081_v1": {
+      "provenance": "revival_policy",
+      "name": "Manager Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003081
+    },
+    "revival_single_consumable_5003082_v1": {
+      "provenance": "revival_policy",
+      "name": "Manager Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003082
+    },
+    "revival_single_consumable_5003083_v1": {
+      "provenance": "revival_policy",
+      "name": "Manager Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003083
+    },
+    "revival_single_consumable_5003084_v1": {
+      "provenance": "revival_policy",
+      "name": "Manager Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003084
+    },
+    "revival_single_consumable_5003085_v1": {
+      "provenance": "revival_policy",
+      "name": "Manager Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003085
+    },
+    "revival_single_consumable_5003086_v1": {
+      "provenance": "revival_policy",
+      "name": "Manager Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003086
+    },
+    "revival_single_consumable_5003087_v1": {
+      "provenance": "revival_policy",
+      "name": "Manager Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003087
+    },
+    "revival_single_consumable_5003088_v1": {
+      "provenance": "revival_policy",
+      "name": "Manager Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003088
+    },
+    "revival_single_consumable_5003089_v1": {
+      "provenance": "revival_policy",
+      "name": "Manager Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003089
+    },
+    "revival_single_consumable_5003090_v1": {
+      "provenance": "revival_policy",
+      "name": "Manager Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003090
+    },
+    "revival_single_consumable_5003091_v1": {
+      "provenance": "revival_policy",
+      "name": "Manager Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003091
+    },
+    "revival_single_consumable_5003092_v1": {
+      "provenance": "revival_policy",
+      "name": "Manager Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003092
+    },
+    "revival_single_consumable_5003093_v1": {
+      "provenance": "revival_policy",
+      "name": "Manager Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003093
+    },
+    "revival_single_consumable_5003094_v1": {
+      "provenance": "revival_policy",
+      "name": "Manager Formation",
+      "quality": "gold",
+      "item_family": "consumable",
+      "item_count": 1,
+      "minimum_rare": 1,
+      "selection": "specific_supplied_consumable_v1",
+      "resource_id": 5003094
+    },
+    "revival_brazil_gold_players_specials_v1": {
+      "provenance": "revival_policy",
+      "name": "BRAZIL PACK",
+      "quality": "gold",
+      "item_count": 12,
+      "minimum_rare": 3,
+      "selection": "reviewed_specials_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "exact_rare": true,
+      "special_pool": "reviewed_all_admitted",
+      "special_weight": 1,
+      "minimum_special": 0,
+      "unopened_priority": -100,
+      "specials_satisfy_rare_guarantee": true,
+      "nationality": 54
+    },
+    "revival_starter_gold_rares_specials_v1": {
+      "provenance": "revival_policy",
+      "name": "STARTER PACK",
+      "quality": "gold",
+      "item_count": 6,
+      "minimum_rare": 6,
+      "selection": "reviewed_specials_sha256_without_replacement",
+      "weights": {
+        "common": 1,
+        "rare": 1
+      },
+      "new_player_fitness": 99,
+      "new_player_formation": "seeded_random_supported",
+      "special_pool": "reviewed_all_admitted",
+      "special_weight": 1,
+      "minimum_special": 0,
+      "unopened_priority": -100,
+      "specials_satisfy_rare_guarantee": true
+    }
+  }
+}

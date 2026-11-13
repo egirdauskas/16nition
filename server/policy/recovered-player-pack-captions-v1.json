@@ -1,0 +1,27 @@
+{
+  "version": "recovered_player_pack_captions_v1",
+  "classification": "recovered_supplied_stock_text",
+  "source": {
+    "file": "reports/overnight/2026-10-13-native-packs/supplied/patch.26.com.ea.gp.fifaworld-eng_us.db",
+    "sha256": "a7d47d85769e922e2df6620e4c388a25a7fcae3cb4703f36d36b19de3d3511b2",
+    "valid_rows": 15698,
+    "effective_archive": "input/patch.26.com.ea.gp.fifaworld.obb",
+    "member": "eng_us.db"
+  },
+  "limits": "Shared supplied locale text, not a Mobile productID or odds certificate. All three RarePlayers aliases agree.",
+  "definitions": {
+    "revival_rare_players_v1": {
+      "NAME": {
+        "key": "FUT_STORE_PACK_405_NAME",
+        "row": 14001,
+        "value": "RARE PLAYERS PACK"
+      },
+      "SHORT": null,
+      "DESC": {
+        "key": "FUT_STORE_PACK_405_DESC",
+        "row": 11290,
+        "value": "The most unique top-rated players, all in a single pack! Includes 12 items, all players, all Gold, all Rare."
+      }
+    }
+  }
+}

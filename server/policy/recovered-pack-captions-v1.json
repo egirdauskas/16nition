@@ -1,0 +1,103 @@
+{
+  "version": "recovered_pack_captions_v1",
+  "classification": "recovered_supplied_stock_text",
+  "source": {
+    "file": "reports/overnight/2026-10-13-native-packs/supplied/patch.26.com.ea.gp.fifaworld-eng_us.db",
+    "sha256": "a7d47d85769e922e2df6620e4c388a25a7fcae3cb4703f36d36b19de3d3511b2",
+    "valid_rows": 15698,
+    "effective_archive": "input/patch.26.com.ea.gp.fifaworld.obb",
+    "member": "eng_us.db"
+  },
+  "definitions": {
+    "revival_bronze_mixed_v1": {
+      "NAME": {
+        "key": "BronzePack_name",
+        "row": 7111,
+        "value": "Bronze Pack"
+      },
+      "SHORT": {
+        "key": "BronzePack_Con",
+        "row": 2171,
+        "value": "12 items, mostly bronze, 1 rare."
+      },
+      "DESC": null
+    },
+    "revival_premium_bronze_mixed_v1": {
+      "NAME": {
+        "key": "PBronzePack_name",
+        "row": 11495,
+        "value": "Premium Bronze Pack"
+      },
+      "SHORT": {
+        "key": "PBronzePack_con",
+        "row": 10738,
+        "value": "12 items, mostly bronze, 3 rare."
+      },
+      "DESC": {
+        "key": "PBronzePack_desc",
+        "row": 14477,
+        "value": "For those looking for the highest quality bronze items, this is the clear choice."
+      }
+    },
+    "revival_silver_mixed_v1": {
+      "NAME": {
+        "key": "SilverPack_name",
+        "row": 14349,
+        "value": "Silver Pack"
+      },
+      "SHORT": {
+        "key": "SilverPack_Con",
+        "row": 15148,
+        "value": "12 items, mostly silver, 1 rare "
+      },
+      "DESC": null
+    },
+    "revival_premium_silver_mixed_v1": {
+      "NAME": {
+        "key": "PSilverPack_name",
+        "row": 2108,
+        "value": "Premium Silver Pack"
+      },
+      "SHORT": {
+        "key": "PsilverPack_con",
+        "row": 7505,
+        "value": "12 items, mostly silver, 3 rare."
+      },
+      "DESC": {
+        "key": "PSilverPack_desc",
+        "row": 7483,
+        "value": "For those looking for the highest quality silver items, this is the clear choice."
+      }
+    },
+    "revival_gold_mixed_v1": {
+      "NAME": {
+        "key": "GoldPack_Name",
+        "row": 11735,
+        "value": "Gold Pack"
+      },
+      "SHORT": {
+        "key": "GoldPack_Con",
+        "row": 979,
+        "value": "12 items, mostly Gold, 1 rare"
+      },
+      "DESC": null
+    },
+    "revival_premium_gold_mixed_v1": {
+      "NAME": {
+        "key": "PGoldPack_name",
+        "row": 9532,
+        "value": "Premium Gold Pack"
+      },
+      "SHORT": {
+        "key": "PGoldPack_con",
+        "row": 1557,
+        "value": "12 items, mostly gold, 3 rare."
+      },
+      "DESC": {
+        "key": "PGoldPack_desc",
+        "row": 12762,
+        "value": "The best pack for finding those elite players to fill out your best squad."
+      }
+    }
+  }
+}

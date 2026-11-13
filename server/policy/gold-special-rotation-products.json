@@ -1,0 +1,23 @@
+{
+  "persona_id": 1,
+  "products": [
+    {
+      "product_id": 40040,
+      "definition": "revival_all_special_players",
+      "coin_price": 7500,
+      "purchase_limit": 2,
+      "repeatable": true,
+      "featured": true,
+      "provenance": "revival_policy"
+    }
+  ],
+  "definition_overrides": {
+    "revival_gold_players": "revival_gold_players_specials_v2",
+    "revival_gold_starter": "revival_gold_starter_specials_v2",
+    "revival_premium_gold_players": "revival_premium_gold_players_specials_v2",
+    "revival_rare_gold_players": "revival_rare_gold_players_specials_v2",
+    "revival_jumbo_gold_players": "revival_jumbo_gold_players_specials_v2",
+    "revival_premium_gold_totw": "revival_premium_gold_totw_specials_v2",
+    "revival_mobile_tots_players": "revival_mobile_tots_players_specials_v2"
+  }
+}

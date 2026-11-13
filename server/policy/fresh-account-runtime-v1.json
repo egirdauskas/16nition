@@ -1,0 +1,39 @@
+{
+  "version": "fresh_account_runtime_v1",
+  "classification": "revival_policy",
+  "default_enabled": false,
+  "new_account_store": "latest_approved_catalog_directly",
+  "sealing": "only_for_new_specials_or_changed_odds",
+  "native_verification": "user_performs_end_to_end_testing",
+  "flags": [
+    "--fut-auth-code", "--victory-auth-code", "--victory-session", "--game-session",
+    "--settings", "--match-reset", "--user-info", "--purchased-items",
+    "--finalize-authentication", "--finalize-queue-prerequisites",
+    "--persona-accomplishments", "--user-credits", "--cycle-session",
+    "--classic-pack-art", "--native-paid-pack-presentation", "--native-consumable-display",
+    "--native-free-coins", "--native-free-packs", "--native-free-silver-packs",
+    "--native-free-bronze-packs", "--native-transfer-list", "--native-training-transfer-list",
+    "--native-quick-sell", "--staff-bonuses", "--squad-navigation", "--football-card-display",
+    "--save-squad", "--squad-mutations", "--inventory-mutations", "--club-inventory", "--apply-card",
+    "--play-game", "--goal-event", "--destroy-match", "--offline-create-match",
+    "--native-match-session", "--native-match-xp", "--native-season-completion",
+    "--native-simulation-discovery", "--native-simulation-create-ack",
+    "--native-simulation-play-ack", "--native-simulation-end-ack",
+    "--native-atomic-matches", "--native-report-end-identity", "--native-distinct-season-ids",
+    "--native-mixed-matches", "--native-played-report-end-identity",
+    "--native-atomic-season-rewards", "--native-season-coins", "--native-early-season-completion",
+    "--offline-season-choices-cycle", "--native-difficulty-rewards", "--native-season-forfeit",
+    "--native-match-forfeit", "--native-pack-sessions", "--squad-management",
+    "--native-season-prize-display", "--native-player-exchange-start",
+    "--offline-tournaments-start", "--offline-tournaments-sim"
+  ],
+  "policies": {
+    "--native-match-reward-policy": "native-match-coins.json",
+    "--offline-season-policy": "offline-seasons-revival.json",
+    "--native-match-pack-policy": "reward-store-parity-v1.json",
+    "--native-player-exchange-policy": "player-exchange-revival-v2.json",
+    "--offline-tournaments-preview": "offline-tournament-catalog-v2.json",
+    "--offline-tournaments-rewards": "tournament-rewards-v2.json",
+    "--market-policy": "market-economy-v1.json"
+  }
+}

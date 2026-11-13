@@ -1,0 +1,24 @@
+{
+  "version": "quick_sell_fifa16_approx_v1",
+  "classification": "revival_policy",
+  "basis": "User20October2026 authorized approximation after fruitless Mobile binary/table recovery. FIFA16console discard guide, not recovered Mobile prices.",
+  "source": "https://fifauteam.com/fifa-16-ultimate-team-quick-sell-prices/",
+  "source_date": "2015-09-09",
+  "rounding": "half_up_per_item",
+  "player_multipliers": {
+    "bronze": {"common": [3, 10], "rare": [3, 4], "special": [20, 1]},
+    "silver": {"common": [3, 2], "rare": [7, 2], "special": [70, 1]},
+    "gold": {"common": [4, 1], "rare": [8, 1], "special": [122, 1]}
+  },
+  "special_scope": "All approved reconstructed Mobile versions use actual special rating and the historical IF bracket. Extension to all reviewed families is approximate; no fabricated resource IDs.",
+  "consumables": {
+    "training": {"bronze": [3, 12], "silver": [13, 37], "gold": [34, 67]},
+    "healing": {"bronze": [3, 12], "silver": [13, 37], "gold": [32, 60]},
+    "position": {"gold": [67, 67]},
+    "formation": {"gold": [34, 67]}
+  },
+  "formation_mapping": "Mobile player/manager formation cards have no matching FIFA16console product. Approximate using the training tier/rarity bracket.",
+  "misc_token_value": 0,
+  "misc_scope": [231, 232, 233],
+  "scope": "Owned unassigned players and current supported pool consumables only; active squad, trade/club items, filtered class0 and CapacityCrowd excluded. No taxes or match coin multiplier."
+}

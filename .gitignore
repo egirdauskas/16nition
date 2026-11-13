@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+dist/
+launcher/app/src/main/assets/game-recipe.zip

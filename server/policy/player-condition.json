@@ -1,0 +1,7 @@
+{
+  "version": "offline_player_condition_v1",
+  "classification": "revival_policy",
+  "fitness": 99,
+  "morale": 99,
+  "persist_native_condition_loss": false
+}

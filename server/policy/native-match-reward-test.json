@@ -1,0 +1,10 @@
+{
+  "classification": "revival_policy",
+  "version": "native_match_reward_test_v1",
+  "scope": "isolated_native_simulation",
+  "default_enabled": false,
+  "match_coins": 25,
+  "season_rewards_enabled": false,
+  "xp_enabled": false,
+  "rationale": "Explicit user-authorized first positive persisted native reward proof; modest 25-coin participation test, not recovered EA reward data. Exactly one pinned isolated fixture."
+}

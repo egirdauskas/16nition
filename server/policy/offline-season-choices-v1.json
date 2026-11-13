@@ -1,0 +1,1808 @@
+{
+  "version": "offline_season_choices_v1",
+  "classification": "revival_policy",
+  "enabled_by_default": false,
+  "runtime_rewards": "unchanged_existing_division_policy",
+  "selection_basis": "49 FIFAUTeam entries; user explicitly selects its Division7 and distinct-nationality WorldTour interpretation on2026-10-28",
+  "fixture_order_basis": "revival_fixture_order_v1; supplied league-club pools, no recovered historical opponent order claimed",
+  "eligibility_basis": "guide constraints with explicit user WorldTourD7/D6>=4distinct starters override; D3German2.Bundesliga absence supplemented by FIFPlay explicit unrestricted entry",
+  "source_sha256": {
+    "reports/season-choice-research/2026-10-28/qwen/20261028-072119-499781/tool-001/source.bin": "b8521e002ed9a1fdbb8281d66fe841f67c9a2d3432342729b68b63bd93b3e823",
+    "reports/season-choice-research/2026-10-28/qwen/20261028-072119-499781/tool-002/source.bin": "d9e5795a5b656d9ac9add3f4d2b24a2b291127f9711325577451ff9eba4e8af8"
+  },
+  "competitions": [
+    {
+      "key": "d10_ultimate_league",
+      "division": 10,
+      "name": "Ultimate League",
+      "opponent_league_id": null,
+      "rules": [],
+      "difficulty_codes": "PSPPPWPSPP",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[5]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "PSPPPWPSPP",
+        "raw_stars": "1",
+        "outcomes": {
+          "title": {
+            "points_raw": "12",
+            "reward_raw": "1,900 c"
+          },
+          "promotion": {
+            "points_raw": "9",
+            "reward_raw": "1,500 c"
+          },
+          "holding": {
+            "points_raw": "0",
+            "reward_raw": "300 c"
+          }
+        },
+        "relegation_reward_raw": "n.a.",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d10_world_tour",
+      "division": 10,
+      "name": "World Tour",
+      "opponent_league_id": null,
+      "rules": [],
+      "difficulty_codes": "BABAABASAA",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[6]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "BABAABASAA",
+        "raw_stars": "0.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "15",
+            "reward_raw": "1,100 c"
+          },
+          "promotion": {
+            "points_raw": "12",
+            "reward_raw": "900 c"
+          },
+          "holding": {
+            "points_raw": "0",
+            "reward_raw": "300 c"
+          }
+        },
+        "relegation_reward_raw": "n.a.",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d10_a_league",
+      "division": 10,
+      "name": "A-League",
+      "opponent_league_id": 351,
+      "rules": [],
+      "difficulty_codes": "AAAASPSASA",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[7]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "AAAASPSASA",
+        "raw_stars": "0.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "12",
+            "reward_raw": "1,200 c"
+          },
+          "promotion": {
+            "points_raw": "9",
+            "reward_raw": "1,000 c"
+          },
+          "holding": {
+            "points_raw": "0",
+            "reward_raw": "300 c"
+          }
+        },
+        "relegation_reward_raw": "n.a.",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d10_football_league_2",
+      "division": 10,
+      "name": "Football League 2",
+      "opponent_league_id": 61,
+      "rules": [],
+      "difficulty_codes": "ASSPASSPSS",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[8]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "ASSPASSPSS",
+        "raw_stars": "0.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "12",
+            "reward_raw": "1,400 c + BP"
+          },
+          "promotion": {
+            "points_raw": "9",
+            "reward_raw": "1,100 c"
+          },
+          "holding": {
+            "points_raw": "0",
+            "reward_raw": "300 c"
+          }
+        },
+        "relegation_reward_raw": "n.a.",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d9_ultimate_league",
+      "division": 9,
+      "name": "Ultimate League",
+      "opponent_league_id": null,
+      "rules": [],
+      "difficulty_codes": "PWPSPWPPPP",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[12]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "PWPSPWPPPP",
+        "raw_stars": "2",
+        "outcomes": {
+          "title": {
+            "points_raw": "14",
+            "reward_raw": "2,400 c"
+          },
+          "promotion": {
+            "points_raw": "11",
+            "reward_raw": "1,900 c"
+          },
+          "holding": {
+            "points_raw": "7",
+            "reward_raw": "1,500 c"
+          }
+        },
+        "relegation_reward_raw": "1,000 c",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d9_world_tour",
+      "division": 9,
+      "name": "World Tour",
+      "opponent_league_id": null,
+      "rules": [
+        {
+          "kind": "chemistry",
+          "operator": ">=",
+          "value": 80
+        }
+      ],
+      "difficulty_codes": "AASASASAAS",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[13]",
+        "raw_entry_requirements": "Min. Team Chemistry: 80",
+        "raw_er": "A",
+        "raw_difficulty_codes": "AASASASAAS",
+        "raw_stars": "1",
+        "outcomes": {
+          "title": {
+            "points_raw": "17",
+            "reward_raw": "1,700 c"
+          },
+          "promotion": {
+            "points_raw": "14",
+            "reward_raw": "1,400 c"
+          },
+          "holding": {
+            "points_raw": "7",
+            "reward_raw": "1,100 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d9_alj_league",
+      "division": 9,
+      "name": "ALJ League",
+      "opponent_league_id": 350,
+      "rules": [],
+      "difficulty_codes": "SSSSPSPPSS",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[14]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "SSSSPSPPSS",
+        "raw_stars": "1",
+        "outcomes": {
+          "title": {
+            "points_raw": "14",
+            "reward_raw": "1,900 c + JBP"
+          },
+          "promotion": {
+            "points_raw": "11",
+            "reward_raw": "1,500 c"
+          },
+          "holding": {
+            "points_raw": "7",
+            "reward_raw": "1,200 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d9_airtricity_league",
+      "division": 9,
+      "name": "Airtricity League",
+      "opponent_league_id": 65,
+      "rules": [],
+      "difficulty_codes": "SPSSSSPSSS",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[15]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "SPSSSSPSSS",
+        "raw_stars": "0.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "14",
+            "reward_raw": "1,500 c"
+          },
+          "promotion": {
+            "points_raw": "11",
+            "reward_raw": "1,200 c"
+          },
+          "holding": {
+            "points_raw": "7",
+            "reward_raw": "900 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d8_ultimate_league",
+      "division": 8,
+      "name": "Ultimate League",
+      "opponent_league_id": null,
+      "rules": [],
+      "difficulty_codes": "PPPWWWPWPP",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[19]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "PPPWWWPWPP",
+        "raw_stars": "2",
+        "outcomes": {
+          "title": {
+            "points_raw": "19",
+            "reward_raw": "2,800 c + BP"
+          },
+          "promotion": {
+            "points_raw": "16",
+            "reward_raw": "2,600 c"
+          },
+          "holding": {
+            "points_raw": "9",
+            "reward_raw": "2,000 c"
+          }
+        },
+        "relegation_reward_raw": "1,400 c",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d8_world_tour",
+      "division": 8,
+      "name": "World Tour",
+      "opponent_league_id": null,
+      "rules": [],
+      "difficulty_codes": "SASASSAASS",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[20]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "SASASSAASS",
+        "raw_stars": "1",
+        "outcomes": {
+          "title": {
+            "points_raw": "19",
+            "reward_raw": "1,600 c + BCP"
+          },
+          "promotion": {
+            "points_raw": "16",
+            "reward_raw": "1,700 c"
+          },
+          "holding": {
+            "points_raw": "9",
+            "reward_raw": "1,300 c + LPP"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d8_chile_campeonato",
+      "division": 8,
+      "name": "Chile Campeonato",
+      "opponent_league_id": 335,
+      "rules": [],
+      "difficulty_codes": "SPSSSPWPPW",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[21]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "SPSSSPWPPW",
+        "raw_stars": "1.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "19",
+            "reward_raw": "2,900 c"
+          },
+          "promotion": {
+            "points_raw": "16",
+            "reward_raw": "2,300 c"
+          },
+          "holding": {
+            "points_raw": "9",
+            "reward_raw": "1,800 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d8_spfl",
+      "division": 8,
+      "name": "SPFL",
+      "opponent_league_id": 50,
+      "rules": [],
+      "difficulty_codes": "SSPSPSSPSS",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[22]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "SSPSPSSPSS",
+        "raw_stars": "1",
+        "outcomes": {
+          "title": {
+            "points_raw": "19",
+            "reward_raw": "1,900 c"
+          },
+          "promotion": {
+            "points_raw": "16",
+            "reward_raw": "1,500 c"
+          },
+          "holding": {
+            "points_raw": "9",
+            "reward_raw": "1,200 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d7_ultimate_league",
+      "division": 7,
+      "name": "Ultimate League",
+      "opponent_league_id": null,
+      "rules": [],
+      "difficulty_codes": "WPWLWPWWPP",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[26]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "WPWLWPWWPP",
+        "raw_stars": "2.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "18",
+            "reward_raw": "3,600 c + PBP"
+          },
+          "promotion": {
+            "points_raw": "15",
+            "reward_raw": "3,100 c"
+          },
+          "holding": {
+            "points_raw": "10",
+            "reward_raw": "2,300 c"
+          }
+        },
+        "relegation_reward_raw": "1,700 c",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d7_world_tour",
+      "division": 7,
+      "name": "World Tour",
+      "opponent_league_id": null,
+      "rules": [
+        {
+          "kind": "chemistry",
+          "operator": ">=",
+          "value": 75
+        },
+        {
+          "kind": "distinct_nationalities",
+          "operator": ">=",
+          "value": 4,
+          "scope": "starting11"
+        }
+      ],
+      "difficulty_codes": "SPASSPSSPP",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[27]",
+        "raw_entry_requirements": "Min. number of players from one nationality: 4 in the squad's Starting 11 Min. Team Chemistry: 75",
+        "raw_er": "B",
+        "raw_difficulty_codes": "SPASSPSSPP",
+        "raw_stars": "1",
+        "outcomes": {
+          "title": {
+            "points_raw": "23",
+            "reward_raw": "2,200 c + SCP"
+          },
+          "promotion": {
+            "points_raw": "20",
+            "reward_raw": "2,400 c"
+          },
+          "holding": {
+            "points_raw": "12",
+            "reward_raw": "1,800 c + LPP"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d7_football_league_1",
+      "division": 7,
+      "name": "Football League 1",
+      "opponent_league_id": 60,
+      "rules": [],
+      "difficulty_codes": "SPPSPPPPWP",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[28]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "SPPSPPPPWP",
+        "raw_stars": "1",
+        "outcomes": {
+          "title": {
+            "points_raw": "23",
+            "reward_raw": "2,900 c"
+          },
+          "promotion": {
+            "points_raw": "20",
+            "reward_raw": "2,300 c"
+          },
+          "holding": {
+            "points_raw": "12",
+            "reward_raw": "1,700 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d7_polska_liga",
+      "division": 7,
+      "name": "Polska Liga",
+      "opponent_league_id": 66,
+      "rules": [],
+      "difficulty_codes": "PWPSPPPSPP",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[29]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "PWPSPPPSPP",
+        "raw_stars": "1.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "23",
+            "reward_raw": "2,400 c + SGP"
+          },
+          "promotion": {
+            "points_raw": "20",
+            "reward_raw": "2,300 c"
+          },
+          "holding": {
+            "points_raw": "12",
+            "reward_raw": "1,700 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d7_superliga",
+      "division": 7,
+      "name": "Superliga",
+      "opponent_league_id": 1,
+      "rules": [],
+      "difficulty_codes": "PWPPWWWPWP",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[30]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "PWPPWWWPWP",
+        "raw_stars": "1.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "23",
+            "reward_raw": "4,000 c"
+          },
+          "promotion": {
+            "points_raw": "20",
+            "reward_raw": "3,200 c"
+          },
+          "holding": {
+            "points_raw": "12",
+            "reward_raw": "2,300 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d6_ultimate_league",
+      "division": 6,
+      "name": "Ultimate League",
+      "opponent_league_id": null,
+      "rules": [],
+      "difficulty_codes": "PPPWPSPSPP",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[34]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "PPPWPSPSPP",
+        "raw_stars": "2.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "20",
+            "reward_raw": "3,600 c + SP"
+          },
+          "promotion": {
+            "points_raw": "17",
+            "reward_raw": "3,600 c"
+          },
+          "holding": {
+            "points_raw": "12",
+            "reward_raw": "2,600 c"
+          }
+        },
+        "relegation_reward_raw": "1,900 c",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d6_world_tour",
+      "division": 6,
+      "name": "World Tour",
+      "opponent_league_id": null,
+      "rules": [
+        {
+          "kind": "chemistry",
+          "operator": ">=",
+          "value": 75
+        },
+        {
+          "kind": "distinct_nationalities",
+          "operator": ">=",
+          "value": 4,
+          "scope": "starting11"
+        }
+      ],
+      "difficulty_codes": "ASSASSASSS",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[35]",
+        "raw_entry_requirements": "Min. number of players from one nationality: 4 in the squad's Starting 11 Min. Team Chemistry: 75",
+        "raw_er": "B",
+        "raw_difficulty_codes": "ASSASSASSS",
+        "raw_stars": "1.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "20",
+            "reward_raw": "2,200 c + SCP"
+          },
+          "promotion": {
+            "points_raw": "17",
+            "reward_raw": "2,000 c"
+          },
+          "holding": {
+            "points_raw": "12",
+            "reward_raw": "1,500 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d6_football_league_1",
+      "division": 6,
+      "name": "Football League 1",
+      "opponent_league_id": 60,
+      "rules": [],
+      "difficulty_codes": "ASSASSSSPS",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[36]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "ASSASSSSPS",
+        "raw_stars": "1",
+        "outcomes": {
+          "title": {
+            "points_raw": "20",
+            "reward_raw": "2,800 c"
+          },
+          "promotion": {
+            "points_raw": "17",
+            "reward_raw": "2,200 c"
+          },
+          "holding": {
+            "points_raw": "12",
+            "reward_raw": "1,600 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d6_polska_liga",
+      "division": 6,
+      "name": "Polska Liga",
+      "opponent_league_id": 66,
+      "rules": [],
+      "difficulty_codes": "SPSASSSASS",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[37]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "SPSASSSASS",
+        "raw_stars": "1",
+        "outcomes": {
+          "title": {
+            "points_raw": "20",
+            "reward_raw": "2,900 c"
+          },
+          "promotion": {
+            "points_raw": "17",
+            "reward_raw": "2,300 c"
+          },
+          "holding": {
+            "points_raw": "12",
+            "reward_raw": "1,700 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d6_superliga",
+      "division": 6,
+      "name": "Superliga",
+      "opponent_league_id": 1,
+      "rules": [],
+      "difficulty_codes": "SPSSPPSSPS",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[38]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "SPSSPPSSPS",
+        "raw_stars": "1",
+        "outcomes": {
+          "title": {
+            "points_raw": "20",
+            "reward_raw": "3,800 c"
+          },
+          "promotion": {
+            "points_raw": "17",
+            "reward_raw": "3,000 c"
+          },
+          "holding": {
+            "points_raw": "12",
+            "reward_raw": "2,200 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d5_ultimate_league",
+      "division": 5,
+      "name": "Ultimate League",
+      "opponent_league_id": null,
+      "rules": [],
+      "difficulty_codes": "WPWLWWLLWW",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[42]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "WPWLWWLLWW",
+        "raw_stars": "2.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "22",
+            "reward_raw": "4,500 c + PSP"
+          },
+          "promotion": {
+            "points_raw": "19",
+            "reward_raw": "4,200 c"
+          },
+          "holding": {
+            "points_raw": "13",
+            "reward_raw": "2,900 c"
+          }
+        },
+        "relegation_reward_raw": "2,000 c",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d5_world_tour",
+      "division": 5,
+      "name": "World Tour",
+      "opponent_league_id": null,
+      "rules": [
+        {
+          "kind": "chemistry",
+          "operator": ">=",
+          "value": 100
+        }
+      ],
+      "difficulty_codes": "PSPSPSSPSP",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[43]",
+        "raw_entry_requirements": "Min. Team Chemistry: 100",
+        "raw_er": "C",
+        "raw_difficulty_codes": "PSPSPSSPSP",
+        "raw_stars": "1.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "25",
+            "reward_raw": "2,300 c + MCP"
+          },
+          "promotion": {
+            "points_raw": "22",
+            "reward_raw": "2,300 c"
+          },
+          "holding": {
+            "points_raw": "13",
+            "reward_raw": "1,600 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d5_raiffeisen_sl",
+      "division": 5,
+      "name": "Raiffeisen SL",
+      "opponent_league_id": 189,
+      "rules": [],
+      "difficulty_codes": "PSPPWSPWPP",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[44]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "PSPPWSPWPP",
+        "raw_stars": "1.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "25",
+            "reward_raw": "2,500 c + SCP"
+          },
+          "promotion": {
+            "points_raw": "22",
+            "reward_raw": "2,500 c"
+          },
+          "holding": {
+            "points_raw": "13",
+            "reward_raw": "1,800 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d5_ligue_2",
+      "division": 5,
+      "name": "Ligue 2",
+      "opponent_league_id": 17,
+      "rules": [],
+      "difficulty_codes": "WPSPPPWPPS",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[45]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "WPSPPPWPPS",
+        "raw_stars": "1.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "25",
+            "reward_raw": "2,700 c + SGP"
+          },
+          "promotion": {
+            "points_raw": "22",
+            "reward_raw": "2,600 c"
+          },
+          "holding": {
+            "points_raw": "13",
+            "reward_raw": "1,800 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d5_tippeligaen",
+      "division": 5,
+      "name": "Tippeligaen",
+      "opponent_league_id": 41,
+      "rules": [],
+      "difficulty_codes": "WWPWLWPWPP",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[46]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "WWPWLWPWPP",
+        "raw_stars": "2",
+        "outcomes": {
+          "title": {
+            "points_raw": "25",
+            "reward_raw": "5,200 c"
+          },
+          "promotion": {
+            "points_raw": "22",
+            "reward_raw": "4,200 c"
+          },
+          "holding": {
+            "points_raw": "13",
+            "reward_raw": "2,900 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d4_ultimate_league",
+      "division": 4,
+      "name": "Ultimate League",
+      "opponent_league_id": null,
+      "rules": [],
+      "difficulty_codes": "LWWWLLWLWL",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[50]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "LWWWLLWLWL",
+        "raw_stars": "3.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "24",
+            "reward_raw": "5,500 c + JSP"
+          },
+          "promotion": {
+            "points_raw": "21",
+            "reward_raw": "5,200 c"
+          },
+          "holding": {
+            "points_raw": "14",
+            "reward_raw": "3,300 c"
+          }
+        },
+        "relegation_reward_raw": "2,200 c",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d4_world_tour",
+      "division": 4,
+      "name": "World Tour",
+      "opponent_league_id": null,
+      "rules": [
+        {
+          "kind": "chemistry",
+          "operator": ">=",
+          "value": 100
+        }
+      ],
+      "difficulty_codes": "PPWPSSPSPP",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[51]",
+        "raw_entry_requirements": "Min. Team Chemistry: 100",
+        "raw_er": "C",
+        "raw_difficulty_codes": "PPWPSSPSPP",
+        "raw_stars": "1.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "27",
+            "reward_raw": "2,400 c + GCP"
+          },
+          "promotion": {
+            "points_raw": "24",
+            "reward_raw": "3,100 c"
+          },
+          "holding": {
+            "points_raw": "14",
+            "reward_raw": "2,100 c+ LPP"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d4_allsvenskan",
+      "division": 4,
+      "name": "Allsvenskan",
+      "opponent_league_id": 56,
+      "rules": [],
+      "difficulty_codes": "PWPWPPWWPP",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[52]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "PWPWPPWWPP",
+        "raw_stars": "1.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "27",
+            "reward_raw": "2,500 c + SCP"
+          },
+          "promotion": {
+            "points_raw": "24",
+            "reward_raw": "2,500 c"
+          },
+          "holding": {
+            "points_raw": "14",
+            "reward_raw": "1,800 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d4_serie_b",
+      "division": 4,
+      "name": "Serie B",
+      "opponent_league_id": 32,
+      "rules": [],
+      "difficulty_codes": "PWPWWPPWPP",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[53]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "PWPWWPPWPP",
+        "raw_stars": "1.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "27",
+            "reward_raw": "3,200 c + GCP"
+          },
+          "promotion": {
+            "points_raw": "24",
+            "reward_raw": "3,000 c"
+          },
+          "holding": {
+            "points_raw": "14",
+            "reward_raw": "2,000 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d4_liga_adelante",
+      "division": 4,
+      "name": "Liga Adelante",
+      "opponent_league_id": 54,
+      "rules": [],
+      "difficulty_codes": "WPWLWWWPWW",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[54]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "WPWLWWWPWW",
+        "raw_stars": "2.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "27",
+            "reward_raw": "6,100 c"
+          },
+          "promotion": {
+            "points_raw": "24",
+            "reward_raw": "4,900 c"
+          },
+          "holding": {
+            "points_raw": "14",
+            "reward_raw": "3,300 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d3_ultimate_league",
+      "division": 3,
+      "name": "Ultimate League",
+      "opponent_league_id": null,
+      "rules": [],
+      "difficulty_codes": "WLLWLULLWL",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[58]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "WLLWLULLWL",
+        "raw_stars": "3.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "24",
+            "reward_raw": "6,000 c + JPSP"
+          },
+          "promotion": {
+            "points_raw": "21",
+            "reward_raw": "5,800 c"
+          },
+          "holding": {
+            "points_raw": "14",
+            "reward_raw": "3,700 c"
+          }
+        },
+        "relegation_reward_raw": "2,300 c",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d3_world_tour",
+      "division": 3,
+      "name": "World Tour",
+      "opponent_league_id": null,
+      "rules": [
+        {
+          "kind": "chemistry",
+          "operator": ">=",
+          "value": 100
+        }
+      ],
+      "difficulty_codes": "PPSPPWPSPP",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[59]",
+        "raw_entry_requirements": "Min. Team Chemistry: 100",
+        "raw_er": "C",
+        "raw_difficulty_codes": "PPSPPWPSPP",
+        "raw_stars": "1.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "26",
+            "reward_raw": "2,700 c + GCP"
+          },
+          "promotion": {
+            "points_raw": "23",
+            "reward_raw": "2,800 c"
+          },
+          "holding": {
+            "points_raw": "15",
+            "reward_raw": "1,800 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d3_mls",
+      "division": 3,
+      "name": "MLS",
+      "opponent_league_id": 39,
+      "rules": [],
+      "difficulty_codes": "WPPPWLWPPW",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[60]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "WPPPWLWPPW",
+        "raw_stars": "2",
+        "outcomes": {
+          "title": {
+            "points_raw": "26",
+            "reward_raw": "3,000 c + SCP"
+          },
+          "promotion": {
+            "points_raw": "23",
+            "reward_raw": "3,000 c"
+          },
+          "holding": {
+            "points_raw": "15",
+            "reward_raw": "1,900 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d3_2_bundesliga",
+      "division": 3,
+      "name": "2. Bundesliga",
+      "opponent_league_id": 20,
+      "rules": [],
+      "difficulty_codes": "WPPPWLWPPW",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[61]",
+        "raw_entry_requirements": null,
+        "raw_er": "",
+        "raw_difficulty_codes": "WPPPWLWPPW",
+        "raw_stars": "2",
+        "outcomes": {
+          "title": {
+            "points_raw": "27",
+            "reward_raw": "4,000 c"
+          },
+          "promotion": {
+            "points_raw": "24",
+            "reward_raw": "3,400 c"
+          },
+          "holding": {
+            "points_raw": "14",
+            "reward_raw": "2,200 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d3_l_championship",
+      "division": 3,
+      "name": "L. Championship",
+      "opponent_league_id": 14,
+      "rules": [],
+      "difficulty_codes": "WWLWWLWWLW",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[62]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "WWLWWLWWLW",
+        "raw_stars": "2.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "27",
+            "reward_raw": "7,200 c"
+          },
+          "promotion": {
+            "points_raw": "24",
+            "reward_raw": "5,800 c"
+          },
+          "holding": {
+            "points_raw": "14",
+            "reward_raw": "3,700 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d2_ultimate_league",
+      "division": 2,
+      "name": "Ultimate League",
+      "opponent_league_id": null,
+      "rules": [],
+      "difficulty_codes": "LLULULLULL",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[66]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "LLULULLULL",
+        "raw_stars": "4.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "24",
+            "reward_raw": "7,000 c + GP"
+          },
+          "promotion": {
+            "points_raw": "21",
+            "reward_raw": "7,100 c"
+          },
+          "holding": {
+            "points_raw": "14",
+            "reward_raw": "4,500 c"
+          }
+        },
+        "relegation_reward_raw": "2,800 c",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d2_world_tour",
+      "division": 2,
+      "name": "World Tour",
+      "opponent_league_id": null,
+      "rules": [
+        {
+          "kind": "players_sharing_league",
+          "operator": ">=",
+          "value": 11,
+          "scope": "starting11"
+        }
+      ],
+      "difficulty_codes": "PPWWPWPPWP",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[67]",
+        "raw_entry_requirements": "Min. number of players from one league: 11 in the squad's Starting 11",
+        "raw_er": "D",
+        "raw_difficulty_codes": "PPWWPWPPWP",
+        "raw_stars": "2",
+        "outcomes": {
+          "title": {
+            "points_raw": "28",
+            "reward_raw": "3,000 c + GCP"
+          },
+          "promotion": {
+            "points_raw": "26",
+            "reward_raw": "3,400 c"
+          },
+          "holding": {
+            "points_raw": "15",
+            "reward_raw": "2,200 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d2_eredivisie",
+      "division": 2,
+      "name": "Eredivisie",
+      "opponent_league_id": 10,
+      "rules": [],
+      "difficulty_codes": "WWLWWLWWWW",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[68]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "WWLWWLWWWW",
+        "raw_stars": "2.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "28",
+            "reward_raw": "5,400 c"
+          },
+          "promotion": {
+            "points_raw": "26",
+            "reward_raw": "4,300 c"
+          },
+          "holding": {
+            "points_raw": "15",
+            "reward_raw": "2,700 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d2_liga_portuguesa",
+      "division": 2,
+      "name": "Liga Portuguesa",
+      "opponent_league_id": 308,
+      "rules": [],
+      "difficulty_codes": "WWWWLWWLWW",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[69]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "WWWWLWWLWW",
+        "raw_stars": "2.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "28",
+            "reward_raw": "5,600 c"
+          },
+          "promotion": {
+            "points_raw": "26",
+            "reward_raw": "4,500 c"
+          },
+          "holding": {
+            "points_raw": "15",
+            "reward_raw": "2,900 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d2_russian_league",
+      "division": 2,
+      "name": "Russian League",
+      "opponent_league_id": 67,
+      "rules": [],
+      "difficulty_codes": "LWLWLWWLLW",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[70]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "LWLWLWWLLW",
+        "raw_stars": "3",
+        "outcomes": {
+          "title": {
+            "points_raw": "28",
+            "reward_raw": "6,400 c"
+          },
+          "promotion": {
+            "points_raw": "26",
+            "reward_raw": "5,100 c"
+          },
+          "holding": {
+            "points_raw": "15",
+            "reward_raw": "3,200 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d1_ultimate_league",
+      "division": 1,
+      "name": "Ultimate League",
+      "opponent_league_id": null,
+      "rules": [],
+      "difficulty_codes": "UUULUUUULU",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[74]",
+        "raw_entry_requirements": null,
+        "raw_er": "–",
+        "raw_difficulty_codes": "UUULUUUULU",
+        "raw_stars": "5",
+        "outcomes": {
+          "title": {
+            "points_raw": "30",
+            "reward_raw": "7,500 c + JGP"
+          },
+          "promotion": {
+            "points_raw": "n.a.",
+            "reward_raw": "n.a."
+          },
+          "holding": {
+            "points_raw": "15",
+            "reward_raw": "6,200 c"
+          }
+        },
+        "relegation_reward_raw": "3,500 c",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d1_world_tour",
+      "division": 1,
+      "name": "World Tour",
+      "opponent_league_id": null,
+      "rules": [
+        {
+          "kind": "players_sharing_league",
+          "operator": ">=",
+          "value": 11,
+          "scope": "starting11"
+        }
+      ],
+      "difficulty_codes": "WSPWWPPWLP",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[75]",
+        "raw_entry_requirements": "Min. number of players from one league: 11 in the squad's Starting 11",
+        "raw_er": "D",
+        "raw_difficulty_codes": "WSPWWPPWLP",
+        "raw_stars": "2.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "28",
+            "reward_raw": "3,000 c + CP"
+          },
+          "promotion": {
+            "points_raw": "n.a.",
+            "reward_raw": "n.a."
+          },
+          "holding": {
+            "points_raw": "15",
+            "reward_raw": "3,200 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d1_ligue_1",
+      "division": 1,
+      "name": "Ligue 1",
+      "opponent_league_id": 16,
+      "rules": [
+        {
+          "kind": "chemistry",
+          "operator": "==",
+          "value": 100
+        },
+        {
+          "kind": "players_from_named_league",
+          "operator": ">=",
+          "value": 11,
+          "scope": "starting11",
+          "league_id": 16
+        }
+      ],
+      "difficulty_codes": "WLWLWWLLWL",
+      "difficulty_source": "https://www.fifplay.com/fut-16-single-player-season/",
+      "difficulty_adoption_note": "Complete ten-match FIFPlay row replaces entire malformed nine-code FIFAUTeam row; source variant retained below.",
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[76]",
+        "raw_entry_requirements": "Min. number of players from Ligue 1 (French League): 11 in the squad's Starting 11. Exact Team Chemistry: 100",
+        "raw_er": "E",
+        "raw_difficulty_codes": "WLWLWWLWL",
+        "raw_stars": "3",
+        "outcomes": {
+          "title": {
+            "points_raw": "28",
+            "reward_raw": "5,500 c + GP"
+          },
+          "promotion": {
+            "points_raw": "n.a.",
+            "reward_raw": "n.a."
+          },
+          "holding": {
+            "points_raw": "15",
+            "reward_raw": "4,200 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d1_bundesliga",
+      "division": 1,
+      "name": "Bundesliga",
+      "opponent_league_id": 19,
+      "rules": [
+        {
+          "kind": "chemistry",
+          "operator": "==",
+          "value": 100
+        },
+        {
+          "kind": "players_from_named_league",
+          "operator": ">=",
+          "value": 11,
+          "scope": "starting11",
+          "league_id": 19
+        }
+      ],
+      "difficulty_codes": "LWLULLWLLU",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[77]",
+        "raw_entry_requirements": "Min. number of players from Bundesliga (German League): 11 in the squad's Starting 11. Exact Team Chemistry: 100",
+        "raw_er": "F",
+        "raw_difficulty_codes": "LWLULLWLLU",
+        "raw_stars": "4",
+        "outcomes": {
+          "title": {
+            "points_raw": "28",
+            "reward_raw": "6,000 c + PGP"
+          },
+          "promotion": {
+            "points_raw": "n.a.",
+            "reward_raw": "n.a."
+          },
+          "holding": {
+            "points_raw": "15",
+            "reward_raw": "6,100 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d1_liga_bbva",
+      "division": 1,
+      "name": "Liga BBVA",
+      "opponent_league_id": 53,
+      "rules": [
+        {
+          "kind": "chemistry",
+          "operator": "==",
+          "value": 100
+        },
+        {
+          "kind": "players_from_named_league",
+          "operator": ">=",
+          "value": 11,
+          "scope": "starting11",
+          "league_id": 53
+        }
+      ],
+      "difficulty_codes": "WLULLWLULL",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[78]",
+        "raw_entry_requirements": "Min. number of players from Liga BBVA (Spanish League): 11 in the squad's Starting 11. Exact Team Chemistry: 100",
+        "raw_er": "G",
+        "raw_difficulty_codes": "WLULLWLULL",
+        "raw_stars": "4",
+        "outcomes": {
+          "title": {
+            "points_raw": "28",
+            "reward_raw": "6,000 c + PGP"
+          },
+          "promotion": {
+            "points_raw": "n.a.",
+            "reward_raw": "n.a."
+          },
+          "holding": {
+            "points_raw": "15",
+            "reward_raw": "6,100 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d1_serie_a",
+      "division": 1,
+      "name": "Serie A",
+      "opponent_league_id": 31,
+      "rules": [
+        {
+          "kind": "chemistry",
+          "operator": "==",
+          "value": 100
+        },
+        {
+          "kind": "players_from_named_league",
+          "operator": ">=",
+          "value": 11,
+          "scope": "starting11_and_substitutes",
+          "league_id": 31
+        }
+      ],
+      "difficulty_codes": "WWLWLLWLLL",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[79]",
+        "raw_entry_requirements": "Min. number of players from Serie A (Italian League): 11 in the squad's Starting 11 and Subs. Exact Team Chemistry: 100",
+        "raw_er": "H",
+        "raw_difficulty_codes": "WWLWLLWLLL",
+        "raw_stars": "3.5",
+        "outcomes": {
+          "title": {
+            "points_raw": "28",
+            "reward_raw": "6,000 c + GP"
+          },
+          "promotion": {
+            "points_raw": "n.a.",
+            "reward_raw": "n.a."
+          },
+          "holding": {
+            "points_raw": "15",
+            "reward_raw": "4,500 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    },
+    {
+      "key": "d1_barclays_pl",
+      "division": 1,
+      "name": "Barclays PL",
+      "opponent_league_id": 13,
+      "rules": [
+        {
+          "kind": "chemistry",
+          "operator": "==",
+          "value": 100
+        },
+        {
+          "kind": "players_from_named_league",
+          "operator": ">=",
+          "value": 11,
+          "scope": "starting11",
+          "league_id": 13
+        }
+      ],
+      "difficulty_codes": "WLULLLULLL",
+      "difficulty_source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+      "difficulty_adoption_note": null,
+      "historical_reference": {
+        "source": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+        "locator": "table[1]/tr[80]",
+        "raw_entry_requirements": "Min. number of players from Barclays PL (English League): 11 in the squad's Starting 11. Exact Team Chemistry: 100",
+        "raw_er": "I",
+        "raw_difficulty_codes": "WLULLLULLL",
+        "raw_stars": "4",
+        "outcomes": {
+          "title": {
+            "points_raw": "28",
+            "reward_raw": "6,000 c + PGP"
+          },
+          "promotion": {
+            "points_raw": "n.a.",
+            "reward_raw": "n.a."
+          },
+          "holding": {
+            "points_raw": "15",
+            "reward_raw": "6,300 c"
+          }
+        },
+        "relegation_reward_raw": "0",
+        "reference_only": true
+      }
+    }
+  ]
+}

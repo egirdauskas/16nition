@@ -1,0 +1,14 @@
+{
+  "persona_id": 1,
+  "products": [
+    {
+      "product_id": 40040,
+      "definition": "revival_all_special_players",
+      "coin_price": 7500,
+      "purchase_limit": 2,
+      "repeatable": true,
+      "featured": true,
+      "provenance": "revival_policy"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "classification": "revival_policy",
+  "version": "welcome_gift_v1",
+  "authorization": "user, 7 Nov 2026 (FIRST-001): first-time welcome via message; 5 Premium Gold packs and 7,500 coins; inbox text supplied by the user",
+  "popup": {
+    "heading": [
+      "LTXT_16N_WELCOME_GIFT_HEADING",
+      "Welcome to 16NITION!"
+    ],
+    "body": [
+      "LTXT_16N_WELCOME_GIFT_BODY",
+      "Your welcome gift is here: 5 Premium Gold Packs and 7,500 coins."
+    ],
+    "button": [
+      "LTXT_16N_WELCOME_GIFT_BUTTON",
+      "Claim"
+    ],
+    "image_file": "16nition_welcome_gift_v6.png",
+    "image_asset": "assets/branding/pixel/16nition-v6-gift-872x520-light.png",
+    "popup_type": "LoginGift",
+    "take_me_to": "act_cab_to_store_my_packs"
+  },
+  "inbox": [
+    "LTXT_16N_WELCOME_INBOX",
+    "Welcome to 16NITION!\nTo kick off your FIFA 16 Mobile Club, check out the Starter Pack in the Store, it costs only one coin!"
+  ],
+  "grant": {
+    "coins": 7500,
+    "packs": {
+      "definition": "revival_premium_gold_mixed_specials_v8",
+      "count": 5,
+      "untradeable": true
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "classification": "revival_policy",
+  "version": "account_progression_v1",
+  "default_enabled": false,
+  "stock_xp_enabled": false,
+  "division10_xp": {
+    "W": 100,
+    "D": 60,
+    "L": 30
+  },
+  "xp_division_step_percent": 10,
+  "first_level_requirement": 300,
+  "level_requirement_step": 50,
+  "coin_multiplier": 15,
+  "coin_level_step_percent": 2,
+  "division_match_base_coins": {
+    "10": {
+      "W": 150,
+      "D": 90,
+      "L": 50
+    },
+    "9": {
+      "W": 180,
+      "D": 105,
+      "L": 60
+    },
+    "8": {
+      "W": 210,
+      "D": 125,
+      "L": 70
+    },
+    "7": {
+      "W": 250,
+      "D": 150,
+      "L": 85
+    },
+    "6": {
+      "W": 300,
+      "D": 180,
+      "L": 100
+    },
+    "5": {
+      "W": 360,
+      "D": 215,
+      "L": 120
+    },
+    "4": {
+      "W": 430,
+      "D": 255,
+      "L": 145
+    },
+    "3": {
+      "W": 510,
+      "D": 305,
+      "L": 170
+    },
+    "2": {
+      "W": 600,
+      "D": 360,
+      "L": 200
+    },
+    "1": {
+      "W": 700,
+      "D": 420,
+      "L": 235
+    }
+  },
+  "rounding": "floor_integer_coins",
+  "pack_grants_enabled": false,
+  "season_grants_enabled": false,
+  "rationale": "Explicit user revival XP/level and 15x W/D/L coin table. Snapshot level at CreateSim. No historical Mobile formula claim. Backend-only certification until stock XP consumer is recovered. Pack and season entitlements are separately authorized but not activated by this XP policy."
+}

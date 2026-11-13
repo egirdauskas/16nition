@@ -1,0 +1,58 @@
+{
+  "version": "classic_pack_store_backend_v9",
+  "classification": "revival_policy",
+  "default_enabled": false,
+  "stock_delivery_enabled": false,
+  "price_source": "offline_rewards_v1",
+  "identity_namespace": "server_local_test_sku_not_ea_product_id",
+  "bindings": {
+    "Bronze": {
+      "product_id": 44001,
+      "definition": "revival_bronze_mixed_specials_v3"
+    },
+    "Premium Bronze": {
+      "product_id": 44002,
+      "definition": "revival_premium_bronze_mixed_specials_v3"
+    },
+    "Silver": {
+      "product_id": 44003,
+      "definition": "revival_silver_mixed_specials_v3"
+    },
+    "Premium Silver": {
+      "product_id": 44004,
+      "definition": "revival_premium_silver_mixed_specials_v3"
+    },
+    "Gold": {
+      "product_id": 44005,
+      "definition": "revival_gold_mixed_specials_v3"
+    },
+    "Premium Gold": {
+      "product_id": 44006,
+      "definition": "revival_premium_gold_mixed_specials_v3"
+    },
+    "Rare Players": {
+      "product_id": 45001,
+      "definition": "revival_rare_players_specials_v2"
+    },
+    "Premium Gold Players": {
+      "product_id": 45004,
+      "definition": "revival_premium_gold_players_specials_v4"
+    },
+    "Jumbo Premium Gold": {
+      "product_id": 45006,
+      "definition": "revival_jumbo_premium_gold_mixed_specials_v3"
+    },
+    "Mega": {
+      "product_id": 45007,
+      "definition": "revival_mega_mixed_specials_v3"
+    },
+    "Jumbo Rare Players": {
+      "product_id": 45008,
+      "definition": "revival_jumbo_rare_players_specials_v2"
+    },
+    "Ultimate": {
+      "product_id": 45009,
+      "definition": "revival_ultimate_players_specials_v2"
+    }
+  }
+}

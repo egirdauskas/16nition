@@ -1,0 +1,16 @@
+{
+  "version": "tournament_championship_rewards_v1",
+  "classification": "revival_policy_temporary",
+  "authorization": "User 3 November 2026 (GAME-012): 'make up some temporary rewards! let them definitely be a bit higher (starter 10000 scale from there)'.",
+  "basis": "FIFA 16 console permanent-cup coin prize references (offline-tournament-catalog-v1 historical_prize_reference) multiplied by 20; not recovered Mobile values.",
+  "trigger": "Once per genuine championship: source-bound trophy-round (round 4) WIN End, applied atomically with the run closure.",
+  "coins": {
+    "201": 10000,
+    "202": 20000,
+    "203": 15000,
+    "204": 24000
+  },
+  "packs": "disabled",
+  "xp": "disabled",
+  "retroactive": false
+}

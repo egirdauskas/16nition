@@ -1,0 +1,15 @@
+{
+  "version": "season_forfeit_v1",
+  "classification": "revival_policy",
+  "default_enabled": false,
+  "outcome": "current_points_against_maintenance_threshold",
+  "division_floor": 10,
+  "promotion": false,
+  "new_coins": 0,
+  "new_xp": 0,
+  "new_packs": 0,
+  "earned_rewards": "preserve",
+  "active_match": "refuse",
+  "next_season": "genuine_original_competition_selection",
+  "authorization": "User29October2026: Yes, current points decide; no new rewards"
+}

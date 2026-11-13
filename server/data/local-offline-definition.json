@@ -1,0 +1,57 @@
+{
+  "season_id": 1,
+  "division_index": 0,
+  "match_minutes": 6,
+  "fixtures": [
+    {
+      "team_id": 1,
+      "difficulty": 0,
+      "round_number": 1
+    },
+    {
+      "team_id": 2,
+      "difficulty": 0,
+      "round_number": 2
+    },
+    {
+      "team_id": 3,
+      "difficulty": 0,
+      "round_number": 3
+    },
+    {
+      "team_id": 4,
+      "difficulty": 0,
+      "round_number": 4
+    },
+    {
+      "team_id": 5,
+      "difficulty": 0,
+      "round_number": 5
+    },
+    {
+      "team_id": 7,
+      "difficulty": 0,
+      "round_number": 6
+    },
+    {
+      "team_id": 8,
+      "difficulty": 0,
+      "round_number": 7
+    },
+    {
+      "team_id": 9,
+      "difficulty": 0,
+      "round_number": 8
+    },
+    {
+      "team_id": 10,
+      "difficulty": 0,
+      "round_number": 9
+    },
+    {
+      "team_id": 11,
+      "difficulty": 0,
+      "round_number": 10
+    }
+  ]
+}

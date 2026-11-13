@@ -1,0 +1,8 @@
+.gradle/
+local.properties
+**/build/
+app/src/main/assets/runtime.zip
+app/src/main/assets/runtime-manifest.json
+app/src/main/assets/content-manifest.json
+app/src/main/jniLibs/
+*.apk

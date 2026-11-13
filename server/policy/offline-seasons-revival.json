@@ -1,0 +1,208 @@
+{
+  "classification": "revival_policy",
+  "version": "offline_seasons_console_fifa16_v2",
+  "matches_per_season": 10,
+  "grants_enabled": false,
+  "promotion_commit_enabled": false,
+  "divisions": {
+    "10": {
+      "maintenance": 0,
+      "promotion": 9,
+      "championship": 12,
+      "proposed_coins": {
+        "RELEGATION": null,
+        "MAINTENANCE": 300,
+        "PROMOTION": 1500,
+        "CHAMPIONSHIP": 1900
+      },
+      "reference_pack_labels": {
+        "RELEGATION": [],
+        "MAINTENANCE": [],
+        "PROMOTION": [],
+        "CHAMPIONSHIP": []
+      }
+    },
+    "9": {
+      "maintenance": 7,
+      "promotion": 11,
+      "championship": 14,
+      "proposed_coins": {
+        "RELEGATION": 1000,
+        "MAINTENANCE": 1500,
+        "PROMOTION": 1900,
+        "CHAMPIONSHIP": 2400
+      },
+      "reference_pack_labels": {
+        "RELEGATION": [],
+        "MAINTENANCE": [],
+        "PROMOTION": [],
+        "CHAMPIONSHIP": []
+      }
+    },
+    "8": {
+      "maintenance": 9,
+      "promotion": 16,
+      "championship": 19,
+      "proposed_coins": {
+        "RELEGATION": 1400,
+        "MAINTENANCE": 2000,
+        "PROMOTION": 2600,
+        "CHAMPIONSHIP": 2800
+      },
+      "reference_pack_labels": {
+        "RELEGATION": [],
+        "MAINTENANCE": [],
+        "PROMOTION": [],
+        "CHAMPIONSHIP": [
+          "BP"
+        ]
+      }
+    },
+    "7": {
+      "maintenance": 10,
+      "promotion": 15,
+      "championship": 18,
+      "proposed_coins": {
+        "RELEGATION": 1700,
+        "MAINTENANCE": 2300,
+        "PROMOTION": 3100,
+        "CHAMPIONSHIP": 3600
+      },
+      "reference_pack_labels": {
+        "RELEGATION": [],
+        "MAINTENANCE": [],
+        "PROMOTION": [],
+        "CHAMPIONSHIP": [
+          "PBP"
+        ]
+      }
+    },
+    "6": {
+      "maintenance": 12,
+      "promotion": 17,
+      "championship": 20,
+      "proposed_coins": {
+        "RELEGATION": 1900,
+        "MAINTENANCE": 2600,
+        "PROMOTION": 3600,
+        "CHAMPIONSHIP": 3600
+      },
+      "reference_pack_labels": {
+        "RELEGATION": [],
+        "MAINTENANCE": [],
+        "PROMOTION": [],
+        "CHAMPIONSHIP": [
+          "SP"
+        ]
+      }
+    },
+    "5": {
+      "maintenance": 13,
+      "promotion": 19,
+      "championship": 22,
+      "proposed_coins": {
+        "RELEGATION": 2000,
+        "MAINTENANCE": 2900,
+        "PROMOTION": 4200,
+        "CHAMPIONSHIP": 4500
+      },
+      "reference_pack_labels": {
+        "RELEGATION": [],
+        "MAINTENANCE": [],
+        "PROMOTION": [],
+        "CHAMPIONSHIP": [
+          "PSP"
+        ]
+      }
+    },
+    "4": {
+      "maintenance": 14,
+      "promotion": 21,
+      "championship": 24,
+      "proposed_coins": {
+        "RELEGATION": 2200,
+        "MAINTENANCE": 3300,
+        "PROMOTION": 5200,
+        "CHAMPIONSHIP": 5500
+      },
+      "reference_pack_labels": {
+        "RELEGATION": [],
+        "MAINTENANCE": [],
+        "PROMOTION": [],
+        "CHAMPIONSHIP": [
+          "JSP"
+        ]
+      }
+    },
+    "3": {
+      "maintenance": 14,
+      "promotion": 21,
+      "championship": 24,
+      "proposed_coins": {
+        "RELEGATION": 2300,
+        "MAINTENANCE": 3700,
+        "PROMOTION": 5800,
+        "CHAMPIONSHIP": 6000
+      },
+      "reference_pack_labels": {
+        "RELEGATION": [],
+        "MAINTENANCE": [],
+        "PROMOTION": [],
+        "CHAMPIONSHIP": [
+          "JPSP"
+        ]
+      }
+    },
+    "2": {
+      "maintenance": 14,
+      "promotion": 21,
+      "championship": 24,
+      "proposed_coins": {
+        "RELEGATION": 2800,
+        "MAINTENANCE": 4500,
+        "PROMOTION": 7100,
+        "CHAMPIONSHIP": 7000
+      },
+      "reference_pack_labels": {
+        "RELEGATION": [],
+        "MAINTENANCE": [],
+        "PROMOTION": [],
+        "CHAMPIONSHIP": [
+          "GP"
+        ]
+      }
+    },
+    "1": {
+      "maintenance": 15,
+      "promotion": null,
+      "championship": 30,
+      "proposed_coins": {
+        "RELEGATION": 3500,
+        "MAINTENANCE": 6200,
+        "PROMOTION": null,
+        "CHAMPIONSHIP": 7500
+      },
+      "reference_pack_labels": {
+        "RELEGATION": [],
+        "MAINTENANCE": [],
+        "PROMOTION": [],
+        "CHAMPIONSHIP": [
+          "JGP"
+        ]
+      }
+    }
+  },
+  "reference": {
+    "source_id": "fifauteam_fifa16_offline_ultimate_league",
+    "url": "https://fifauteam.com/fifa-16-seasons-divisions-rewards/",
+    "publication_date_as_displayed": "2015-11-22",
+    "source_classification": "third_party_period_console_table",
+    "game": "FIFA 16 Ultimate Team console/PC",
+    "mode": "single_player",
+    "track": "Ultimate League",
+    "historical_mobile_values_recovered": false,
+    "adoption": "explicit_user_authorized_revival_policy",
+    "bonus_packs": "Reference labels only; no Mobile pack ID or grant contract inferred."
+  },
+  "rationale": "User-authorized adoption of FIFA16 console FUT single-player Ultimate League numeric thresholds and coin components. Console reference only, not recovered Mobile history. No real-account/default-service change; grants, bonus packs and promotion commits remain disabled."
+}

@@ -1,0 +1,10 @@
+{
+  "version": "club_item_quick_sell_console_v1",
+  "classification": "revival_policy",
+  "basis": "Previously authorized FIFA16 console approximation; not recovered Mobile discard prices. Supplied Mobile value/rarity determines the bracket.",
+  "source": "https://fifauteam.com/fifa-16-ultimate-team-quick-sell-prices/",
+  "source_date": "2015-09-09",
+  "club_items": {"bronze": [3, 13], "silver": [14, 37], "gold": [31, 60]},
+  "ball_coins": 15,
+  "scope": "Only supplied inactive owned unassigned badges, kits, stadiums and balls. No active-item sale, tax or match multiplier. Original v1 player/consumable quotes and receipts stay unchanged."
+}

@@ -1,0 +1,407 @@
+{
+  "version": "market_economy_v2",
+  "classification": "revival_policy_placeholder",
+  "default_enabled": false,
+  "authorization": "Accepted by the user on 4 Nov 2026: all sections (approved_sections), including bot listing durations weighted toward 1 hour. Player listing durations follow the stock picker. Isolated lab only. Items section (v1) per user direction 4 Nov 2026; numbers proposed by Claude and accepted in conversation. v2: position-change and formation pricing per user direction 4 Nov 2026.",
+  "price": {
+    "minimum": 150,
+    "maximum": 15000000,
+    "increments": [
+      [
+        1000,
+        50
+      ],
+      [
+        10000,
+        100
+      ],
+      [
+        50000,
+        250
+      ],
+      [
+        100000,
+        500
+      ],
+      [
+        999999999,
+        1000
+      ]
+    ],
+    "rating_priced_from": 81,
+    "card_minimum": {
+      "bronze": {
+        "common": 150,
+        "rare": 200
+      },
+      "silver": {
+        "common": 150,
+        "rare": 300
+      },
+      "gold": {
+        "common": 350,
+        "rare": 650
+      }
+    },
+    "linear": {
+      "from_rating": 65,
+      "base": 200,
+      "per_point": 150
+    },
+    "convex": {
+      "from_rating": 81,
+      "base": 1000,
+      "growth_percent": 160
+    },
+    "rare_percent": 130,
+    "quality_percent": {
+      "bronze": 40,
+      "silver": 60,
+      "gold": 100
+    },
+    "card_maximum": {
+      "bronze": 10000,
+      "silver": 10000
+    },
+    "card_maximum_note": "User direction 4 Nov 2026: non-special bronze/silver can never trade above 10,000 (matches the listing cap).",
+    "special_percent_by_rating": [
+      [
+        0,
+        100
+      ],
+      [
+        95,
+        150
+      ],
+      [
+        96,
+        200
+      ],
+      [
+        97,
+        250
+      ]
+    ],
+    "special_percent_note": "User direction 4 Nov 2026: only superstar specials (base card rated superstar_base_rating+, i.e. Messi and Ronaldo) take the rating-graded special premium, so only their TOTS/TOTY/RB reach the cap; every other special is priced at its boosted rating with no extra premium.",
+    "superstar_base_rating": 93,
+    "special_maximum": 5000000,
+    "special_maximum_note": "User direction 4 Nov 2026: specials other than superstars (Messi/Ronaldo) stay below 5M, in order: above special_soft_cap_from the excess is compressed smoothly toward special_maximum.",
+    "special_soft_cap_from": 3000000
+  },
+  "modifiers_percent": {
+    "top_nation": 115,
+    "skill_attackers": {
+      "positions": [
+        "ST",
+        "CF",
+        "RF",
+        "LF",
+        "RW",
+        "LW",
+        "CAM",
+        "RM",
+        "LM"
+      ],
+      "minimum_stars": 4,
+      "bonus": 120
+    },
+    "elite_attackers": {
+      "positions": [
+        "ST",
+        "CF",
+        "RF",
+        "LF",
+        "RW",
+        "LW",
+        "CAM",
+        "RM",
+        "LM"
+      ],
+      "minimum_rating": 86,
+      "bonus": 200,
+      "maximum_rating": 92
+    },
+    "pace_curve": {
+      "note": "x full_bonus at the position's great pace (low_tier_pace.great_pace) for 81+. Non-elite golds 75-85 also get a bonus ramping from start_percent at great-within up to full at great (75-80: applied to the gold floor, never lowering the pace premium). Slow cards are never discounted.",
+      "full_bonus_percent": 130,
+      "near_great": {
+        "minimum_rating": 75,
+        "maximum_rating": 85,
+        "within": 5,
+        "start_percent": 115
+      }
+    }
+  },
+  "top_nations": [
+    14,
+    45,
+    21,
+    18,
+    27,
+    54,
+    52,
+    38,
+    34
+  ],
+  "demand": {
+    "bronze": 95,
+    "silver": 95,
+    "gold": 95,
+    "elite_rating": 86,
+    "elite": 95,
+    "special": 95
+  },
+  "sale": {
+    "price_ratio_full_demand_percent": 90,
+    "price_ratio_zero_demand_percent": 160,
+    "elite_sensitivity_multiplier_percent": 200,
+    "time_skew_power": 3,
+    "note": "User direction 4 Nov 2026: at or below 90% of fair a sale is very likely (95%) for every card type; most sales happen early: sale time = duration * u^3 (half of sales in the first 1/8 of the listing).",
+    "instant_below_percent": 70,
+    "instant_seconds": [
+      2,
+      20
+    ],
+    "speed_note": "User direction 4 Nov 2026: sale speed follows underpricing; <=70% of fair sells in 2-20 s, 70-100% scales the time down linearly."
+  },
+  "supply": {
+    "inventory_size": 120,
+    "weights": {
+      "bronze": 30,
+      "silver": 30,
+      "gold": 30,
+      "gold_elite": 5,
+      "special": 5
+    },
+    "duration_weights": {
+      "3600": 75,
+      "10800": 10,
+      "21600": 6,
+      "43200": 4,
+      "86400": 3,
+      "259200": 2
+    },
+    "duration_note": "User direction 4 Nov 2026: most bot listings are 1 hour by far. Drawn once per listing at creation; never rerolled."
+  },
+  "mispricing": {
+    "near_percent": [
+      92,
+      108
+    ],
+    "bargain_chance_percent": 10,
+    "bargain_discount_percent": [
+      10,
+      35
+    ],
+    "mistake_chance_per_mille": 8,
+    "mistake_discount_percent": [
+      40,
+      70
+    ],
+    "special_scale_percent": 25
+  },
+  "bot_reservation_percent": [
+    80,
+    115
+  ],
+  "fee_percent": 5,
+  "low_tier_pace": {
+    "note": "User direction 4 Nov 2026: pace drives below-81 prices relative to what is great for the position, very high with a top league. Golds 75-80 get 60% of the same silver (silver cups keep silvers dearer).",
+    "qualities": [
+      "bronze",
+      "silver",
+      "gold"
+    ],
+    "great_pace": {
+      "CB": 80,
+      "CDM": 80,
+      "CM": 82,
+      "CAM": 88,
+      "LB": 90,
+      "RB": 90,
+      "LWB": 90,
+      "RWB": 90,
+      "LM": 90,
+      "RM": 90,
+      "LW": 90,
+      "RW": 90,
+      "ST": 88,
+      "CF": 88,
+      "LF": 88,
+      "RF": 88
+    },
+    "premium_starts_below_great": 10,
+    "growth_percent_per_point": 118,
+    "combo": {
+      "within_great": 2
+    },
+    "gold_percent_of_silver": 60,
+    "mid_gold": {
+      "note": "User direction 4 Nov 2026: non-elite golds 81-85 above great pace get the steep pace premium; it replaces the flat league and pace bonuses there.",
+      "minimum_rating": 81,
+      "maximum_rating": 85,
+      "premium_starts_below_great": 0
+    }
+  },
+  "league_bonus": {
+    "note": "Percent multipliers. high: cards 81+. low_tier/combo: pace premium below 81. PL and LaLiga highest, Bundesliga and Serie A a bit less, Ligue 1 least.",
+    "13": {
+      "name": "Premier League",
+      "high": 125,
+      "low_tier": 150,
+      "combo": 200
+    },
+    "53": {
+      "name": "LaLiga",
+      "high": 125,
+      "low_tier": 150,
+      "combo": 200
+    },
+    "19": {
+      "name": "Bundesliga",
+      "high": 118,
+      "low_tier": 135,
+      "combo": 175
+    },
+    "31": {
+      "name": "Serie A",
+      "high": 118,
+      "low_tier": 135,
+      "combo": 175
+    },
+    "16": {
+      "name": "Ligue 1",
+      "high": 110,
+      "low_tier": 120,
+      "combo": 150
+    }
+  },
+  "approved_sections": [
+    "price",
+    "modifiers_percent",
+    "league_bonus",
+    "low_tier_pace",
+    "fee_percent",
+    "demand",
+    "supply",
+    "mispricing",
+    "bot_reservation_percent",
+    "bidding",
+    "sale",
+    "listing",
+    "items"
+  ],
+  "bidding": {
+    "note": "Placeholder (Claude): a bot that will outbid answers after this many seconds (seeded per bid), never after expiry.",
+    "bot_response_delay_seconds": [
+      5,
+      45
+    ]
+  },
+  "listing": {
+    "note": "Player listing durations accepted (1397 genuine list used 3600). Placeholder set mirrors bot supply.",
+    "durations_seconds": [
+      3600,
+      10800,
+      21600,
+      43200,
+      86400,
+      259200
+    ]
+  },
+  "items": {
+    "note": "User direction 4 Nov 2026 (follow the stock mobile client): club items and managers trade both ways; training/healing/position/formation consumables are sellable only (no consumables search category). No coach/physio supply.",
+    "demand": 95,
+    "ball": 150,
+    "stadium": {
+      "note": "User direction 4 Nov 2026: every named stadium (value >= 80) fluctuates between 2,500 and 5,000; generic grounds 150.",
+      "famous_from_value": 80,
+      "generic": 150,
+      "named_band": [
+        2500,
+        5000
+      ]
+    },
+    "manager": {
+      "note": "Near quick-sell; a bit higher for gold, rare and top-nation managers (no league column in managercards).",
+      "base": 150,
+      "by_rating": [
+        [
+          75,
+          250
+        ],
+        [
+          82,
+          400
+        ]
+      ],
+      "rare_percent": 130,
+      "top_nation_percent": 150
+    },
+    "training": {
+      "bronze": 150,
+      "silver": 250,
+      "gold": 500
+    },
+    "healing": {
+      "bronze": 150,
+      "silver": 150,
+      "gold": 250
+    },
+    "rare_percent": 130,
+    "position": {
+      "note": "User direction 4 Nov 2026: wingback swaps at the minimum; anything involving CDM/CM/CAM/CF/ST 2,500; RW->RF and LW->LF 2,500; other wing swaps 1,000.",
+      "groups": {
+        "wingback": 150,
+        "central": 2500,
+        "central_forward": 2500,
+        "wing_to_forward": 2500,
+        "wing": 1000
+      }
+    },
+    "formation": {
+      "note": "User direction 4 Nov 2026: rare above common, four-back above 3/5-back, capped at 2,500.",
+      "four_back": {
+        "common": 1500,
+        "rare": 2500
+      },
+      "other_back": {
+        "common": 750,
+        "rare": 1200
+      }
+    },
+    "listing_maximum": {
+      "club": 5000,
+      "manager": 5000,
+      "consumable": 10000
+    },
+    "supply": {
+      "note": "Bot inventory per stock search category; staff = managers only.",
+      "ball": 16,
+      "stadium": 10,
+      "clubInfo": 40,
+      "staff": 24,
+      "kit_percent": 50
+    },
+    "club_bands": {
+      "note": "User direction 4 Nov 2026: badges/kits in value bands (80+, 75-79, below 75); no ranking inside a band (fair value = band midpoint); bot listings fluctuate anywhere in the band, then mispricing.",
+      "bands": [
+        {
+          "from_value": 80,
+          "low": 2500,
+          "high": 5000
+        },
+        {
+          "from_value": 75,
+          "low": 750,
+          "high": 1500
+        },
+        {
+          "from_value": 54,
+          "low": 150,
+          "high": 500
+        }
+      ]
+    }
+  }
+}

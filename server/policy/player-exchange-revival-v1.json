@@ -1,0 +1,25 @@
+{
+  "version": "player_exchange_revival_v1",
+  "classification": "revival_policy",
+  "default_enabled": false,
+  "authorization": "User 2 November 2026 permits labelled revival cutoffs and odds; retain original Mobile mechanics.",
+  "historical_source": "https://www.ea.com/fifa-mobile-player-exchange-FAQ",
+  "native_score": "sum_of_selected_owned_player_discard_values",
+  "input_count": [2, 10],
+  "reward_count_weights": [50, 35, 15],
+  "free_replacement_draws": 1,
+  "coins_charged": 0,
+  "xp_awarded": 0,
+  "reward_tradeable": true,
+  "tiers": ["common_bronze", "rare_bronze", "common_silver", "rare_silver", "common_gold", "rare_gold"],
+  "ranges": [
+    {"upperLimit": 199, "lowerPackLevel": 0, "upperPackLevel": 2, "tier_weights": [70, 25, 5, 0, 0, 0]},
+    {"upperLimit": 499, "lowerPackLevel": 0, "upperPackLevel": 3, "tier_weights": [35, 40, 20, 5, 0, 0]},
+    {"upperLimit": 999, "lowerPackLevel": 1, "upperPackLevel": 3, "tier_weights": [0, 30, 45, 25, 0, 0]},
+    {"upperLimit": 1999, "lowerPackLevel": 2, "upperPackLevel": 4, "tier_weights": [0, 0, 45, 40, 15, 0]},
+    {"upperLimit": 3999, "lowerPackLevel": 3, "upperPackLevel": 5, "tier_weights": [0, 0, 0, 40, 40, 20]},
+    {"upperLimit": 2147483647, "lowerPackLevel": 4, "upperPackLevel": 5, "tier_weights": [0, 0, 0, 0, 60, 40]}
+  ],
+  "selection": "Weighted count, then weighted tier per reward; uniform among admitted player versions in that tier. Specials belong to the rare tier of their approved pool quality. All admitted special families remain eligible. Exact draws are pinned per transaction.",
+  "limits": "Cutoffs, count weights and tier weights are local design values, not recovered EA odds. Native tier-number visual mapping and financial delivery require separate original-client proof. No level/15x match multiplier applies."
+}

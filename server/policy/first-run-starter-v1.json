@@ -1,0 +1,12 @@
+{
+  "version": "first_run_starter_v1",
+  "approved": "User choice 8 Nov 2026: option 1 (bronze/silver squad plus one gold from the favourite club) and a random bronze manager.",
+  "formation": "stock default 4-4-2 (formation_id unset)",
+  "starting": {"favourite_club": 1, "silver": 5, "bronze": 5},
+  "bench": {"silver": 4, "bronze": 8},
+  "favourite_club_quality_order": ["gold", "silver", "bronze"],
+  "player_rare": [0],
+  "manager_quality": "bronze",
+  "fitness": 99,
+  "club_items": "favourite club badge, home and away kits, stadium (supplied rows; omitted when absent)"
+}

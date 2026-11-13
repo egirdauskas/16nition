@@ -1,0 +1,47 @@
+{
+ "version": "store_demo_offers_v1",
+ "classification": "revival_policy",
+ "approved": "User, 6 November 2026 (STORE-006): release demo of Store offer properties. A time-limited Brazil pack (12 Brazilian golds, exactly 3 rares, Brazilian specials in the pool, 25,000 coins) until 14 November 2026 00:00 CET, and a one-time starter pack (6 gold rares, specials enabled) for 1 coin, one per club (the stock Store shows no buy button at 0 coins, run 1502; user chose 1 coin). The user also allowed removing the Consumables Pack (product 62300) from the Store. User, 6 November 2026: show the stock LIMITED TIME banner and countdown on the Brazil pack (time_banner, from 6 November 2026 00:00 CET; Store reply timestamp; Brazil first in Featured). User, 12 November 2026: extend the Brazil pack by 7 days, until 21 November 2026 00:00 CET.",
+ "default_enabled": false,
+ "offers": [
+  {
+   "product_id": 56001,
+   "definition": "revival_brazil_gold_players_specials_v1",
+   "coin_price": 25000,
+   "repeatable": true,
+   "featured": true,
+   "available_until": 1795215600,
+   "captions": {
+    "NAME": "BRAZIL PACK",
+    "DESC": "12 Brazilian Gold players including 3 Rares. Brazilian specials can appear. Available until 21 November.",
+    "SHORT": "12 ITEMS\n12 GOLD\n3 RARES"
+   },
+   "wire_block": [
+    26792,
+    16
+   ],
+   "available_from": 1793919600,
+   "time_banner": true
+  },
+  {
+   "product_id": 56002,
+   "definition": "revival_starter_gold_rares_specials_v1",
+   "coin_price": 1,
+   "featured": true,
+   "captions": {
+    "NAME": "STARTER PACK",
+    "DESC": "6 Rare Gold players, specials enabled. 1 coin, one per club.",
+    "SHORT": "6 ITEMS\n6 GOLD\n6 RARES"
+   },
+   "once": true,
+   "repeatable": true,
+   "wire_block": [
+    26920,
+    4
+   ]
+  }
+ ],
+ "retired_products": [
+  62300
+ ]
+}

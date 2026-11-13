@@ -1,0 +1,9 @@
+{
+  "version": "store_direct_delivery_v1",
+  "classification": "revival_policy",
+  "default_enabled": false,
+  "selections": ["specific_supplied_consumable_v1"],
+  "stock_evidence": "Original StoreCommonModel purchase callback (lines 586-615) navigates evt_to_unassigned with packrevealsfx=true and loadBestCardPopup=true on success. Purchase and opening replies share factory 022f6624, parser 022f69c4 and item-vector install 01a5bd90 -> virtual +30c / 01a63960.",
+  "contract": "One coin purchase of an individual-card offer debits the price and places exactly that card in Unassigned. The reply is the established opening shape: numberItems, purchasedPackId (the purchased wire offer) and itemList. No unopened pack is left behind.",
+  "authorization": "User 4 November 2026 questioned the extra Unopened Packs step for single cards; delivery shape is revival policy, prices remain store-single-consumables-v1."
+}

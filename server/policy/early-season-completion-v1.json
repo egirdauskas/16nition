@@ -1,0 +1,10 @@
+{
+  "version": "early_season_completion_v1",
+  "classification": "revival_policy",
+  "default_enabled": false,
+  "stock_delivery_enabled": false,
+  "trigger": "best_outcome_secured",
+  "maximum_fixtures": 10,
+  "higher_outcome_opportunity": "preserve",
+  "unplayed_fixtures": "remain_unplayed"
+}

@@ -1,0 +1,780 @@
+{
+ "version": "accomplishments_v1",
+ "classification": "revival_policy",
+ "approved": "User, 5 November 2026 (ACCOMP-001): permanent challenge set (goals, matches, wins, clean sheets, 3+ goal wins, divisions reached, division titles starting with a Mega, Market buys/sells) and hard nation challenges rewarding one untradeable special card; generous scaled rewards collected with the Redeem button; progress counts from enabling (no back pay).",
+ "default_enabled": false,
+ "challenge_version": 1,
+ "start_date": "2026-11-01T00:00:00",
+ "categories": [
+  {
+   "id": 1,
+   "name": "Goals"
+  },
+  {
+   "id": 2,
+   "name": "Matches"
+  },
+  {
+   "id": 3,
+   "name": "Seasons"
+  },
+  {
+   "id": 4,
+   "name": "Transfer Market"
+  },
+  {
+   "id": 5,
+   "name": "Nation Legends"
+  }
+ ],
+ "challenges": [
+  {
+   "id": 1101,
+   "category": 1,
+   "name": "Goalscorer 10",
+   "description": "Score 10 goals.",
+   "metric": "goals",
+   "target": 10,
+   "reward": {
+    "coins": 2500
+   }
+  },
+  {
+   "id": 1102,
+   "category": 1,
+   "name": "Goalscorer 50",
+   "description": "Score 50 goals.",
+   "metric": "goals",
+   "target": 50,
+   "reward": {
+    "coins": 10000,
+    "pack": "Premium Gold"
+   }
+  },
+  {
+   "id": 1103,
+   "category": 1,
+   "name": "Goalscorer 100",
+   "description": "Score 100 goals.",
+   "metric": "goals",
+   "target": 100,
+   "reward": {
+    "coins": 15000,
+    "pack": "Rare Players"
+   }
+  },
+  {
+   "id": 1104,
+   "category": 1,
+   "name": "Goalscorer 250",
+   "description": "Score 250 goals.",
+   "metric": "goals",
+   "target": 250,
+   "reward": {
+    "coins": 25000,
+    "pack": "Jumbo Premium Gold"
+   }
+  },
+  {
+   "id": 1105,
+   "category": 1,
+   "name": "Goalscorer 500",
+   "description": "Score 500 goals.",
+   "metric": "goals",
+   "target": 500,
+   "reward": {
+    "coins": 40000,
+    "pack": "Mega"
+   }
+  },
+  {
+   "id": 1106,
+   "category": 1,
+   "name": "Goalscorer 1000",
+   "description": "Score 1000 goals.",
+   "metric": "goals",
+   "target": 1000,
+   "reward": {
+    "coins": 75000,
+    "pack": "Ultimate"
+   }
+  },
+  {
+   "id": 1201,
+   "category": 2,
+   "name": "Regular 10",
+   "description": "Play 10 matches.",
+   "metric": "played",
+   "target": 10,
+   "reward": {
+    "coins": 2000
+   }
+  },
+  {
+   "id": 1202,
+   "category": 2,
+   "name": "Regular 50",
+   "description": "Play 50 matches.",
+   "metric": "played",
+   "target": 50,
+   "reward": {
+    "coins": 7500,
+    "pack": "Premium Gold"
+   }
+  },
+  {
+   "id": 1203,
+   "category": 2,
+   "name": "Regular 100",
+   "description": "Play 100 matches.",
+   "metric": "played",
+   "target": 100,
+   "reward": {
+    "coins": 15000,
+    "pack": "Rare Players"
+   }
+  },
+  {
+   "id": 1204,
+   "category": 2,
+   "name": "Regular 250",
+   "description": "Play 250 matches.",
+   "metric": "played",
+   "target": 250,
+   "reward": {
+    "coins": 25000,
+    "pack": "Jumbo Rare Players"
+   }
+  },
+  {
+   "id": 1205,
+   "category": 2,
+   "name": "Regular 500",
+   "description": "Play 500 matches.",
+   "metric": "played",
+   "target": 500,
+   "reward": {
+    "coins": 50000,
+    "pack": "Ultimate"
+   }
+  },
+  {
+   "id": 1211,
+   "category": 2,
+   "name": "Winner 5",
+   "description": "Win 5 matches.",
+   "metric": "wins",
+   "target": 5,
+   "reward": {
+    "coins": 3000
+   }
+  },
+  {
+   "id": 1212,
+   "category": 2,
+   "name": "Winner 25",
+   "description": "Win 25 matches.",
+   "metric": "wins",
+   "target": 25,
+   "reward": {
+    "coins": 10000,
+    "pack": "Rare Players"
+   }
+  },
+  {
+   "id": 1213,
+   "category": 2,
+   "name": "Winner 100",
+   "description": "Win 100 matches.",
+   "metric": "wins",
+   "target": 100,
+   "reward": {
+    "coins": 25000,
+    "pack": "Mega"
+   }
+  },
+  {
+   "id": 1214,
+   "category": 2,
+   "name": "Winner 250",
+   "description": "Win 250 matches.",
+   "metric": "wins",
+   "target": 250,
+   "reward": {
+    "coins": 50000,
+    "pack": "Ultimate"
+   }
+  },
+  {
+   "id": 1221,
+   "category": 2,
+   "name": "Shut Out 5",
+   "description": "Keep 5 clean sheets.",
+   "metric": "clean_sheets",
+   "target": 5,
+   "reward": {
+    "coins": 5000
+   }
+  },
+  {
+   "id": 1222,
+   "category": 2,
+   "name": "Shut Out 25",
+   "description": "Keep 25 clean sheets.",
+   "metric": "clean_sheets",
+   "target": 25,
+   "reward": {
+    "coins": 15000,
+    "pack": "Jumbo Premium Gold"
+   }
+  },
+  {
+   "id": 1223,
+   "category": 2,
+   "name": "Shut Out 100",
+   "description": "Keep 100 clean sheets.",
+   "metric": "clean_sheets",
+   "target": 100,
+   "reward": {
+    "coins": 40000,
+    "pack": "Ultimate"
+   }
+  },
+  {
+   "id": 1231,
+   "category": 2,
+   "name": "Thrashing 5",
+   "description": "Win 5 matches by 3 or more goals.",
+   "metric": "big_wins",
+   "target": 5,
+   "reward": {
+    "coins": 5000
+   }
+  },
+  {
+   "id": 1232,
+   "category": 2,
+   "name": "Thrashing 25",
+   "description": "Win 25 matches by 3 or more goals.",
+   "metric": "big_wins",
+   "target": 25,
+   "reward": {
+    "coins": 15000,
+    "pack": "Rare Players"
+   }
+  },
+  {
+   "id": 1233,
+   "category": 2,
+   "name": "Thrashing 75",
+   "description": "Win 75 matches by 3 or more goals.",
+   "metric": "big_wins",
+   "target": 75,
+   "reward": {
+    "coins": 40000,
+    "pack": "Ultimate"
+   }
+  },
+  {
+   "id": 1309,
+   "category": 3,
+   "name": "Division 9",
+   "description": "Reach Division 9 in Seasons.",
+   "metric": "division_reached",
+   "target": 1,
+   "reward": {
+    "coins": 5000,
+    "pack": "Premium Gold"
+   },
+   "filter": {
+    "division": 9
+   }
+  },
+  {
+   "id": 1308,
+   "category": 3,
+   "name": "Division 8",
+   "description": "Reach Division 8 in Seasons.",
+   "metric": "division_reached",
+   "target": 1,
+   "reward": {
+    "coins": 7500,
+    "pack": "Premium Gold"
+   },
+   "filter": {
+    "division": 8
+   }
+  },
+  {
+   "id": 1307,
+   "category": 3,
+   "name": "Division 7",
+   "description": "Reach Division 7 in Seasons.",
+   "metric": "division_reached",
+   "target": 1,
+   "reward": {
+    "coins": 10000,
+    "pack": "Rare Players"
+   },
+   "filter": {
+    "division": 7
+   }
+  },
+  {
+   "id": 1306,
+   "category": 3,
+   "name": "Division 6",
+   "description": "Reach Division 6 in Seasons.",
+   "metric": "division_reached",
+   "target": 1,
+   "reward": {
+    "coins": 12500,
+    "pack": "Rare Players"
+   },
+   "filter": {
+    "division": 6
+   }
+  },
+  {
+   "id": 1305,
+   "category": 3,
+   "name": "Division 5",
+   "description": "Reach Division 5 in Seasons.",
+   "metric": "division_reached",
+   "target": 1,
+   "reward": {
+    "coins": 15000,
+    "pack": "Jumbo Premium Gold"
+   },
+   "filter": {
+    "division": 5
+   }
+  },
+  {
+   "id": 1304,
+   "category": 3,
+   "name": "Division 4",
+   "description": "Reach Division 4 in Seasons.",
+   "metric": "division_reached",
+   "target": 1,
+   "reward": {
+    "coins": 20000,
+    "pack": "Jumbo Premium Gold"
+   },
+   "filter": {
+    "division": 4
+   }
+  },
+  {
+   "id": 1303,
+   "category": 3,
+   "name": "Division 3",
+   "description": "Reach Division 3 in Seasons.",
+   "metric": "division_reached",
+   "target": 1,
+   "reward": {
+    "coins": 25000,
+    "pack": "Mega"
+   },
+   "filter": {
+    "division": 3
+   }
+  },
+  {
+   "id": 1302,
+   "category": 3,
+   "name": "Division 2",
+   "description": "Reach Division 2 in Seasons.",
+   "metric": "division_reached",
+   "target": 1,
+   "reward": {
+    "coins": 35000,
+    "pack": "Jumbo Rare Players"
+   },
+   "filter": {
+    "division": 2
+   }
+  },
+  {
+   "id": 1301,
+   "category": 3,
+   "name": "Division 1",
+   "description": "Reach Division 1 in Seasons.",
+   "metric": "division_reached",
+   "target": 1,
+   "reward": {
+    "coins": 50000,
+    "pack": "Ultimate"
+   },
+   "filter": {
+    "division": 1
+   }
+  },
+  {
+   "id": 1360,
+   "category": 3,
+   "name": "Division 10 Champions",
+   "description": "Win the Division 10 title in Seasons.",
+   "metric": "division_title",
+   "target": 1,
+   "reward": {
+    "coins": 5000,
+    "pack": "Mega"
+   },
+   "filter": {
+    "division": 10
+   }
+  },
+  {
+   "id": 1359,
+   "category": 3,
+   "name": "Division 9 Champions",
+   "description": "Win the Division 9 title in Seasons.",
+   "metric": "division_title",
+   "target": 1,
+   "reward": {
+    "coins": 7500,
+    "pack": "Mega"
+   },
+   "filter": {
+    "division": 9
+   }
+  },
+  {
+   "id": 1358,
+   "category": 3,
+   "name": "Division 8 Champions",
+   "description": "Win the Division 8 title in Seasons.",
+   "metric": "division_title",
+   "target": 1,
+   "reward": {
+    "coins": 10000,
+    "pack": "Mega"
+   },
+   "filter": {
+    "division": 8
+   }
+  },
+  {
+   "id": 1357,
+   "category": 3,
+   "name": "Division 7 Champions",
+   "description": "Win the Division 7 title in Seasons.",
+   "metric": "division_title",
+   "target": 1,
+   "reward": {
+    "coins": 12500,
+    "pack": "Mega"
+   },
+   "filter": {
+    "division": 7
+   }
+  },
+  {
+   "id": 1356,
+   "category": 3,
+   "name": "Division 6 Champions",
+   "description": "Win the Division 6 title in Seasons.",
+   "metric": "division_title",
+   "target": 1,
+   "reward": {
+    "coins": 15000,
+    "pack": "Jumbo Rare Players"
+   },
+   "filter": {
+    "division": 6
+   }
+  },
+  {
+   "id": 1355,
+   "category": 3,
+   "name": "Division 5 Champions",
+   "description": "Win the Division 5 title in Seasons.",
+   "metric": "division_title",
+   "target": 1,
+   "reward": {
+    "coins": 17500,
+    "pack": "Jumbo Rare Players"
+   },
+   "filter": {
+    "division": 5
+   }
+  },
+  {
+   "id": 1354,
+   "category": 3,
+   "name": "Division 4 Champions",
+   "description": "Win the Division 4 title in Seasons.",
+   "metric": "division_title",
+   "target": 1,
+   "reward": {
+    "coins": 20000,
+    "pack": "Jumbo Rare Players"
+   },
+   "filter": {
+    "division": 4
+   }
+  },
+  {
+   "id": 1353,
+   "category": 3,
+   "name": "Division 3 Champions",
+   "description": "Win the Division 3 title in Seasons.",
+   "metric": "division_title",
+   "target": 1,
+   "reward": {
+    "coins": 25000,
+    "pack": "Jumbo Rare Players"
+   },
+   "filter": {
+    "division": 3
+   }
+  },
+  {
+   "id": 1352,
+   "category": 3,
+   "name": "Division 2 Champions",
+   "description": "Win the Division 2 title in Seasons.",
+   "metric": "division_title",
+   "target": 1,
+   "reward": {
+    "coins": 30000,
+    "pack": "Jumbo Rare Players"
+   },
+   "filter": {
+    "division": 2
+   }
+  },
+  {
+   "id": 1351,
+   "category": 3,
+   "name": "Division 1 Champions",
+   "description": "Win the Division 1 title in Seasons.",
+   "metric": "division_title",
+   "target": 1,
+   "reward": {
+    "coins": 40000,
+    "pack": "Ultimate"
+   },
+   "filter": {
+    "division": 1
+   }
+  },
+  {
+   "id": 1401,
+   "category": 4,
+   "name": "Shopper 10",
+   "description": "Buy 10 items on the Transfer Market.",
+   "metric": "market_buys",
+   "target": 10,
+   "reward": {
+    "coins": 5000
+   }
+  },
+  {
+   "id": 1402,
+   "category": 4,
+   "name": "Shopper 50",
+   "description": "Buy 50 items on the Transfer Market.",
+   "metric": "market_buys",
+   "target": 50,
+   "reward": {
+    "coins": 15000,
+    "pack": "Rare Players"
+   }
+  },
+  {
+   "id": 1411,
+   "category": 4,
+   "name": "Trader 10",
+   "description": "Sell 10 items on the Transfer Market.",
+   "metric": "market_sells",
+   "target": 10,
+   "reward": {
+    "coins": 5000
+   }
+  },
+  {
+   "id": 1412,
+   "category": 4,
+   "name": "Trader 50",
+   "description": "Sell 50 items on the Transfer Market.",
+   "metric": "market_sells",
+   "target": 50,
+   "reward": {
+    "coins": 15000,
+    "pack": "Rare Players"
+   }
+  },
+  {
+   "id": 1501,
+   "category": 5,
+   "name": "La Roja",
+   "description": "Score 50 goals with Spanish players. Reward: TOTW Fabregas (90).",
+   "metric": "goals",
+   "target": 50,
+   "reward": {
+    "coins": 0,
+    "card": "totw_banner_until_03_30:cescfabregas"
+   },
+   "filter": {
+    "country": 45
+   }
+  },
+  {
+   "id": 1502,
+   "category": 5,
+   "name": "Albiceleste",
+   "description": "Score 50 goals with Argentine players, including 10 chip shots. Reward: TOTW Aguero (91).",
+   "metric": "goals",
+   "target": 50,
+   "reward": {
+    "coins": 0,
+    "card": "totw_banner_until_01_27:sergioaguero"
+   },
+   "filter": {
+    "country": 52
+   },
+   "also": {
+    "filter": {
+     "country": 52,
+     "shot_type": "ChipShot"
+    },
+    "target": 10
+   }
+  },
+  {
+   "id": 1503,
+   "category": 5,
+   "name": "Les Bleus",
+   "description": "Score 40 goals with French players, including 10 chip shots. Reward: TOTW Pogba (92).",
+   "metric": "goals",
+   "target": 40,
+   "reward": {
+    "coins": 0,
+    "card": "totw_banner_until_03_30:paulpogba"
+   },
+   "filter": {
+    "country": 18
+   },
+   "also": {
+    "filter": {
+     "country": 18,
+     "shot_type": "ChipShot"
+    },
+    "target": 10
+   }
+  },
+  {
+   "id": 1504,
+   "category": 5,
+   "name": "Los Cafeteros",
+   "description": "Score 30 goals with Colombian players. Reward: TOTW James Rodriguez (90).",
+   "metric": "goals",
+   "target": 30,
+   "reward": {
+    "coins": 0,
+    "card": "totw_banner_until_04_06:jamesrodriguez"
+   },
+   "filter": {
+    "country": 56
+   }
+  },
+  {
+   "id": 1505,
+   "category": 5,
+   "name": "Samba Strikes",
+   "description": "Score 30 goals from 20+ yards with Brazilian players. Reward: Double Elevens Neymar (90).",
+   "metric": "goals",
+   "target": 30,
+   "reward": {
+    "coins": 0,
+    "card": "double_elevens:neymar"
+   },
+   "filter": {
+    "country": 54,
+    "min_distance": 20
+   }
+  },
+  {
+   "id": 1506,
+   "category": 5,
+   "name": "Red Devils",
+   "description": "Score 25 goals from 20+ yards with Belgian players. Reward: TOTW De Bruyne (91).",
+   "metric": "goals",
+   "target": 25,
+   "reward": {
+    "coins": 0,
+    "card": "totw_banner_until_01_04:kevindebruyne"
+   },
+   "filter": {
+    "country": 7,
+    "min_distance": 20
+   }
+  },
+  {
+   "id": 1507,
+   "category": 5,
+   "name": "Die Mannschaft",
+   "description": "Score 20 headers with German players. Reward: TOTW Thomas Muller (90).",
+   "metric": "goals",
+   "target": 20,
+   "reward": {
+    "coins": 0,
+    "card": "totw_banner_until_03_02:thomasmuller"
+   },
+   "filter": {
+    "country": 21,
+    "shot_type": "Header"
+   }
+  },
+  {
+   "id": 1508,
+   "category": 5,
+   "name": "Three Lions",
+   "description": "Score 25 headers with English players. Reward: TOTW Rooney (89).",
+   "metric": "goals",
+   "target": 25,
+   "reward": {
+    "coins": 0,
+    "card": "totw_banner_until_01_27:waynerooney"
+   },
+   "filter": {
+    "country": 14,
+    "shot_type": "Header"
+   }
+  },
+  {
+   "id": 1509,
+   "category": 5,
+   "name": "Azzurri",
+   "description": "Score 10 penalties with Italian players. Reward: TOTW Buffon (91).",
+   "metric": "goals",
+   "target": 10,
+   "reward": {
+    "coins": 0,
+    "card": "totw_banner_until_03_30:gianluigibuffon"
+   },
+   "filter": {
+    "country": 27,
+    "situation": "Penalty"
+   }
+  },
+  {
+   "id": 1510,
+   "category": 5,
+   "name": "Blagult",
+   "description": "Score 10 chip shots with Swedish players. Reward: Most Feared Zlatan (92).",
+   "metric": "goals",
+   "target": 10,
+   "reward": {
+    "coins": 0,
+    "card": "most_feared_midfielders_forwards:zlatan_ibrahimovi"
+   },
+   "filter": {
+    "country": 46,
+    "shot_type": "ChipShot"
+   }
+  }
+ ]
+}

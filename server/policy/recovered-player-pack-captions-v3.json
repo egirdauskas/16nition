@@ -1,0 +1,27 @@
+{
+  "version": "recovered_player_pack_captions_v3",
+  "classification": "recovered_supplied_stock_text",
+  "source": {
+    "file": "reports/overnight/2026-10-13-native-packs/supplied/patch.26.com.ea.gp.fifaworld-eng_us.db",
+    "sha256": "a7d47d85769e922e2df6620e4c388a25a7fcae3cb4703f36d36b19de3d3511b2",
+    "valid_rows": 15698,
+    "effective_archive": "input/patch.26.com.ea.gp.fifaworld.obb",
+    "member": "eng_us.db"
+  },
+  "limits": "Explicit revival selection of supplied406/3508 24-player variant; conflicting3406 12-player text remains preserved in source census. Not a universal Mobile composition/product binding.",
+  "definitions": {
+    "revival_jumbo_rare_players_v1": {
+      "NAME": {
+        "key": "FUT_STORE_PACK_406_NAME",
+        "row": 6339,
+        "value": "JUMBO RARE PLAYERS PACK"
+      },
+      "SHORT": null,
+      "DESC": {
+        "key": "FUT_STORE_PACK_406_DESC",
+        "row": 3058,
+        "value": "The most unique top-rated players, all in a single pack! Includes 24 items, all players, all Gold, all Rare."
+      }
+    }
+  }
+}
